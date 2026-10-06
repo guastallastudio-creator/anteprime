@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Presso — Caffetteria Specialty · Niguarda, Milano</title>
+<meta name="description" content="Presso, caffetteria specialty in via Pianell 52 a Milano Niguarda: espresso a 1,30 €, monorigini, V60, batch brew, lievitati e pranzo. Un luogo, un gesto, un espresso.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Presso — Caffetteria Specialty · Niguarda, Milano">
+<meta property="og:description" content="Anteprima del sito: Presso, caffetteria specialty in via Pianell 52 a Milano Niguarda: espresso a 1,30 €, monorigini, V60, batch brew, lievitati e pranzo. Un luogo, un gesto, un espresso.">
+<meta property="og:image" content="https://guastallastudio-creator.github.io/anteprime/presso-9xbsw/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171310'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='%23C9712E' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F1EA; --paper-2:#EAE5DA; --ink:#171310; --ink-2:#2A2420; --muted:#6B625A; --rule:#DAD3C6;
+  --crema:#C9712E; --crema-2:#A9561C; --steel:#A6ABAF;
+  --d:"Bricolage Grotesque", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --m:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  --pad:clamp(16px,4.5vw,48px);
+  --ease:cubic-bezier(.2,.75,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--d);font-size:16.5px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1260px;margin:0 auto;padding:0 var(--pad)}
+.h{font-family:var(--d);font-weight:700;font-variation-settings:"opsz" 96;letter-spacing:-.035em;line-height:.95}
+.h em{font-style:normal;color:var(--crema)}
+.mono{font-family:var(--m);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.tag{display:inline-flex;align-items:center;gap:10px;font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--crema);display:block}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s}
+.nav.on{background:rgba(244,241,234,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:25px;letter-spacing:-.04em}
+.logo i{width:20px;height:20px;border-radius:50%;border:5px solid var(--crema);display:block}
+.nav nav{display:flex;gap:28px;font-size:14.5px;font-weight:500}
+.nav nav a{opacity:.75;transition:opacity .2s}.nav nav a:hover{opacity:1}
+.call{font-family:var(--m);font-size:13px;font-weight:500;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;transition:background .25s}
+.call:hover{background:var(--crema-2)}
+
+/* hero */
+.hero{padding-top:66px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:30px;min-height:calc(100vh - 66px);min-height:calc(100svh - 66px);padding-top:20px;padding-bottom:40px}
+.hero h1{font-size:clamp(54px,6.6vw,104px);margin:22px 0 26px}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 b{display:block;font-weight:inherit;transform:translateY(105%);animation:up 1s var(--ease) forwards}
+.hero h1 span:nth-child(2) b{animation-delay:.09s}.hero h1 span:nth-child(3) b{animation-delay:.18s}
+@keyframes up{to{transform:none}}
+.lead{max-width:31em;font-size:clamp(16.5px,1.3vw,19px);color:var(--muted)}
+.lead b{color:var(--ink);font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .35s var(--ease),background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-d{background:var(--ink);color:var(--paper)}.btn-d:hover{background:var(--crema-2)}
+.btn-o{border:1.5px solid var(--ink)}
+.price-row{display:flex;gap:26px;margin-top:38px;flex-wrap:wrap}
+.price-row div{font-family:var(--m);font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.price-row b{display:block;font-family:var(--d);font-size:30px;font-weight:700;color:var(--ink);letter-spacing:-.03em;text-transform:none;line-height:1.1}
+
+.machine{position:relative;justify-self:center;width:100%;max-width:560px;user-select:none;-webkit-user-select:none;touch-action:none}
+.machine .cv{position:relative;aspect-ratio:1/1;width:100%;cursor:pointer}
+#shot{position:absolute;inset:0;width:100%;height:100%}
+.machine .fallback{position:absolute;inset:6%;border-radius:28px;object-fit:cover;opacity:0}
+.machine.nogl .fallback{opacity:1}.machine.nogl #shot,.machine.nogl .panel{display:none}
+.panel{position:absolute;left:0;top:6%;display:flex;flex-direction:column;align-items:center;gap:10px;width:150px}
+.gauge{width:132px;height:132px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#fff,#E7E3DB 70%,#CFC9BE);box-shadow:inset 0 0 0 7px #2A2420,inset 0 0 0 9px #8E8780,0 18px 34px -16px rgba(0,0,0,.45);position:relative}
+.gauge svg{position:absolute;inset:0}
+.gauge .lbl{position:absolute;left:0;right:0;bottom:30px;text-align:center;font-family:var(--m);font-size:9px;letter-spacing:.14em;color:#6B625A}
+.readout{font-family:var(--m);font-size:12.5px;display:grid;grid-template-columns:auto auto;gap:4px 12px;background:var(--ink);color:#E9E2D6;padding:10px 14px;border-radius:12px}
+.readout span{color:#8F877E}
+.readout b{font-weight:500;text-align:right;font-variant-numeric:tabular-nums;color:#F2B47A}
+.hold{position:absolute;left:0;right:0;bottom:-6px;text-align:center}
+.hold .pill{display:inline-flex;align-items:center;gap:10px;font-family:var(--m);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;background:var(--paper);border:1.5px solid var(--ink);border-radius:999px;padding:10px 16px;transition:background .25s,color .25s}
+.hold .pill i{width:10px;height:10px;border-radius:50%;background:var(--crema);box-shadow:0 0 0 0 rgba(201,113,46,.6);animation:pulse 1.6s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(201,113,46,0)}100%{box-shadow:0 0 0 0 rgba(201,113,46,0)}}
+.machine.pulling .hold .pill{background:var(--ink);color:var(--paper)}
+.verdict{position:absolute;right:2%;top:10%;background:var(--crema);color:#fff;border-radius:18px;padding:14px 16px;font-weight:600;font-size:14px;line-height:1.3;max-width:190px;transform:rotate(3deg) scale(.6);opacity:0;transition:transform .5s var(--ease),opacity .4s;pointer-events:none}
+.verdict b{display:block;font-size:24px;letter-spacing:-.03em;line-height:1.05;margin-bottom:4px}
+.verdict.on{transform:rotate(3deg) scale(1);opacity:1}
+
+/* banda */
+.band{background:var(--ink);color:var(--paper);overflow:hidden;white-space:nowrap}
+.band .track{display:inline-flex;padding:17px 0;animation:slide 36s linear infinite}
+.band span{font-family:var(--m);font-size:clamp(14px,1.4vw,17px);letter-spacing:.04em;display:inline-flex;align-items:center;gap:26px;padding-right:26px}
+.band span b{color:#F2B47A;font-weight:500}
+.band span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--crema)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(84px,11vw,148px) 0}
+
+/* storia */
+.story{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(36px,7vw,100px);align-items:center}
+.swap{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5}
+.swap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.swap .from,.swap .to{position:absolute;left:18px;font-family:var(--m);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:9px 13px;border-radius:999px}
+.swap .from{top:18px;background:rgba(244,241,234,.9);text-decoration:line-through;color:var(--muted)}
+.swap .to{top:60px;background:var(--crema);color:#fff}
+.story h2{font-size:clamp(44px,5.4vw,84px);margin:20px 0 26px}
+.story p{color:var(--muted);font-size:17.5px;margin-bottom:16px;max-width:34em}
+.story p b{color:var(--ink);font-weight:600}
+.quote{margin-top:28px;background:var(--paper-2);border-radius:22px;padding:24px 26px}
+.quote q{display:block;font-size:clamp(21px,2vw,27px);font-weight:600;letter-spacing:-.02em;line-height:1.25;quotes:"“" "”"}
+.quote cite{display:block;margin-top:12px;font-style:normal;font-family:var(--m);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.facts span{border:1.5px solid var(--rule);border-radius:999px;padding:7px 13px;font-size:13.5px;color:var(--muted)}
+
+/* in tazza */
+.cup{background:var(--ink);color:#EDE6DA;overflow:hidden}
+.cup .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.cup .tag{color:#9C948A}
+.cup h2{font-size:clamp(46px,6vw,92px);margin:20px 0 24px}
+.cup h2 em{color:#F2B47A}
+.cup p{color:#B8AFA3;font-size:17px;max-width:30em;margin-bottom:14px}
+.label{background:#F1EBDF;color:var(--ink);border-radius:26px;padding:clamp(24px,3.4vw,40px);position:relative;transform:rotate(-1.5deg);box-shadow:0 40px 70px -40px rgba(0,0,0,.8)}
+.label .top{display:flex;justify-content:space-between;font-family:var(--m);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1.5px dashed #C9C0B1;padding-bottom:14px}
+.label h3{font-size:clamp(46px,5vw,74px);font-weight:800;letter-spacing:-.045em;line-height:.92;margin:22px 0 4px}
+.label .sub{font-family:var(--m);font-size:13px;color:var(--crema-2);letter-spacing:.04em}
+.label dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin-top:24px;font-size:15px}
+.label dt{font-family:var(--m);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.notes{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.notes span{background:var(--ink);color:#F2B47A;border-radius:999px;padding:7px 14px;font-family:var(--m);font-size:12.5px}
+.label .stamp{position:absolute;right:-12px;top:-16px;width:96px;height:96px;border-radius:50%;background:var(--crema);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--m);font-size:10px;letter-spacing:.06em;text-transform:uppercase;line-height:1.3;transform:rotate(12deg)}
+.label .stamp b{display:block;font-family:var(--d);font-size:26px;letter-spacing:-.03em;text-transform:none}
+
+/* menu */
+.menu .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:46px}
+.menu h2{font-size:clamp(46px,6vw,92px);margin-top:18px}
+.menu .head p{max-width:25em;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.list{list-style:none}
+.list li{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:17px 0;border-bottom:1.5px solid var(--rule);align-items:baseline}
+.list .n{font-size:clamp(21px,1.9vw,26px);font-weight:600;letter-spacing:-.02em}
+.list .p{font-family:var(--m);font-size:17px;font-weight:500;font-variant-numeric:tabular-nums}
+.list .d{grid-column:1/-1;font-size:14.5px;color:var(--muted)}
+.also{margin-top:22px;font-size:15.5px;color:var(--muted)}
+.also b{color:var(--ink);font-weight:600}
+.brew{background:var(--paper-2);border-radius:26px;padding:clamp(24px,3vw,36px)}
+.brew h3{font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-bottom:18px}
+.brew .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.brew .two div{background:var(--paper);border-radius:18px;padding:18px}
+.brew .two b{display:block;font-size:22px;letter-spacing:-.02em;margin-bottom:6px}
+.brew .two span{font-family:var(--m);font-size:12px;color:var(--crema-2)}
+.brew .two p{font-size:14.5px;color:var(--muted);margin-top:8px}
+.brew img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;margin-top:14px}
+
+/* cibo */
+.food{background:var(--paper-2)}
+.food .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:46px}
+.fcard{background:var(--paper);border-radius:26px;padding:28px 26px;display:flex;flex-direction:column}
+.fcard .when{font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--crema-2)}
+.fcard h3{font-size:34px;font-weight:700;letter-spacing:-.035em;line-height:1;margin:14px 0 18px}
+.fcard ul{list-style:none;margin-top:auto}
+.fcard li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1.5px solid var(--rule);font-size:15.5px}
+.fcard li span{font-family:var(--m);font-size:14px;white-space:nowrap}
+.fcard li small{display:block;color:var(--muted);font-size:13px}
+.fcard.ph{padding:0;overflow:hidden;min-height:360px;position:relative}
+.fcard.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fcard.ph .cap{position:absolute;left:16px;bottom:16px;background:var(--paper);border-radius:999px;padding:8px 14px;font-family:var(--m);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.food h2{font-size:clamp(46px,6vw,92px);margin-top:18px}
+
+/* filiera */
+.chain h2{font-size:clamp(44px,5.6vw,86px);margin:18px 0 14px;max-width:13em}
+.chain .intro{color:var(--muted);max-width:36em;font-size:17px}
+.partners{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:46px;border-top:1.5px solid var(--ink)}
+.partner{padding:26px 22px 28px 0;border-bottom:1.5px solid var(--rule);position:relative}
+.partner:not(:nth-child(3n)){border-right:1.5px solid var(--rule);margin-right:0}
+.partner:nth-child(3n+2),.partner:nth-child(3n){padding-left:22px}
+.partner .w{font-family:var(--m);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--crema-2)}
+.partner h3{font-size:26px;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:12px 0 6px}
+.partner p{font-size:14.5px;color:var(--muted)}
+.partner .km{position:absolute;right:16px;top:24px;font-family:var(--m);font-size:12px;color:var(--muted)}
+
+/* foto */
+.shots{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:280px 280px;gap:16px}
+.shots figure{border-radius:24px;overflow:hidden;position:relative}
+.shots figure:first-child{grid-row:span 2}
+.shots img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.shots figure:hover img{transform:scale(1.04)}
+.shots figcaption{position:absolute;left:14px;bottom:14px;background:var(--paper);border-radius:999px;padding:7px 12px;font-family:var(--m);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase}
+
+/* dove */
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,80px);align-items:stretch}
+.visit h2{font-size:clamp(46px,6vw,92px);margin:18px 0 32px}
+.rows div{display:grid;grid-template-columns:120px 1fr;padding:15px 0;border-bottom:1.5px solid var(--rule);font-size:17px}
+.rows span{font-family:var(--m);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+.rows a{border-bottom:1.5px solid var(--crema)}
+.rows small{display:block;color:var(--muted);font-size:14px}
+.map{border-radius:28px;overflow:hidden;position:relative;min-height:460px;background:var(--paper-2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.05)}
+
+footer{background:var(--ink);color:#9C948A;padding:66px 0 34px;font-size:14px;overflow:hidden}
+footer .big{font-size:clamp(100px,21vw,300px);font-weight:800;letter-spacing:-.06em;line-height:.8;color:var(--paper);display:flex;align-items:center;gap:.08em}
+footer .big i{width:.62em;height:.62em;border-radius:50%;border:.15em solid var(--crema);display:block}
+footer .sub{font-family:var(--m);font-size:14px;letter-spacing:.04em;color:#CFC6B9;margin-top:20px}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:42px;padding-top:22px;border-top:1px solid #3A322C;font-size:12.5px}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.mbar{display:none}
+
+@media (max-width:1000px){
+  .partners{grid-template-columns:1fr 1fr}
+  .partner:nth-child(n){border-right:0;padding-left:0}
+  .partner:nth-child(odd){border-right:1.5px solid var(--rule);padding-right:18px}
+  .partner:nth-child(even){padding-left:18px}
+  .food .grid{grid-template-columns:1fr 1fr}
+  .fcard.ph{grid-column:span 2;min-height:300px}
+}
+@media (max-width:900px){
+  .nav nav{display:none}
+  .hero .wrap,.story,.cup .wrap,.cols,.visit .wrap{grid-template-columns:1fr}
+  .hero .wrap{min-height:auto;padding-top:34px}
+  .machine{max-width:470px}
+  .panel{width:118px;top:2%}
+  .gauge{width:108px;height:108px}
+  .gauge .lbl{bottom:24px}
+  .readout{font-size:11px;padding:8px 10px}
+  .shots{grid-template-columns:1fr 1fr;grid-template-rows:300px 200px 200px}
+  .shots figure:first-child{grid-row:auto;grid-column:span 2}
+  .label{transform:none}
+}
+@media (max-width:600px){
+  .call span{display:none}
+  .food .grid{grid-template-columns:1fr}
+  .fcard.ph{grid-column:auto}
+  .brew .two{grid-template-columns:1fr}
+  .partners{grid-template-columns:1fr}
+  .partner:nth-child(n){border-right:0;padding-left:0;padding-right:0}
+  .rows div{grid-template-columns:96px 1fr}
+  .map{min-height:300px}
+  .verdict{right:0;top:2%;max-width:150px;font-size:12.5px}
+  .verdict b{font-size:20px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;transform:translateY(150%);transition:transform .45s var(--ease)}
+  .mbar.on{transform:none}
+  .mbar a{display:flex;justify-content:center;align-items:center;padding:15px;border-radius:999px;font-weight:600;font-size:15px;border:1.5px solid var(--ink)}
+  .mbar a:first-child{background:var(--paper)}
+  .mbar a:last-child{background:var(--ink);color:var(--paper)}
+  footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Presso, home"><i></i>presso</a>
+    <nav aria-label="Sezioni"><a href="#storia">Storia</a><a href="#tazza">In tazza</a><a href="#menu">Menu</a><a href="#cibo">Colazione e pranzo</a><a href="#dove">Dove siamo</a></nav>
+    <a class="call" href="tel:+393398988237" aria-label="Chiama Presso">☎ <span>339 898 8237</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag"><i></i>Caffetteria specialty · Niguarda, Milano</span>
+      <h1 class="h"><span><b>Un luogo.</b></span><span><b>Un gesto.</b></span><span><b><em>Un espresso.</em></b></span></h1>
+      <p class="lead">Per anni è stato il bar Le Betulle. Oggi si chiama Presso: <b>caffè specialty de Le Piantagioni del Caffè</b>, V60, batch brew e lievitati artigianali. Ed è ancora un bar di quartiere, <b>per tutti</b>.</p>
+      <div class="ctas">
+        <a class="btn btn-d" href="#menu">Guarda il menu</a>
+        <a class="btn btn-o" href="https://maps.google.com/?q=Presso+Caffetteria+Specialty+Via+Salvatore+Pianell+52+Milano" target="_blank" rel="noopener">Portami lì →</a>
+      </div>
+      <div class="price-row">
+        <div><b>1,30 €</b>espresso</div>
+        <div><b>3,50 €</b>monorigine</div>
+        <div><b>6 €</b>V60</div>
+      </div>
+    </div>
+    <div class="machine" id="machine">
+      <div class="cv" id="cv">
+        <canvas id="shot" aria-label="Una macchina espresso: tieni premuto per estrarre un caffè"></canvas>
+        <img class="fallback" src="img/espresso.jpg" alt="Espresso che scende nella tazzina">
+      </div>
+      <div class="panel" aria-hidden="true">
+        <div class="gauge"><svg viewBox="0 0 132 132" id="gsvg"></svg><div class="lbl">BAR</div></div>
+        <div class="readout"><span>tempo</span><b id="rt">00.0 s</b><span>in tazza</span><b id="rg">0.0 g</b></div>
+      </div>
+      <div class="verdict" id="verdict"><b>Perfetto.</b>27 secondi, 36 grammi. Da noi costa 1,30 €.</div>
+      <div class="hold"><span class="pill"><i></i><span id="holdtxt">Tieni premuto per estrarre</span></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="track">
+  <span>Espresso <b>1,30 €</b></span><span>Monorigine <b>3,50 €</b></span><span>Cappuccino <b>2 €</b></span><span>V60 <b>6 €</b></span><span>Batch brew <b>4,50 €</b></span><span>Cruffin <b>2,20 €</b></span><span>Via Pianell 52</span>
+  <span>Espresso <b>1,30 €</b></span><span>Monorigine <b>3,50 €</b></span><span>Cappuccino <b>2 €</b></span><span>V60 <b>6 €</b></span><span>Batch brew <b>4,50 €</b></span><span>Cruffin <b>2,20 €</b></span><span>Via Pianell 52</span>
+</div></div>
+
+<section class="sec" id="storia">
+  <div class="wrap story">
+    <figure class="swap rv"><img src="img/bancone.jpg" alt="Il bancone di una caffetteria con la macchina in primo piano" loading="lazy"><span class="from">Bar Le Betulle</span><span class="to">Presso · 2026</span></figure>
+    <div>
+      <span class="tag rv"><i></i>La storia</span>
+      <h2 class="h rv">Il bar di sempre, <em>il caffè di adesso.</em></h2>
+      <p class="rv"><b>Andrea Spataro</b> ha rilevato il bar Le Betulle a 23 anni. Veniva dalle cucine di alcuni hotel milanesi e doveva partire per l'America, quando sua mamma gli ha detto che il bar sotto casa si vendeva. Ci ha pensato, e ha deciso di provarci.</p>
+      <p class="rv">Poi il caffè è diventato una passione: il corso di caffetteria specialty alla Scuola Galdus, e il locale ripensato con <b>MARG Studio</b>. Il bancone adesso è più basso, la pedana non c'è più e la macchina sta in primo piano, dove la vedi lavorare.</p>
+      <div class="quote rv"><q>Non sentivo mio il bar vecchio, volevo fare una cosa che mi riguardasse di più.</q><cite>Andrea Spataro, fondatore</cite></div>
+      <div class="facts rv"><span>Bancone senza pedana</span><span>Saletta per una quindicina</span><span>Tavolini fuori</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec cup" id="tazza">
+  <div class="wrap">
+    <div>
+      <span class="tag rv"><i></i>In tazza adesso</span>
+      <h2 class="h rv">Un caffè che <em>cambia</em> con le stagioni.</h2>
+      <p class="rv">Il caffè arriva da Le Piantagioni del Caffè di Livorno, che tosta specialty dal 1994. I chicchi ruotano più o meno ogni quattro mesi, tra blend, monorigini ed estrazioni diverse: ogni volta che torni può esserci qualcosa da assaggiare.</p>
+      <p class="rv">A ottobre in macinino c'è un Perù biologico, coltivato a 1.700 metri da una piccola cooperativa.</p>
+    </div>
+    <div class="label rv">
+      <div class="stamp"><div><b>3,50 €</b>al banco</div></div>
+      <div class="top"><span>Presso · monorigine</span><span>Ott 2026</span></div>
+      <h3>Perù<br>Choopchebi</h3>
+      <div class="sub">100% arabica · biologico</div>
+      <dl>
+        <dt>Altitudine</dt><dd>1.700 m</dd>
+        <dt>Produttore</dt><dd>Cooperativa di circa 150 soci, fondata nel 1947</dd>
+        <dt>Storia</dt><dd>Nata per sostituire le piantagioni di coca con varietà di caffè pregiate</dd>
+        <dt>Torrefazione</dt><dd>Le Piantagioni del Caffè, Livorno</dd>
+      </dl>
+      <div class="notes"><span>mandorla</span><span>cioccolato</span><span>fiori</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv"><i></i>Il menu</span><h2 class="h rv">Dal banco, <em>senza fretta.</em></h2></div>
+      <p class="rv">Prezzi da bar di quartiere, caffè da caffetteria specialty. Puoi prendere il solito espresso al volo oppure fermarti per un V60.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <ul class="list rv">
+          <li><span class="n">Espresso</span><span class="p">1,30 €</span><span class="d">il caffè di sempre, al banco</span></li>
+          <li><span class="n">Espresso monorigine</span><span class="p">3,50 €</span><span class="d">la monorigine del momento</span></li>
+          <li><span class="n">Cappuccino</span><span class="p">2,00 €</span><span class="d">latte montato al momento</span></li>
+          <li><span class="n">V60</span><span class="p">6,00 €</span><span class="d">filtro manuale, una tazza alla volta</span></li>
+          <li><span class="n">Batch brew</span><span class="p">4,50 €</span><span class="d">filtro a macchina, sempre pronto</span></li>
+        </ul>
+        <p class="also rv">E poi <b>cortado</b>, <b>flat white</b> e <b>affogato al caffè</b>, fatto col gelato di Orto Gelato, la gelateria qui accanto.</p>
+      </div>
+      <div class="brew rv">
+        <h3>Due modi di fare il filtro.</h3>
+        <div class="two">
+          <div><b>V60</b><span>manuale · 1 tazza</span><p>Estrazione lenta, a mano: ogni passaggio è controllato, dalla macinatura al versamento.</p></div>
+          <div><b>Batch brew</b><span>a macchina · per tanti</span><p>Estrazione automatica in quantità più grandi: filtro specialty senza aspettare.</p></div>
+        </div>
+        <img src="img/v60.jpg" alt="Caffè filtro V60 versato a mano" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec food" id="cibo">
+  <div class="wrap">
+    <span class="tag rv"><i></i>Colazione e pranzo</span>
+    <h2 class="h rv">Fatto da chi <em>lo sa fare.</em></h2>
+    <div class="grid">
+      <div class="fcard rv">
+        <span class="when">Colazione</span>
+        <h3>Lievitati di AB Pasticceria</h3>
+        <ul>
+          <li>Croissant vuoto<span>1,60 €</span></li>
+          <li><div>Croissant farcito<small>crema, cioccolato, frutti di bosco, albicocca</small></div><span>2,00 €</span></li>
+          <li><div>Vegano, integrale o pistacchio</div><span>2,20 €</span></li>
+          <li><div>Cruffin<small>metà croissant, metà muffin</small></div><span>2,20 €</span></li>
+        </ul>
+      </div>
+      <div class="fcard ph rv"><img src="img/croissant.jpg" alt="Croissant appena sfornati in vetrina" loading="lazy"><span class="cap">Lo sfogliato di casa</span></div>
+      <div class="fcard rv">
+        <span class="when">Pranzo</span>
+        <h3>Pizza, toast e pan de cristal</h3>
+        <ul>
+          <li><div>Sfoglia<small>cotto, fontina e Parmigiano</small></div><span>3,00 €</span></li>
+          <li><div>Avocado toast<small>pane di farro e lievito madre</small></div><span>8,50 €</span></li>
+          <li><div>Pizza alla romana e al padellino</div><span>MG Bakery</span></li>
+          <li><div>Panini col pan de cristal<small>e insalate</small></div><span>10 – 15 €</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec chain">
+  <div class="wrap">
+    <span class="tag rv"><i></i>Chi c'è dietro</span>
+    <h2 class="h rv">Un bar fatto <em>di botteghe.</em></h2>
+    <p class="intro rv">Ogni cosa che trovi al banco arriva da qualcuno che la fa bene. Ecco chi.</p>
+    <div class="partners">
+      <div class="partner rv"><span class="w">Il caffè</span><h3>Le Piantagioni del Caffè</h3><p>Torrefazione specialty dal 1994, della famiglia Meschini.</p><span class="km">Livorno</span></div>
+      <div class="partner rv"><span class="w">I lievitati</span><h3>AB Pasticceria</h3><p>Croissant, cruffin e lo sfogliato creato apposta per Presso.</p><span class="km">Cormano</span></div>
+      <div class="partner rv"><span class="w">Pizza e toast</span><h3>MG Bakery</h3><p>Pizza alla romana, padellino e pane di farro a lievito madre.</p><span class="km">Lissone</span></div>
+      <div class="partner rv"><span class="w">Il pane</span><h3>Roberto Talerico</h3><p>Pan de cristal da 30 centimetri, lo stesso del Portrait.</p><span class="km">Legnano</span></div>
+      <div class="partner rv"><span class="w">Il gelato</span><h3>Orto Gelato</h3><p>La gelateria accanto: il suo gelato finisce nell'affogato.</p><span class="km">qui accanto</span></div>
+      <div class="partner rv"><span class="w">Il progetto</span><h3>MARG Studio</h3><p>Lo studio che ha ridisegnato il locale attorno alla macchina.</p><span class="km">Milano</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:clamp(84px,11vw,148px)">
+  <div class="wrap shots">
+    <figure class="rv"><img src="img/espresso.jpg" alt="Espresso che scende dalla macchina" loading="lazy"><figcaption>9 bar</figcaption></figure>
+    <figure class="rv"><img src="img/latte.jpg" alt="Cappuccino con latte art" loading="lazy"><figcaption>Cappuccino · 2 €</figcaption></figure>
+    <figure class="rv"><img src="img/caraffa.jpg" alt="Caffè filtro nella caraffa di vetro" loading="lazy"><figcaption>Batch brew</figcaption></figure>
+    <figure class="rv" style="grid-column:span 2"><img src="img/croissant.jpg" alt="Croissant in vetrina" loading="lazy" style="object-position:50% 70%"><figcaption>Colazione</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec visit" id="dove" style="padding-top:0">
+  <div class="wrap">
+    <div>
+      <span class="tag rv"><i></i>Dove siamo</span>
+      <h2 class="h rv">Via Pianell 52, <em>Niguarda.</em></h2>
+      <div class="rows rv">
+        <div><span>Indirizzo</span><p><a href="https://maps.google.com/?q=Presso+Caffetteria+Specialty+Via+Salvatore+Pianell+52+Milano" target="_blank" rel="noopener">Via Salvatore Pianell 52, Milano</a><small>traversa di viale Fulvio Testi, tra Prato Centenaro e Segnano</small></p></div>
+        <div><span>Telefono</span><p><a href="tel:+393398988237">339 898 8237</a></p></div>
+        <div><span>Orari</span><p>In aggiornamento<small>per ora li trovi su Google Maps e Instagram</small></p></div>
+        <div><span>Social</span><p><a href="https://www.instagram.com/presso.caffetteria/" target="_blank" rel="noopener">@presso.caffetteria</a></p></div>
+      </div>
+    </div>
+    <div class="map rv"><iframe title="Mappa: Via Salvatore Pianell 52, Milano" loading="lazy" src="https://www.google.com/maps?q=Via+Salvatore+Pianell+52,+20125+Milano&z=16&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">press<i></i></div>
+    <div class="sub">Un luogo, un gesto, un espresso. · Via Pianell 52, Milano</div>
+    <div class="row"><span>Presso Caffetteria Specialty · 339 898 8237 · @presso.caffetteria</span><span>Anteprima del sito · foto d'esempio (Unsplash), da sostituire con quelle del locale</span></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a href="https://maps.google.com/?q=Presso+Caffetteria+Specialty+Via+Salvatore+Pianell+52+Milano" target="_blank" rel="noopener">Portami lì</a><a href="tel:+393398988237">Chiama</a></div>
+
+<script>
+/* ---------- l'estrazione (WebGL2) ----------
+   Tieni premuto: la pressione sale a 9 bar, il caffè scende dai beccucci
+   e riempie il bicchierino a strati (cuore, corpo, crema). */
+(function(){
+  const box=document.getElementById('machine'),cvw=document.getElementById('cv'),cv=document.getElementById('shot');
+  const rt=document.getElementById('rt'),rg=document.getElementById('rg'),verdict=document.getElementById('verdict'),holdtxt=document.getElementById('holdtxt');
+  /* manometro */
+  const g=document.getElementById('gsvg');let ticks='';
+  for(let i=0;i<=15;i++){const a=(-135+i*18)*Math.PI/180,r1=i%3?50:46,r2=55;
+    ticks+=`<line x1="${66+Math.sin(a)*r1}" y1="${66-Math.cos(a)*r1}" x2="${66+Math.sin(a)*r2}" y2="${66-Math.cos(a)*r2}" stroke="#2A2420" stroke-width="${i%3?1.2:2.2}"/>`;
+    if(i%3===0)ticks+=`<text x="${66+Math.sin(a)*36}" y="${66-Math.cos(a)*36+3.5}" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" fill="#2A2420">${i}</text>`}
+  const arc=(a0,a1,r)=>{const p=a=>[66+Math.sin(a*Math.PI/180)*r,66-Math.cos(a*Math.PI/180)*r];const[x0,y0]=p(a0),[x1,y1]=p(a1);return`M${x0} ${y0}A${r} ${r} 0 0 1 ${x1} ${y1}`};
+  g.innerHTML=`<path d="${arc(-135+8*18,-135+10*18,52)}" stroke="#C9712E" stroke-width="6" fill="none" opacity=".85"/>`+ticks+
+    `<g id="needle"><line x1="66" y1="74" x2="66" y2="22" stroke="#B3261E" stroke-width="2.6" stroke-linecap="round"/><circle cx="66" cy="66" r="6" fill="#2A2420"/></g>`;
+  const needle=document.getElementById('needle');
+
+  let gl=null;try{gl=cv.getContext('webgl2',{alpha:true,premultipliedAlpha:true,antialias:true})}catch(e){}
+  if(!gl){box.classList.add('nogl');return}
+  const VS=`#version 300 es
+  in vec2 a;out vec2 uv;void main(){uv=a*.5+.5;gl_Position=vec4(a,0,1);}`;
+  const FS=`#version 300 es
+  precision highp float;in vec2 uv;out vec4 o;
+  uniform float t,fill,flow,px,drip;
+  float hash(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+  float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x),f.y);}
+  float box(vec2 p,vec2 c,vec2 b,float r){vec2 q=abs(p-c)-b+r;return length(max(q,0.))+min(max(q.x,q.y),0.)-r;}
+  vec4 over(vec4 a,vec4 b){float al=a.a+b.a*(1.-a.a);return vec4((a.rgb*a.a+b.rgb*b.a*(1.-a.a))/max(al,1e-4),al);}
+  vec3 chrome(float x,float w,float cx){float u=(x-cx)/w;return vec3(.20,.20,.21)+vec3(.62)*exp(-pow((u+.35)/.18,2.))+vec3(.25)*exp(-pow((u-.45)/.25,2.))+vec3(.08)*u;}
+  /* bicchierino: pareti leggermente svasate */
+  float glassHalf(float y){return mix(.205,.25,clamp((y+.62)/.57,0.,1.));}
+  void main(){
+    vec2 p=uv*2.-1.;float aa=px*1.5;vec4 c=vec4(0);
+    /* ombra a terra */
+    float sh=exp(-pow(p.x/.62,2.)*2.)*exp(-pow((p.y+.765)/.035,2.));
+    c=over(vec4(0,0,0,sh*.25),c);
+    /* griglia del vassoio */
+    float tray=box(p,vec2(0,-.70),vec2(.62,.055),.03);
+    if(tray<aa){vec3 tc=chrome(p.x,.62,0.)*.9;float slot=step(.5,fract(p.x*30.))*step(-.73,p.y)*step(p.y,-.665)*step(abs(p.x),.56);tc=mix(tc,vec3(.08),slot*.85);
+      tc*=1.-.35*smoothstep(-.66,-.75,p.y);c=over(vec4(tc,1.-smoothstep(-aa,aa,tray)),c);}
+    /* corpo macchina in alto */
+    float body=box(p,vec2(0,1.02),vec2(.92,.2),.06);
+    if(body<aa){vec3 bc=mix(vec3(.12,.11,.1),vec3(.22,.2,.19),smoothstep(.82,1.,p.y));bc+=.05*exp(-pow((p.x+.3)/.25,2.));c=over(vec4(bc,1.-smoothstep(-aa,aa,body)),c);}
+    /* gruppo */
+    float grp=box(p,vec2(0,.73),vec2(.26,.1),.04);
+    if(grp<aa){c=over(vec4(chrome(p.x,.26,0.),1.-smoothstep(-aa,aa,grp)),c);}
+    /* manico portafiltro */
+    float hd=box(p,vec2(.58,.545),vec2(.36,.042),.042);
+    if(hd<aa){vec3 hc=vec3(.09,.07,.06)+vec3(.18,.12,.08)*smoothstep(.0,.04,.56-p.y+.0)*.0+.12*exp(-pow((p.y-.565)/.012,2.));c=over(vec4(hc,1.-smoothstep(-aa,aa,hd)),c);}
+    /* portafiltro */
+    float pf=box(p,vec2(0,.56),vec2(.24,.065),.05);
+    if(pf<aa){c=over(vec4(chrome(p.x,.24,0.)*.95,1.-smoothstep(-aa,aa,pf)),c);}
+    /* beccucci */
+    for(int k=0;k<2;k++){float sx=k==0?-.065:.065;float sp=box(p,vec2(sx,.455),vec2(.026,.045),.012);
+      if(sp<aa)c=over(vec4(chrome(p.x,.03,sx),1.-smoothstep(-aa,aa,sp)),c);}
+    /* livello del caffè */
+    float yb=-.575,H=.37,lev=yb+H*fill;
+    float wave=.006*flow*sin(p.x*38.-t*13.)+.003*sin(p.x*17.+t*4.)*min(fill*8.,1.);
+    float surf=lev+wave;
+    /* getti */
+    float topY=.41;
+    for(int k=0;k<2;k++){float sx=k==0?-.065:.065;
+      float w=(.004+.0065*flow)*(1.+.12*sin(p.y*60.+t*34.+float(k)*2.))*(1.+.18*noise(vec2(p.y*40.-t*24.,float(k))));
+      float x0=sx*mix(1.,.55,smoothstep(topY,surf,p.y))+.0015*sin(p.y*22.+t*7.+float(k));
+      float on=step(surf,p.y)*step(p.y,topY)*step(.02,flow);
+      float d=abs(p.x-x0)-w;
+      if(on>.5&&d<aa){float tint=smoothstep(.15,.85,fill);vec3 sc=mix(vec3(.30,.15,.06),vec3(.62,.36,.16),tint);sc+=.25*exp(-pow((p.x-x0+w*.4)/(w*.5+.001),2.));
+        c=over(vec4(sc,(1.-smoothstep(-aa,aa,d))*.96),c);}
+    }
+    /* goccia finale */
+    if(drip>0.){float dy=topY-drip*(topY-surf);float dd=length((p-vec2(.065,dy))*vec2(1.,.7))-.012;if(dd<aa)c=over(vec4(.35,.18,.07,1.-smoothstep(-aa,aa,dd)),c);}
+    /* bicchiere */
+    float gh=glassHalf(p.y);
+    float inside=step(-.62,p.y)*step(p.y,-.05)*step(abs(p.x),gh);
+    if(p.y>-.63&&p.y<-.045&&(inside>.5||abs(abs(p.x)-gh)<aa*2.)){
+      float edge=1.-smoothstep(-aa,aa,abs(p.x)-gh);
+      float inner=abs(p.x)<gh-.016&&p.y>yb?1.:0.;
+      /* liquido */
+      if(inner>.5&&p.y<surf){
+        float h=(p.y-yb)/max(surf-yb,1e-3);
+        float creme=clamp(.012+fill*.085,0.,.09);
+        vec3 heart=vec3(.10,.05,.02),bodyc=vec3(.30,.15,.06),crc=vec3(.80,.50,.24);
+        vec3 lc=mix(heart,bodyc,smoothstep(.0,.55,h));
+        float cz=smoothstep(surf-creme-.012,surf-creme+.01,p.y);
+        float tiger=noise(vec2(p.x*60.,p.y*14.+t*.4))*.5+noise(vec2(p.x*140.,p.y*40.))*.5;
+        vec3 cc=mix(crc*.78,crc*1.1,tiger)*(1.-.25*smoothstep(-.1,.1,p.x*0.));
+        lc=mix(lc,cc,cz);
+        float xn=p.x/gh;lc*=.72+.38*cos(xn*1.45);
+        lc+=vec3(.9,.65,.4)*.10*exp(-pow((xn+.55)/.12,2.));
+        /* turbolenza mentre scende */
+        lc+=flow*.05*(noise(vec2(p.x*20.,p.y*20.-t*6.))-.5);
+        c=over(vec4(lc,1.),c);
+        /* bollicine di crema in superficie */
+        float bub=smoothstep(.6,.95,noise(vec2(p.x*90.,t*.5)))*exp(-pow((p.y-surf+.006)/.004,2.));
+        c.rgb+=bub*.25;
+      }
+      /* vetro: pareti, fondo spesso, riflessi */
+      float wall=smoothstep(gh-.02,gh-.002,abs(p.x));
+      float base=smoothstep(yb+.002,yb-.012,p.y)*step(-.625,p.y);
+      float fres=max(wall,base*.8);
+      float spec=exp(-pow((p.x/gh+.62)/.05,2.))*.55+exp(-pow((p.x/gh-.7)/.09,2.))*.22;
+      spec*=smoothstep(-.6,-.45,p.y)*smoothstep(-.04,-.14,p.y);
+      float rim=exp(-pow((p.y+.05)/.006,2.))*step(abs(p.x),gh);
+      vec3 gc=mix(vec3(.50,.55,.58),vec3(.97,.98,1.),clamp(spec*1.6+rim,0.,1.));
+      float ga=clamp(.05+fres*.55+spec+rim*.8,0.,1.)*edge;
+      c=over(vec4(gc,ga),c);
+    }
+    o=vec4(c.rgb*c.a,c.a);
+  }`;
+  function sh(ty,s){const o=gl.createShader(ty);gl.shaderSource(o,s);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))throw gl.getShaderInfoLog(o);return o}
+  let P;try{P=gl.createProgram();gl.attachShader(P,sh(gl.VERTEX_SHADER,VS));gl.attachShader(P,sh(gl.FRAGMENT_SHADER,FS));gl.bindAttribLocation(P,0,'a');gl.linkProgram(P);if(!gl.getProgramParameter(P,gl.LINK_STATUS))throw gl.getProgramInfoLog(P)}catch(e){console.warn(e);box.classList.add('nogl');return}
+  gl.useProgram(P);const U=n=>gl.getUniformLocation(P,n);const uT=U('t'),uF=U('fill'),uFl=U('flow'),uPx=U('px'),uD=U('drip');
+  const vb=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,vb);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);
+  function size(){const d=Math.min(devicePixelRatio||1,2),w=Math.round(cv.clientWidth*d);if(cv.width!==w){cv.width=w;cv.height=w}}
+  addEventListener('resize',size);size();
+
+  let pulling=false,pressure=0,fill=0,flow=0,done=false,drip=0,dripT=-1,shotT=0,pressT=0,touched=false;
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function start(e){if(e)e.preventDefault();if(done){reset();return}if(!touched)reset();pulling=true;touched=true;box.classList.add('pulling');verdict.classList.remove('on');holdtxt.textContent='Estrazione…'}
+  function stop(){if(!pulling)return;pulling=false;box.classList.remove('pulling');if(fill>.02){dripT=0;finish()}}
+  function finish(){
+    done=true;holdtxt.textContent='Tocca per farne un altro';
+    const s=(shotT).toFixed(0),gr=(fill*36).toFixed(0);
+    let title,txt;
+    if(fill>=.98){title='Perfetto.';txt=`${s} secondi, ${gr} grammi. Da noi costa 1,30 €.`}
+    else if(fill>.6){title='Espresso.';txt=`${gr} grammi in ${s} secondi. Quasi da manuale.`}
+    else if(fill>.3){title='Ristretto.';txt=`Solo ${gr} grammi: corto e intenso, per chi va di fretta.`}
+    else{title='Un sorso.';txt='Tienilo premuto un po’ di più: un espresso vuole circa 27 secondi.'}
+    verdict.innerHTML=`<b>${title}</b>${txt}`;verdict.classList.add('on');
+  }
+  function reset(){fill=0;done=false;shotT=0;pressT=0;pressure=0;verdict.classList.remove('on');holdtxt.textContent='Tieni premuto per estrarre';dripT=-1;drip=0}
+  cvw.addEventListener('pointerdown',start);
+  addEventListener('pointerup',stop);addEventListener('pointercancel',stop);
+  addEventListener('keydown',e=>{if(e.code==='Space'&&!e.repeat&&box.getBoundingClientRect().top<innerHeight&&box.getBoundingClientRect().bottom>0&&document.activeElement===document.body){start(e)}});
+  addEventListener('keyup',e=>{if(e.code==='Space')stop()});
+
+  let vis=true,prev=0;
+  new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis){prev=0;requestAnimationFrame(loop)}}).observe(box);
+  const t0=performance.now();
+  function loop(now){
+    if(!vis)return;
+    const dt=prev?Math.min((now-prev)/1000,1/30):1/60;prev=now;
+    /* demo automatica finché nessuno tocca: un piccolo assaggio */
+    if(!touched&&!still){const k=((now-t0)/1000)%9;const want=k>1.2&&k<2.6;
+      if(want&&!pulling&&!done&&fill<.25){pulling=true}else if(!want&&pulling){pulling=false;}
+      if(k>8.6&&fill>0&&!pulling){fill=Math.max(0,fill-dt*2)}}
+    const target=pulling&&!done?9:0;
+    pressure+=(target-pressure)*(pulling?Math.min(1,dt*(pressure<3?2.2:3.2)):Math.min(1,dt*5));
+    flow+=((pulling&&!done&&pressure>2.5?1:0)-flow)*Math.min(1,dt*(pulling?5:9));
+    if(pulling&&!done)pressT+=dt;
+    if(flow>.05&&!done){fill=Math.min(1,fill+dt*flow*.34)}
+    shotT=Math.min(2,pressT*3.2)+fill*25;
+    if(touched&&pulling&&fill>=1){pulling=false;box.classList.remove('pulling');dripT=0;finish()}
+    if(dripT>=0){dripT+=dt;drip=Math.min(1,dripT*1.6);if(dripT>.7){dripT=-1;drip=0}}
+    needle.setAttribute('transform',`rotate(${-135+pressure*18} 66 66)`);
+    if(touched){rt.textContent=(shotT<10?'0':'')+shotT.toFixed(1)+' s';rg.textContent=(fill*36).toFixed(1)+' g'}
+    gl.viewport(0,0,cv.width,cv.height);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.uniform1f(uT,now/1000);gl.uniform1f(uF,fill);gl.uniform1f(uFl,flow);gl.uniform1f(uPx,2/cv.width);gl.uniform1f(uD,drip);
+    gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const mbar=document.getElementById('mbar'),nav=document.getElementById('nav');
+addEventListener('scroll',()=>{mbar.classList.toggle('on',scrollY>innerHeight*.6);nav.classList.toggle('on',scrollY>20)},{passive:true});
+</script>
+<div id="pv" style="position:fixed;left:12px;bottom:12px;z-index:99;max-width:calc(100vw - 24px);background:rgba(20,18,16,.86);color:#fff;font:500 11.5px/1.35 -apple-system,'Helvetica Neue',Arial,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 6px 18px -8px rgba(0,0,0,.5);pointer-events:none">Anteprima non ufficiale · proposta di sito per Presso</div>
+<style>@media (max-width:600px){#pv{bottom:calc(84px + env(safe-area-inset-bottom))!important}}</style>
+</body>
+</html>

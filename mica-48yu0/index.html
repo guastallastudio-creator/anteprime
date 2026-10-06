@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Mica — Bar e spazio creativo · Via Teodosio 81, Milano</title>
+<meta name="description" content="Mica, bar e spazio creativo in via Teodosio 81 a Città Studi: colazione francese, pranzo vegetariano, matcha latte e laboratori di ceramica, ricamo e altro attorno a un grande tavolo. Cibo bello, cose buone.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mica — Bar e spazio creativo · Via Teodosio 81, Milano">
+<meta property="og:description" content="Anteprima del sito: Mica, bar e spazio creativo in via Teodosio 81 a Città Studi: colazione francese, pranzo vegetariano, matcha latte e laboratori di ceramica, ricamo e altro attorno a un grande tavolo. Cibo bello, cose buone.">
+<meta property="og:image" content="https://guastallastudio-creator.github.io/anteprime/mica-48yu0/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F6EEE1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23C65D3B'/%3E%3Cpath d='M20 20L44 44M44 20L20 44' stroke='%23F6EEE1' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400..800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6EEE1; --paper-2:#EFE3D0; --ink:#2A211C; --muted:#75685C; --rule:#E2D4BE;
+  --terra:#C65D3B; --terra-2:#A9472A; --cobalt:#2F4FA2; --rose:#E58FA6; --sage:#7E9A6E; --ochre:#E0A23A;
+  --d:"Young Serif", Georgia, serif; --s:"Figtree", -apple-system, "Helvetica Neue", Arial, sans-serif; --h:"Caveat", cursive;
+  --pad:clamp(16px,4.5vw,48px);
+  --ease:cubic-bezier(.2,.75,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--s);font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+.d{font-family:var(--d);font-weight:400;letter-spacing:-.02em;line-height:1.02}
+.d em{font-style:normal;color:var(--terra)}
+.hand{font-family:var(--h);font-weight:700}
+.tag{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.tag::before{content:"✕";font-size:13px}
+.stitch-line{height:3px;background:repeating-linear-gradient(90deg,var(--terra) 0 12px,transparent 12px 20px);border-radius:3px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s}
+.nav.on{background:rgba(246,238,225,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{font-family:var(--d);font-size:30px;letter-spacing:-.03em;display:flex;align-items:center;gap:8px}
+.logo i{font-style:normal;color:var(--terra);font-family:var(--s);font-weight:800;font-size:20px}
+.nav nav{display:flex;gap:28px;font-size:15px;font-weight:600}
+.nav nav a{opacity:.75}.nav nav a:hover{opacity:1;color:var(--terra)}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--terra);color:#fff;padding:10px 17px;border-radius:999px;font-weight:700;font-size:14px;transition:background .25s}
+.pill:hover{background:var(--terra-2)}
+
+/* hero */
+.hero{padding-top:68px;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;min-height:calc(100vh - 68px);min-height:calc(100svh - 68px);padding-top:20px;padding-bottom:40px}
+.hero h1{font-size:clamp(56px,7.4vw,118px);margin:22px 0 24px}
+.hero h1 span{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 b{display:block;font-weight:400;transform:translateY(105%);animation:up 1s var(--ease) forwards}
+.hero h1 span:nth-child(2) b{animation-delay:.1s}
+@keyframes up{to{transform:none}}
+.lead{max-width:29em;font-size:clamp(17px,1.3vw,19px);color:var(--muted)}
+.lead b{color:var(--ink);font-weight:700}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;font-weight:700;font-size:15.5px;transition:transform .35s var(--ease),background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-t{background:var(--terra);color:#fff}.btn-t:hover{background:var(--terra-2)}
+.btn-o{border:2px solid var(--ink)}
+.open{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin-top:34px;font-size:14.5px;max-width:330px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 14px 30px -24px rgba(0,0,0,.4)}
+.open b{font-weight:700}
+.open span{color:var(--muted)}
+
+.hoopbox{justify-self:center;width:100%;max-width:560px;display:flex;flex-direction:column;align-items:center}
+.hoop{position:relative;width:100%;aspect-ratio:1/1;border-radius:50%;padding:5.2%;background:radial-gradient(circle at 30% 25%,#E9C08A,#C08A50 55%,#9C6A37);box-shadow:inset 0 0 0 3px rgba(255,255,255,.18),inset 0 -6px 12px rgba(0,0,0,.18),0 30px 50px -28px rgba(80,45,15,.55)}
+.hoop::before{content:"";position:absolute;inset:2.4%;border-radius:50%;border:2px solid rgba(80,45,15,.25);pointer-events:none;z-index:2}
+.hoop .screw{position:absolute;left:50%;top:-4.5%;width:12%;height:9%;transform:translateX(-50%);background:linear-gradient(90deg,#8F7A4E,#E8D7A6 45%,#9C8558);border-radius:6px 6px 3px 3px;box-shadow:0 4px 8px rgba(0,0,0,.25)}
+.hoop .screw::after{content:"";position:absolute;left:30%;right:30%;top:-55%;height:70%;border-radius:50%;background:radial-gradient(circle at 40% 35%,#F4E6BC,#A78E5D)}
+#cloth{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;display:block;touch-action:none;cursor:crosshair;box-shadow:inset 0 0 18px rgba(80,50,20,.25)}
+.hoopbox.nogl .hoop{background:url(img/cianotipia.jpg) center/cover}
+.tools{display:flex;align-items:center;gap:12px;margin-top:22px;flex-wrap:wrap;justify-content:center}
+.thread{width:34px;height:34px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1.5px var(--rule),0 6px 12px -6px rgba(0,0,0,.35);cursor:pointer;position:relative;transition:transform .25s var(--ease)}
+.thread::after{content:"";position:absolute;inset:7px;border-radius:50%;background:repeating-linear-gradient(60deg,rgba(255,255,255,.35) 0 2px,transparent 2px 5px)}
+.thread.on{transform:scale(1.18);box-shadow:0 0 0 2.5px var(--ink),0 6px 12px -6px rgba(0,0,0,.35)}
+.tools button.undo{border:0;background:none;font-family:var(--h);font-size:24px;color:var(--muted);cursor:pointer;padding:0 6px}
+.tools button.undo:hover{color:var(--terra)}
+.note{font-family:var(--h);font-size:25px;color:var(--terra);margin-top:6px;transform:rotate(-2deg)}
+
+/* banda */
+.band{background:var(--terra);color:#fff;overflow:hidden;white-space:nowrap}
+.band .track{display:inline-flex;padding:15px 0;animation:slide 36s linear infinite}
+.band span{font-family:var(--d);font-size:clamp(20px,2.2vw,30px);display:inline-flex;align-items:center;gap:24px;padding-right:24px}
+.band span::after{content:"✕";font-family:var(--s);font-weight:800;font-size:.6em;color:#F6C9B8}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(84px,11vw,148px) 0}
+
+/* storia */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,7vw,100px);align-items:center}
+.collage{position:relative;min-height:540px}
+.collage figure{position:absolute;border-radius:20px;overflow:hidden;box-shadow:0 26px 44px -28px rgba(0,0,0,.45);border:7px solid #fff}
+.collage figure img{width:100%;height:100%;object-fit:cover}
+.collage .a{left:0;top:0;width:62%;height:74%;transform:rotate(-3deg)}
+.collage .b{right:0;bottom:0;width:52%;height:58%;transform:rotate(4deg)}
+.collage .tape{position:absolute;width:110px;height:30px;background:rgba(229,143,166,.75);top:-12px;left:50%;transform:translateX(-50%) rotate(-6deg);z-index:2}
+.collage .lbl{position:absolute;left:4%;bottom:6%;font-family:var(--h);font-size:28px;color:var(--cobalt);transform:rotate(-4deg)}
+.story h2{font-size:clamp(42px,5vw,76px);margin:18px 0 24px}
+.story p{color:var(--muted);font-size:17.5px;margin-bottom:16px;max-width:34em}
+.story p b{color:var(--ink)}
+.quote{margin-top:24px;position:relative;padding:24px 26px 24px 30px;background:#fff;border-radius:22px}
+.quote::before{content:"";position:absolute;left:12px;top:18px;bottom:18px;width:3px;background:repeating-linear-gradient(180deg,var(--terra) 0 9px,transparent 9px 15px)}
+.quote q{display:block;font-family:var(--d);font-size:clamp(20px,1.9vw,25px);line-height:1.3;quotes:"“" "”"}
+.quote cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* tavolo */
+.table{background:var(--cobalt);color:#F2F0FA;overflow:hidden}
+.table .wrap{text-align:center}
+.table .tag{color:#C9D3F5}
+.table h2{font-size:clamp(44px,6vw,96px);margin:20px auto 22px;max-width:12em}
+.table h2 em{color:#F7B9C9}
+.table p.big{font-family:var(--d);font-size:clamp(21px,2.1vw,30px);line-height:1.35;max-width:26em;margin:0 auto;color:#E6E9F8}
+.table cite{display:block;margin-top:16px;font-style:normal;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#AFC0F0}
+.seats{display:flex;justify-content:center;gap:clamp(8px,1.6vw,18px);margin-top:54px;flex-wrap:wrap}
+.seat{width:clamp(34px,4vw,50px);aspect-ratio:1/1;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;font-weight:800;font-size:13px;color:#C9D3F5;border:2px dashed rgba(255,255,255,.3);transition:background .3s,border-color .3s,transform .3s var(--ease)}
+.seat.taken{background:#F7B9C9;border-color:#F7B9C9;color:var(--cobalt);transform:scale(1.06)}
+.board{height:16px;border-radius:12px;background:linear-gradient(#D5A066,#B07A43);max-width:860px;margin:14px auto 0;box-shadow:0 10px 0 rgba(0,0,0,.18)}
+.table small{display:block;margin-top:22px;font-family:var(--h);font-size:24px;color:#F7B9C9}
+
+/* cucina */
+.food .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:46px}
+.food h2{font-size:clamp(44px,5.8vw,90px);margin-top:18px}
+.food .head p{max-width:24em;color:var(--muted)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.fc{background:#fff;border-radius:24px;padding:28px 26px;position:relative}
+.fc .when{font-family:var(--h);font-size:26px;color:var(--terra);line-height:1}
+.fc h3{font-family:var(--d);font-weight:400;font-size:30px;line-height:1.05;letter-spacing:-.02em;margin:10px 0 16px}
+.fc ul{list-style:none}
+.fc li{padding:10px 0;border-top:1.5px dashed var(--rule);font-size:15.5px}
+.fc li small{display:block;color:var(--muted);font-size:13.5px}
+.fc .price{position:absolute;right:20px;top:22px;background:var(--rose);color:#fff;border-radius:999px;padding:5px 12px;font-weight:800;font-size:13.5px;transform:rotate(4deg)}
+.fpics{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.fpics figure{border-radius:24px;overflow:hidden;position:relative}
+.fpics img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.fpics figcaption{position:absolute;left:14px;bottom:14px;background:var(--paper);border-radius:999px;padding:6px 14px;font-family:var(--h);font-size:22px}
+
+/* laboratori */
+.labs{background:var(--paper-2)}
+.labs .head{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:end;margin-bottom:44px}
+.labs h2{font-size:clamp(44px,5.8vw,90px);margin-top:18px}
+.labs .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.labs .facts div{background:#fff;border-radius:16px;padding:14px 16px;font-size:14.5px;color:var(--muted)}
+.labs .facts b{display:block;font-family:var(--d);font-weight:400;font-size:22px;color:var(--ink);line-height:1.1}
+.cal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.lab{background:#fff;border-radius:22px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;transition:transform .45s var(--ease)}
+.lab:hover{transform:translateY(-4px)}
+.lab .date{display:flex;align-items:baseline;gap:10px}
+.lab .date b{font-family:var(--d);font-weight:400;font-size:46px;line-height:.9;color:var(--terra)}
+.lab .date span{font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.lab h3{font-family:var(--d);font-weight:400;font-size:23px;line-height:1.15}
+.lab .k{position:absolute;right:16px;top:18px;font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.k.cer{background:#F4D9CC;color:var(--terra-2)}.k.ric{background:#F9DCE5;color:#B04769}.k.alt{background:#DCE3F6;color:var(--cobalt)}
+.lab a{margin-top:auto;align-self:flex-start;font-weight:700;font-size:14.5px;border-bottom:2px solid var(--terra);padding-bottom:2px}
+.lab a:hover{color:var(--terra)}
+.empty{grid-column:1/-1;background:#fff;border-radius:22px;padding:30px;text-align:center;color:var(--muted)}
+.propose{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;margin-top:30px;background:var(--terra);color:#fff;border-radius:26px;padding:clamp(24px,3.4vw,40px)}
+.propose q{display:block;font-family:var(--d);font-size:clamp(20px,2vw,27px);line-height:1.3;quotes:"“" "”"}
+.propose cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#F6C9B8}
+.propose .btn{background:#fff;color:var(--terra-2)}
+
+/* dove */
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,80px);align-items:stretch}
+.visit h2{font-size:clamp(44px,5.8vw,90px);margin:18px 0 30px}
+.rows div{display:grid;grid-template-columns:120px 1fr;padding:15px 0;border-bottom:1.5px dashed var(--rule);font-size:17px}
+.rows span{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.rows a{border-bottom:2px solid var(--terra)}
+.rows small{display:block;color:var(--muted);font-size:14px}
+.map{border-radius:26px;overflow:hidden;position:relative;min-height:460px;background:var(--paper-2);border:7px solid #fff;box-shadow:0 20px 40px -30px rgba(0,0,0,.4)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.8) sepia(.25)}
+
+footer{background:var(--ink);color:#A79A8C;padding:66px 0 34px;font-size:14px;overflow:hidden}
+footer .big{font-family:var(--d);font-size:clamp(110px,24vw,330px);line-height:.8;color:var(--paper);letter-spacing:-.04em}
+footer .big i{font-style:normal;font-family:var(--s);font-weight:800;color:var(--terra);font-size:.35em;vertical-align:.9em;margin-left:.1em}
+footer .sub{font-family:var(--h);font-size:30px;color:#F6C9B8;margin-top:10px}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:40px;padding-top:22px;border-top:1px solid #43372F;font-size:12.5px}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.mbar{display:none}
+
+@media (max-width:1000px){.cal{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr 1fr}.labs .head{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .nav nav{display:none}
+  .hero .wrap,.story,.visit .wrap{grid-template-columns:1fr}
+  .hero .wrap{min-height:auto;padding-top:34px}
+  .hoopbox{max-width:min(84vw,460px)}
+  .collage{min-height:440px}
+}
+@media (max-width:600px){
+  .cal,.fgrid,.fpics{grid-template-columns:1fr}
+  .labs .facts{grid-template-columns:1fr 1fr}
+  .propose{grid-template-columns:1fr}
+  .collage{min-height:360px}
+  .rows div{grid-template-columns:96px 1fr}
+  .map{min-height:300px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;transform:translateY(150%);transition:transform .45s var(--ease)}
+  .mbar.on{transform:none}
+  .mbar a{display:flex;justify-content:center;align-items:center;padding:15px;border-radius:999px;font-weight:700;font-size:15px;border:2px solid var(--ink)}
+  .mbar a:first-child{background:var(--paper)}
+  .mbar a:last-child{background:var(--terra);border-color:var(--terra);color:#fff}
+  footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Mica, home">mica<i>✕</i></a>
+    <nav aria-label="Sezioni"><a href="#storia">Il posto</a><a href="#cucina">Cucina</a><a href="#laboratori">Laboratori</a><a href="#dove">Dove siamo</a></nav>
+    <a class="pill" href="#laboratori">Laboratori di ottobre</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag">Bar e spazio creativo · Città Studi</span>
+      <h1 class="d"><span><b>Cibo bello,</b></span><span><b><em>cose buone.</em></b></span></h1>
+      <p class="lead">Colazione alla francese, <b>pranzo vegetariano</b> che cambia ogni settimana, matcha latte e un grande tavolo dove si mangia insieme. E quando c'è un laboratorio, si impara a fare qualcosa <b>con le mani</b>.</p>
+      <div class="ctas">
+        <a class="btn btn-t" href="#laboratori">Vedi i laboratori</a>
+        <a class="btn btn-o" href="https://maps.google.com/?q=Mica+Bar+Via+Teodosio+81+Milano" target="_blank" rel="noopener">Portami lì →</a>
+      </div>
+      <div class="open"><b>Mar · Ven · Sab</b><span>9:00 – 17:30</span><b>Mer · Gio</b><span>9:00 – 20:00</span></div>
+    </div>
+    <div class="hoopbox" id="hoopbox">
+      <div class="hoop"><div class="screw"></div><canvas id="cloth" aria-label="Un telaio da ricamo: muovi il mouse o il dito sulla tela per ricamare a punto croce"></canvas></div>
+      <div class="tools" id="tools">
+        <span class="thread on" data-c="#C65D3B" style="background:#C65D3B" title="Terracotta"></span>
+        <span class="thread" data-c="#2F4FA2" style="background:#2F4FA2" title="Blu cobalto"></span>
+        <span class="thread" data-c="#E58FA6" style="background:#E58FA6" title="Rosa"></span>
+        <span class="thread" data-c="#7E9A6E" style="background:#7E9A6E" title="Salvia"></span>
+        <span class="thread" data-c="#E0A23A" style="background:#E0A23A" title="Ocra"></span>
+        <button class="undo" id="undo" type="button">scuci tutto</button>
+      </div>
+      <div class="note">ricama qui: passa sulla tela ✕</div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="track">
+  <span>Ceramica</span><span>Ricamo</span><span>Galette</span><span>Matcha latte</span><span>Cianotipia</span><span>Origami</span><span>Via Teodosio 81</span>
+  <span>Ceramica</span><span>Ricamo</span><span>Galette</span><span>Matcha latte</span><span>Cianotipia</span><span>Origami</span><span>Via Teodosio 81</span>
+</div></div>
+
+<section class="sec" id="storia">
+  <div class="wrap story">
+    <div class="collage rv">
+      <figure class="a"><span class="tape"></span><img src="img/1590605095243-072811dbe64c.jpg" alt="Mani che modellano la ceramica al tornio" loading="lazy"></figure>
+      <figure class="b"><img src="img/1695668148100-987abc5841ea.jpg" alt="Un telaio da ricamo con fiori rosa" loading="lazy"></figure>
+      <span class="lbl">fatto a mano ✕</span>
+    </div>
+    <div>
+      <span class="tag rv">Il posto</span>
+      <h2 class="d rv">Dall'ingegneria chimica <em>al lavoro con le mani.</em></h2>
+      <p class="rv"><b>Camille Madamet</b> viene dalla Bretagna. Sei anni fa è arrivata a Milano in Erasmus per studiare ingegneria chimica, e poi è rimasta. A un certo punto ha cercato qualcosa che avesse più senso per lei, e ha seguito l'altra parte di sé: quella legata al lavoro manuale e alla creatività.</p>
+      <p class="rv">A febbraio 2025 ha aperto Mica in via Teodosio: una stanza raccolta, un piccolo dehors e, al centro, un grande tavolo.</p>
+      <div class="quote rv"><q>Volevo creare un posto che fosse un bar, ma anche un luogo di socialità, che connettesse le persone attraverso eventi e cose da fare.</q><cite>Camille, fondatrice</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec table">
+  <div class="wrap">
+    <span class="tag rv">Il tavolo grande</span>
+    <h2 class="d rv">Un tavolo solo, <em>per tutti.</em></h2>
+    <p class="big rv">“L'idea del tavolo grande era proprio quella di creare un tavolo di condivisione, dove le persone possano mangiare, fare un workshop e conoscersi.”</p>
+    <cite class="rv">Camille</cite>
+    <div class="seats" id="seats" aria-hidden="true"></div>
+    <div class="board"></div>
+    <small>12–14 posti a ogni laboratorio: prendi il tuo ✕</small>
+  </div>
+</section>
+
+<section class="sec food" id="cucina">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv">Cucina</span><h2 class="d rv">Un pezzo di Bretagna <em>a Città Studi.</em></h2></div>
+      <p class="rv">La cucina è tutta vegetariana, con opzioni vegane, e la prepara Camille. Il menu del pranzo cambia ogni settimana.</p>
+    </div>
+    <div class="fgrid">
+      <div class="fc rv"><span class="when">la mattina</span><h3>Colazione francese</h3><ul>
+        <li>Croissant e pain au chocolat<small>da un produttore francese, cotti qui</small></li>
+        <li>Torte e biscotti<small>fatti da Camille, cambiano spesso</small></li>
+        <li>Espresso<small>il classico, al banco</small></li></ul></div>
+      <div class="fc rv"><span class="price">4 – 9 €</span><span class="when">a pranzo</span><h3>Pranzo vegetariano</h3><ul>
+        <li>Galette bretone<small>la crêpe salata di Bretagna: c'è sempre</small></li>
+        <li>Quiche<small>cambia con la settimana</small></li>
+        <li>Insalate e bruschette<small>con opzioni vegane</small></li></ul></div>
+      <div class="fc rv"><span class="when">tutto il giorno</span><h3>Da bere</h3><ul>
+        <li>Matcha latte e coconut matcha</li>
+        <li>Latte nocciola</li>
+        <li>Espresso tonic</li>
+        <li>Birre artigianali e Spritz<small>il pomeriggio e la sera</small></li></ul></div>
+    </div>
+    <div class="fpics">
+      <figure class="rv"><img src="img/matcha.jpg" alt="Matcha latte con latte art" loading="lazy"><figcaption>matcha latte</figcaption></figure>
+      <figure class="rv"><img src="img/pranzo.jpg" alt="Un piatto vegetariano colorato" loading="lazy"><figcaption>pranzo veg</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec labs" id="laboratori">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv">Laboratori</span><h2 class="d rv">Questo mese <em>si fa così.</em></h2></div>
+      <div class="facts rv">
+        <div><b>12–14</b>persone a laboratorio</div>
+        <div><b>Gio – Sab</b>a pranzo o la sera dopo la chiusura</div>
+        <div><b>Materiali</b>li porta Camille o chi insegna</div>
+        <div><b>Merenda</b>o aperitivo, di solito compresi</div>
+      </div>
+    </div>
+    <div class="cal" id="cal"></div>
+    <div class="propose rv">
+      <div><q>Ci sono ragazze che arrivano da me e mi dicono: io faccio ricamo, io faccio illustrazione, oppure decorazione o calligrafia.</q><cite>Camille · il calendario lo fate anche voi</cite></div>
+      <a class="btn" href="https://ig.me/m/mica_barmilano" target="_blank" rel="noopener">Proponi un laboratorio →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec visit" id="dove">
+  <div class="wrap">
+    <div>
+      <span class="tag rv">Dove siamo</span>
+      <h2 class="d rv">Via Teodosio 81, <em>Città Studi.</em></h2>
+      <div class="rows rv">
+        <div><span>Indirizzo</span><p><a href="https://maps.google.com/?q=Mica+Bar+Via+Teodosio+81+Milano" target="_blank" rel="noopener">Via Teodosio 81, Milano</a></p></div>
+        <div><span>Orari</span><p>Mar, ven, sab · 9:00 – 17:30<small>mer, gio · 9:00 – 20:00</small></p></div>
+        <div><span>Telefono</span><p><a href="tel:+390232934007">02 3293 4007</a></p></div>
+        <div><span>Social</span><p><a href="https://www.instagram.com/mica_barmilano/" target="_blank" rel="noopener">@mica_barmilano</a><small>anche su TikTok</small></p></div>
+      </div>
+    </div>
+    <div class="map rv"><iframe title="Mappa: Via Teodosio 81, Milano" loading="lazy" src="https://www.google.com/maps?q=Via+Teodosio+81,+20131+Milano&z=16&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">mica<i>✕</i></div>
+    <div class="sub">cibo bello, cose buone.</div>
+    <div class="row"><span>Mica · Via Teodosio 81, Milano · 02 3293 4007 · @mica_barmilano</span><span>Anteprima del sito · foto d'esempio (Unsplash), da sostituire con quelle del locale</span></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a href="https://maps.google.com/?q=Mica+Bar+Via+Teodosio+81+Milano" target="_blank" rel="noopener">Portami lì</a><a href="#laboratori">Laboratori</a></div>
+
+<script>
+/* ---------- il telaio: punto croce ----------
+   Una griglia di quadretti sulla tela Aida. All'inizio si ricama da sola
+   (cuore, MICA, fiori), poi ogni quadretto toccato dal mouse diventa una croce. */
+(function(){
+  const box=document.getElementById('hoopbox'),cv=document.getElementById('cloth');
+  const ctx=cv.getContext&&cv.getContext('2d');if(!ctx){box.classList.add('nogl');return}
+  const N=34;let S=0,W=0,dpr=1,fabric=null;
+  const st=new Map();/* "c,r" -> {col,t,j} */
+  const C={t:'#C65D3B',b:'#2F4FA2',p:'#E58FA6',s:'#7E9A6E',o:'#E0A23A'};
+  const F={M:['10001','11011','10101','10101','10001','10001','10001'],I:['11111','00100','00100','00100','00100','00100','11111'],C:['01111','10000','10000','10000','10000','10000','01111'],A:['01110','10001','10001','11111','10001','10001','10001']};
+  const heart=['0110110','1111111','1111111','0111110','0011100','0001000'];
+  const flower=['.p.p.','ppopp','.ppp.','..s..','.ss..'];
+  const plan=[];
+  heart.forEach((row,r)=>[...row].forEach((v,c)=>{if(v==='1')plan.push([14+c,4+r,C.b])}));
+  'MICA'.split('').forEach((L,k)=>F[L].forEach((row,r)=>[...row].forEach((v,c)=>{if(v==='1')plan.push([6+k*6+c,13+r,C.t])})));
+  [[8,22],[15,23],[22,22]].forEach(([x,y])=>flower.forEach((row,r)=>[...row].forEach((v,c)=>{if(v!=='.')plan.push([x+c,y+r,v==='p'?C.p:v==='o'?C.o:C.s])})));
+  function inside(c,r){const x=c+.5-N/2,y=r+.5-N/2;return x*x+y*y<(N/2-1.2)*(N/2-1.2)}
+  function size(){dpr=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;cv.width=cv.height=Math.round(W*dpr);S=W/N;makeFabric();draw(performance.now())}
+  function makeFabric(){fabric=document.createElement('canvas');fabric.width=fabric.height=Math.round(W*dpr);const g=fabric.getContext('2d');g.scale(dpr,dpr);
+    g.fillStyle='#F7F0E3';g.fillRect(0,0,W,W);
+    g.strokeStyle='rgba(150,120,80,.10)';g.lineWidth=1;
+    for(let i=0;i<=N*3;i++){const p=i*S/3;g.beginPath();g.moveTo(p,0);g.lineTo(p,W);g.stroke();g.beginPath();g.moveTo(0,p);g.lineTo(W,p);g.stroke()}
+    g.fillStyle='rgba(110,85,55,.28)';for(let c=0;c<=N;c++)for(let r=0;r<=N;r++){g.beginPath();g.arc(c*S,r*S,Math.max(.8,S*.07),0,7);g.fill()}
+    const gr=g.createRadialGradient(W/2,W/2,W*.3,W/2,W/2,W*.5);gr.addColorStop(0,'rgba(0,0,0,0)');gr.addColorStop(1,'rgba(90,60,25,.16)');g.fillStyle=gr;g.fillRect(0,0,W,W)}
+  function shade(hex,k){const n=parseInt(hex.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;r=Math.min(255,r+k);g=Math.min(255,g+k);b=Math.min(255,b+k);return`rgb(${Math.max(0,r)},${Math.max(0,g)},${Math.max(0,b)})`}
+  function stitch(c,r,s,now){const age=Math.min(1,(now-s.t)/220),sc=age<1?.4+.6*(1-Math.pow(1-age,3))*1.08:1;
+    const x=c*S+S/2,y=r*S+S/2,h=S*.36*sc,lw=S*.3;
+    ctx.save();ctx.translate(x,y);ctx.rotate(s.j);ctx.lineCap='round';
+    for(const [ax,ay,bx,by] of [[-h,h,h,-h],[-h,-h,h,h]]){
+      ctx.strokeStyle='rgba(60,35,15,.22)';ctx.lineWidth=lw;ctx.beginPath();ctx.moveTo(ax+.8,ay+1);ctx.lineTo(bx+.8,by+1);ctx.stroke();
+      ctx.strokeStyle=s.col;ctx.lineWidth=lw;ctx.beginPath();ctx.moveTo(ax,ay);ctx.lineTo(bx,by);ctx.stroke();
+      ctx.strokeStyle=shade(s.col,55);ctx.globalAlpha=.55;ctx.lineWidth=lw*.32;ctx.beginPath();ctx.moveTo(ax-lw*.12,ay-lw*.12);ctx.lineTo(bx-lw*.12,by-lw*.12);ctx.stroke();ctx.globalAlpha=1}
+    ctx.restore()}
+  let dirty=true,anim=0;
+  function draw(now){ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);if(fabric)ctx.drawImage(fabric,0,0);ctx.setTransform(dpr,0,0,dpr,0,0);
+    anim=0;for(const [k,s] of st){const [c,r]=k.split(',').map(Number);stitch(c,r,s,now);if(now-s.t<220)anim=1}}
+  function put(c,r,col,now){if(c<0||r<0||c>=N||r>=N||!inside(c,r))return;const k=c+','+r,o=st.get(k);if(o&&o.col===col)return;st.set(k,{col,t:now,j:(Math.random()-.5)*.12});dirty=true}
+  /* ricamo automatico iniziale */
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let pi=0,t0=performance.now()+500;
+  function intro(now){if(still){plan.forEach(([c,r,col])=>put(c,r,col,now-999));pi=plan.length;return}
+    const want=Math.floor((now-t0)/22);while(pi<plan.length&&pi<want){const [c,r,col]=plan[pi++];put(c,r,col,now)}}
+  /* mouse e dito */
+  let col=C.t,last=null;
+  function cell(e){const R=cv.getBoundingClientRect();return[Math.floor((e.clientX-R.left)/R.width*N),Math.floor((e.clientY-R.top)/R.height*N)]}
+  function line(a,b,now){let [x0,y0]=a,[x1,y1]=b;const dx=Math.abs(x1-x0),dy=-Math.abs(y1-y0),sx=x0<x1?1:-1,sy=y0<y1?1:-1;let err=dx+dy;
+    for(let i=0;i<80;i++){put(x0,y0,col,now);if(x0===x1&&y0===y1)break;const e2=2*err;if(e2>=dy){err+=dy;x0+=sx}if(e2<=dx){err+=dx;y0+=sy}}}
+  cv.addEventListener('pointermove',e=>{const p=cell(e),now=performance.now();if(e.pointerType!=='mouse'&&!e.buttons&&e.pressure===0){last=null;return}if(last)line(last,p,now);else put(p[0],p[1],col,now);last=p});
+  cv.addEventListener('pointerdown',e=>{const p=cell(e);put(p[0],p[1],col,performance.now());last=p;cv.setPointerCapture(e.pointerId)});
+  cv.addEventListener('pointerleave',()=>last=null);cv.addEventListener('pointerup',e=>{if(e.pointerType!=='mouse')last=null});
+  document.querySelectorAll('.thread').forEach(t=>t.addEventListener('click',()=>{document.querySelectorAll('.thread').forEach(x=>x.classList.remove('on'));t.classList.add('on');col=t.dataset.c}));
+  document.getElementById('undo').addEventListener('click',()=>{st.clear();pi=0;t0=performance.now()+300;dirty=true});
+  addEventListener('resize',size);size();
+  let vis=true;new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis)requestAnimationFrame(loop)}).observe(box);
+  function loop(now){if(!vis)return;intro(now);if(dirty||anim){draw(now);dirty=false}requestAnimationFrame(loop)}
+  requestAnimationFrame(loop);
+})();
+
+/* ---------- laboratori: quelli passati spariscono da soli ---------- */
+(function(){
+  const L=[
+    ['2026-10-03','Bag charms con le perline','alt','https://live.tebi.co/api/u/igDOAEETOek='],
+    ['2026-10-08','Ceramica & aperitivo','cer','https://live.tebi.co/api/u/BP5_LLBzru4='],
+    ['2026-10-10','Tarocchi, tema amore','alt','https://live.tebi.co/api/u/XJ6tLYxQ5VU='],
+    ['2026-10-15','Ricamo su astuccio “Back to work”','ric','https://live.tebi.co/api/u/p_hktiUDp_0='],
+    ['2026-10-17','Cianotipia','alt','https://live.tebi.co/api/u/WsZdPWtG63s='],
+    ['2026-10-24','Ceramica: matcha set','cer','https://live.tebi.co/api/u/x7l2LwxQfFc='],
+    ['2026-10-24','PsicOrigami','alt','https://live.tebi.co/api/u/XjC8CKU8z3k='],
+    ['2026-10-29','Ricamo su biancheria','ric','https://live.tebi.co/api/u/tBTfEK2-GRU='],
+    ['2026-10-31','Ceramica: tema fiori','cer','https://live.tebi.co/api/u/__BdD42knu8=']];
+  const K={cer:'Ceramica',ric:'Ricamo',alt:'Laboratorio'};
+  const today=new Date();today.setHours(0,0,0,0);
+  const cal=document.getElementById('cal');let html='';
+  for(const [d,t,k,u] of L){const dt=new Date(d+'T12:00:00');if(dt<today)continue;
+    const wd=dt.toLocaleDateString('it-IT',{weekday:'long'}),mo=dt.toLocaleDateString('it-IT',{month:'long'});
+    html+=`<div class="lab rv"><span class="k ${k}">${K[k]}</span><div class="date"><b>${dt.getDate()}</b><span>${wd}<br>${mo}</span></div><h3>${t}</h3><a href="${u}" target="_blank" rel="noopener">Prenota il posto →</a></div>`}
+  cal.innerHTML=html||'<div class="empty">I laboratori di questo mese sono finiti: quelli nuovi escono su <a href="https://www.instagram.com/mica_barmilano/" target="_blank" rel="noopener" style="border-bottom:2px solid var(--terra)">Instagram</a>.</div>';
+  /* il tavolo: i posti si riempiono quando lo vedi */
+  const seats=document.getElementById('seats');for(let i=0;i<14;i++){const s=document.createElement('span');s.className='seat';s.textContent=i+1;seats.appendChild(s)}
+  new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){[...seats.children].forEach((s,i)=>setTimeout(()=>s.classList.add('taken'),200+i*120+(i%3)*60));o.disconnect()}},{threshold:.5}).observe(seats);
+})();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const mbar=document.getElementById('mbar'),nav=document.getElementById('nav');
+addEventListener('scroll',()=>{mbar.classList.toggle('on',scrollY>innerHeight*.6);nav.classList.toggle('on',scrollY>20)},{passive:true});
+</script>
+<div id="pv" style="position:fixed;left:12px;bottom:12px;z-index:99;max-width:calc(100vw - 24px);background:rgba(20,18,16,.86);color:#fff;font:500 11.5px/1.35 -apple-system,'Helvetica Neue',Arial,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 6px 18px -8px rgba(0,0,0,.5);pointer-events:none">Anteprima non ufficiale · proposta di sito per Mica</div>
+<style>@media (max-width:600px){#pv{bottom:calc(84px + env(safe-area-inset-bottom))!important}}</style>
+</body>
+</html>

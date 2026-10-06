@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bar Normale — Enoteca con cucina · Via Venini 71, NoLo</title>
+<meta name="description" content="Bar Normale, via Venini 71 a NoLo, Milano: vini di piccoli produttori e michette del Panificio Danelli. Dalle 18 a mezzanotte, martedì chiuso. Niente prenotazioni: venite normale.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bar Normale — Enoteca con cucina · Via Venini 71, NoLo">
+<meta property="og:description" content="Anteprima del sito: Bar Normale, via Venini 71 a NoLo, Milano: vini di piccoli produttori e michette del Panificio Danelli. Dalle 18 a mezzanotte, martedì chiuso. Niente prenotazioni: venite normale.">
+<meta property="og:image" content="https://guastallastudio-creator.github.io/anteprime/bar-normale-3ys8o/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F2EC">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161412'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23F5F2EC'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F2EC; --paper-2:#ECE6DB; --ink:#161412; --muted:#6C655C; --rule:#DDD5C8;
+  --wine:#7A1F2B; --wine-2:#5E1520; --crust:#C27A36;
+  --s:"Hanken Grotesk", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --i:"Instrument Serif", Georgia, serif;
+  --pad:clamp(16px,4.5vw,48px);
+  --ease:cubic-bezier(.2,.75,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--s);font-size:17px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+.h{font-weight:850;letter-spacing:-.045em;line-height:.92}
+.h em,.it{font-family:var(--i);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.h em{color:var(--wine)}
+.tag{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tag::before{content:"";width:18px;height:2px;background:currentColor}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s}
+.nav.on{background:rgba(245,242,236,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.logo{font-weight:900;font-size:21px;letter-spacing:-.04em}
+.logo span{font-family:var(--i);font-style:italic;font-weight:400;font-size:24px;letter-spacing:0;color:var(--wine)}
+.nav nav{display:flex;gap:28px;font-size:15px;font-weight:600}
+.nav nav a{opacity:.7}.nav nav a:hover{opacity:1}
+.wa{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-weight:700;font-size:14px;transition:background .25s}
+.wa:hover{background:var(--wine)}
+.wa svg{width:16px;height:16px}
+
+/* hero */
+.hero{padding-top:66px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:24px;min-height:calc(100vh - 66px);min-height:calc(100svh - 66px);padding-top:16px;padding-bottom:40px}
+.hero h1{font-size:clamp(72px,10.4vw,168px);margin:22px 0 22px}
+.hero h1 span{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 b{display:block;font-weight:inherit;transform:translateY(105%);animation:up 1s var(--ease) forwards}
+.hero h1 span:nth-child(2) b{animation-delay:.1s}
+@keyframes up{to{transform:none}}
+.lead{max-width:29em;font-size:clamp(17px,1.35vw,19.5px);color:var(--muted)}
+.lead b{color:var(--ink);font-weight:700}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;font-weight:700;font-size:15.5px;transition:transform .35s var(--ease),background .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-d{background:var(--ink);color:var(--paper)}.btn-d:hover{background:var(--wine)}
+.btn-o{border:2px solid var(--ink)}
+.rules{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:36px;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.rules span{display:flex;align-items:center;gap:8px}
+.rules span::before{content:"✓";color:var(--wine);font-size:15px}
+
+.stage{position:relative;aspect-ratio:1/1;width:100%;max-width:620px;justify-self:center}
+#bread{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y}
+#bread:active{cursor:grabbing}
+.stage .fallback{position:absolute;inset:12%;border-radius:50%;object-fit:cover;opacity:0}
+.stage.nogl .fallback{opacity:1}.stage.nogl #bread,.stage.nogl .ticket,.stage.nogl .hint{display:none}
+.ticket{position:absolute;right:2%;top:8%;background:#fff;border-radius:6px;padding:14px 16px 16px;width:200px;box-shadow:0 20px 40px -24px rgba(0,0,0,.4);transform:rotate(4deg);font-size:13px}
+.ticket::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:8px;background:radial-gradient(circle at 6px -2px,transparent 6px,#fff 6.5px) 0 0/12px 8px repeat-x}
+.ticket .k{font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ticket .n{font-family:var(--i);font-style:italic;font-size:30px;line-height:1;margin:8px 0 4px;transition:opacity .3s}
+.ticket .row{display:flex;justify-content:space-between;border-top:1.5px dashed var(--rule);padding-top:8px;margin-top:8px;font-weight:700}
+.hint{position:absolute;left:0;right:0;bottom:2%;text-align:center;font-family:var(--i);font-style:italic;font-size:19px;color:var(--muted)}
+
+/* banda */
+.band{background:var(--ink);color:var(--paper);overflow:hidden;white-space:nowrap}
+.band .track{display:inline-flex;padding:16px 0;animation:slide 34s linear infinite}
+.band span{font-weight:800;font-size:clamp(18px,1.8vw,24px);letter-spacing:-.02em;display:inline-flex;align-items:center;gap:26px;padding-right:26px}
+.band span:nth-child(even){font-family:var(--i);font-style:italic;font-weight:400;letter-spacing:0;color:#E9C8A0}
+.band span::after{content:"·";color:#8D857A}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(84px,11vw,150px) 0}
+
+/* manifesto */
+.manifesto{text-align:center}
+.manifesto .q{font-size:clamp(34px,4.6vw,70px);font-weight:800;letter-spacing:-.04em;line-height:1.08;max-width:17em;margin:24px auto 0}
+.manifesto s{text-decoration:none;position:relative;color:var(--muted);transition:color .6s}
+.manifesto s::after{content:"";position:absolute;left:-2%;right:-2%;top:55%;height:.09em;background:var(--wine);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+.manifesto.in s::after{transform:scaleX(1)}
+.manifesto.in s:nth-of-type(2)::after{transition-delay:.25s}.manifesto.in s:nth-of-type(3)::after{transition-delay:.5s}
+.manifesto .n{font-family:var(--i);font-style:italic;font-weight:400;color:var(--wine);letter-spacing:-.01em}
+.manifesto cite{display:block;margin-top:26px;font-style:normal;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* vino */
+.wine{background:var(--wine);color:#F6E9E2;overflow:hidden}
+.wine .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.wine .tag{color:#E7B9B3}
+.wine h2{font-size:clamp(46px,6vw,96px);margin:20px 0 26px}
+.wine h2 em{color:#F3C9A6}
+.wine p{color:#EBCFC8;font-size:17.5px;max-width:31em;margin-bottom:14px}
+.wine .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.wine .pills span{border:1.5px solid rgba(246,233,226,.45);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px}
+.wpics{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.wpics figure{border-radius:22px;overflow:hidden}
+.wpics img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.wpics figure:nth-child(2){transform:translateY(46px)}
+
+/* michette */
+.bread .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:46px}
+.bread h2{font-size:clamp(46px,6vw,96px);margin-top:20px}
+.bread .head p{max-width:24em;color:var(--muted)}
+.five{display:inline-block;margin-top:12px;font-weight:900;font-size:26px;letter-spacing:-.03em;border:2.5px solid var(--ink);border-radius:999px;padding:2px 16px}
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bc{background:#fff;border-radius:24px;padding:26px 24px 24px;display:flex;flex-direction:column;min-height:280px;position:relative;overflow:hidden;transition:transform .45s var(--ease)}
+.bc:hover{transform:translateY(-5px)}
+.bc .sl{width:86px;height:86px;border-radius:50%;margin-bottom:22px;box-shadow:inset 0 0 0 4px rgba(0,0,0,.08)}
+.bc .k{font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.bc h3{font-size:30px;font-weight:850;letter-spacing:-.04em;line-height:1;margin:8px 0 10px}
+.bc h3 em{font-family:var(--i);font-style:italic;font-weight:400;letter-spacing:0;color:var(--wine)}
+.bc p{color:var(--muted);font-size:15px;margin-top:auto}
+.extra{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:18px}
+.ph{border-radius:24px;overflow:hidden;position:relative;min-height:320px}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.side{background:var(--paper-2);border-radius:24px;padding:28px 26px}
+.side h3{font-size:26px;font-weight:850;letter-spacing:-.035em;line-height:1.05;margin-bottom:14px}
+.side ul{list-style:none}
+.side li{padding:12px 0;border-top:1.5px solid var(--rule);font-size:16px}
+.side li small{display:block;color:var(--muted);font-size:14px}
+.bquote{margin-top:46px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;max-width:52em}
+.bquote::before{content:"“";font-family:var(--i);font-size:120px;line-height:.7;color:var(--wine)}
+.bquote q{font-family:var(--i);font-size:clamp(26px,2.6vw,38px);line-height:1.18;quotes:none;display:block}
+.bquote cite{display:block;margin-top:12px;font-style:normal;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* chi siamo: documenti */
+.who{background:var(--paper-2)}
+.who h2{font-size:clamp(46px,6vw,92px);margin:20px 0 14px}
+.who .intro{color:var(--muted);max-width:36em}
+.ids{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:46px}
+.idc{background:linear-gradient(135deg,#E9EFF3,#F4E9EC 60%,#EAF0EA);border-radius:16px;padding:20px 22px 22px;box-shadow:0 1px 0 rgba(0,0,0,.08),0 26px 40px -30px rgba(0,0,0,.5);position:relative;overflow:hidden}
+.idc::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(122,31,43,.035) 0 2px,transparent 2px 9px)}
+.idc .t{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#5A6B7A;border-bottom:1.5px solid rgba(90,107,122,.3);padding-bottom:10px;position:relative}
+.idc .body{display:grid;grid-template-columns:110px 1fr;gap:18px;margin-top:16px;position:relative}
+.idc .face{width:110px;aspect-ratio:3/4;border-radius:8px;background:linear-gradient(#D5CEC3,#BFB6A8);display:grid;place-items:center;font-weight:900;font-size:44px;color:#fff;letter-spacing:-.05em}
+.idc dl{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14.5px}
+.idc dt{font-weight:700;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#7A8794;padding-top:3px}
+.idc dd{font-weight:600}
+.idc{padding-bottom:50px}.idc .sig{position:absolute;left:28px;bottom:12px;font-family:var(--i);font-style:italic;font-size:26px;color:#2B3D63;transform:rotate(-6deg)}
+
+/* regole */
+.house{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink)}
+.house div{padding:26px 20px 26px 0;border-right:1.5px solid var(--rule)}
+.house div:not(:first-child){padding-left:20px}
+.house div:last-child{border-right:0}
+.house b{display:block;font-family:var(--i);font-style:italic;font-weight:400;font-size:44px;line-height:1;color:var(--wine)}
+.house span{display:block;font-weight:800;font-size:21px;letter-spacing:-.03em;margin-top:12px;line-height:1.15}
+.house small{display:block;color:var(--muted);font-size:14.5px;margin-top:6px}
+
+/* dove */
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,80px);align-items:stretch}
+.visit h2{font-size:clamp(46px,6vw,92px);margin:20px 0 32px}
+.rows div{display:grid;grid-template-columns:130px 1fr;padding:15px 0;border-bottom:1.5px solid var(--rule);font-size:17px}
+.rows span{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.rows a{border-bottom:2px solid var(--wine)}
+.rows small{display:block;color:var(--muted);font-size:14px}
+.map{border-radius:24px;overflow:hidden;position:relative;min-height:460px;background:var(--paper-2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.04)}
+
+footer{background:var(--ink);color:#8D857A;padding:66px 0 34px;font-size:14px;overflow:hidden}
+footer .big{font-size:clamp(76px,15vw,230px);font-weight:900;letter-spacing:-.06em;line-height:.85;color:var(--paper)}
+footer .big em{font-family:var(--i);font-style:italic;font-weight:400;letter-spacing:-.02em;color:#E9C8A0}
+footer .sub{font-family:var(--i);font-style:italic;font-size:24px;color:#CFC6B9;margin-top:16px}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:42px;padding-top:22px;border-top:1px solid #34302B;font-size:12.5px}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.mbar{display:none}
+
+@media (max-width:1000px){.bgrid{grid-template-columns:1fr 1fr}.house{grid-template-columns:1fr 1fr}.house div:nth-child(2){border-right:0}.house div:nth-child(3){padding-left:0}.house div{border-bottom:1.5px solid var(--rule)}}
+@media (max-width:900px){
+  .nav nav{display:none}
+  .hero .wrap,.wine .wrap,.extra,.visit .wrap{grid-template-columns:1fr}
+  .hero .wrap{min-height:auto;padding-top:34px}
+  .stage{max-width:500px}
+  .ids{grid-template-columns:1fr}
+  .wpics figure:nth-child(2){transform:none}
+}
+@media (max-width:600px){
+  .wa span{display:none}.wa{padding:10px}
+  .bgrid{grid-template-columns:1fr}
+  .ticket{width:160px;padding:10px 12px 12px;right:0;top:2%}.ticket .n{font-size:24px}
+  .idc .body{grid-template-columns:80px 1fr}.idc .face{width:80px;font-size:32px}
+  .house{grid-template-columns:1fr}.house div{padding-left:0!important;border-right:0}
+  .rows div{grid-template-columns:100px 1fr}
+  .map{min-height:300px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;transform:translateY(150%);transition:transform .45s var(--ease)}
+  .mbar.on{transform:none}
+  .mbar a{display:flex;justify-content:center;align-items:center;padding:15px;border-radius:999px;font-weight:700;font-size:15px;border:2px solid var(--ink)}
+  .mbar a:first-child{background:var(--paper)}
+  .mbar a:last-child{background:var(--ink);color:var(--paper)}
+  footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Bar Normale, home">Bar <span>Normale</span></a>
+    <nav aria-label="Sezioni"><a href="#vino">Il vino</a><a href="#michette">Le michette</a><a href="#noi">Chi siamo</a><a href="#dove">Dove siamo</a></nav>
+    <a class="wa" href="https://wa.me/393522142309" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg><span>Scrivici</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag">Enoteca con cucina · NoLo, Milano</span>
+      <h1 class="h"><span><b>Un bar</b></span><span><b><em>normale.</em></b></span></h1>
+      <p class="lead">Vini di <b>piccoli produttori</b>, italiani ed europei, scelti per le persone che li fanno. <b>Michette del Panificio Danelli</b> farcite come si deve. Nient'altro, ed è già tanto.</p>
+      <div class="ctas">
+        <a class="btn btn-d" href="https://maps.google.com/?q=Bar+Normale+Via+Venini+71+Milano" target="_blank" rel="noopener">Portami lì →</a>
+        <a class="btn btn-o" href="#michette">Cosa si mangia</a>
+      </div>
+      <div class="rules"><span>Dalle 18 a mezzanotte</span><span>Martedì chiuso</span><span>Niente prenotazioni</span></div>
+    </div>
+    <div class="stage" id="stage">
+      <canvas id="bread" aria-label="Una michetta in 3D: trascina per girarla, clicca per farcirla"></canvas>
+      <img class="fallback" src="img/michetta.jpg" alt="Panino al salame">
+      <div class="ticket" aria-live="polite"><div class="k">Michetta con</div><div class="n" id="fill">Salame Milano</div><div class="row"><span>Danelli</span><span>5 €</span></div></div>
+      <div class="hint">clicca per cambiare farcitura · trascina per girarla</div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="track">
+  <span>Niente prenotazioni</span><span>venite normale</span><span>Michetta 5 €</span><span>piccoli produttori</span><span>Via Venini 71</span><span>martedì chiuso</span>
+  <span>Niente prenotazioni</span><span>venite normale</span><span>Michetta 5 €</span><span>piccoli produttori</span><span>Via Venini 71</span><span>martedì chiuso</span>
+</div></div>
+
+<section class="sec manifesto rv" id="manifesto">
+  <div class="wrap">
+    <span class="tag">Il manifesto</span>
+    <p class="q">Tutti vogliono aprire qualcosa di <s>speciale</s>, <s>unico</s>, <s>avanguardista</s>. Noi volevamo semplicemente fare una cosa <span class="n">normale.</span></p>
+    <cite>Roberta e Vincenzo</cite>
+  </div>
+</section>
+
+<section class="sec wine" id="vino">
+  <div class="wrap">
+    <div>
+      <span class="tag rv">Il vino</span>
+      <h2 class="h rv">Il vino viene <em>prima di tutto.</em></h2>
+      <p class="rv">Piccoli produttori italiani ed europei, scelti per la loro storia più che per l'etichetta. L'idea è farti scoprire chi c'è dietro ogni bottiglia, in un posto dove non serve sapere niente di vino per stare bene.</p>
+      <p class="rv">Si beve al calice o in bottiglia, in varie fasce di prezzo. Se non sai cosa scegliere, chiedi: è il loro mestiere.</p>
+      <div class="pills rv"><span>Piccoli produttori</span><span>Italia ed Europa</span><span>Al calice</span><span>Due sommelier al banco</span></div>
+    </div>
+    <div class="wpics">
+      <figure class="rv"><img src="img/bottiglie.jpg" alt="Bottiglie di vino nella scaffalatura" loading="lazy"></figure>
+      <figure class="rv"><img src="img/calici.jpg" alt="Due calici di rosso con olive" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec bread" id="michette">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv">Le michette</span><h2 class="h rv">Il pane <em>della normalità.</em></h2></div>
+      <p class="rv">La michetta del Panificio Danelli, il pane di Milano, farcita in tre modi e basta.<br><span class="five">5 €</span></p>
+    </div>
+    <div class="bgrid">
+      <div class="bc rv"><div class="sl" style="background:radial-gradient(circle,#fff 1.3px,transparent 1.8px) 0 0/11px 9px,radial-gradient(circle at 40% 40%,#B4323A,#8C1E28)"></div><span class="k">La classica</span><h3>Salame <em>Milano</em></h3><p>Michetta e salame Milano. Semplicemente al salame.</p></div>
+      <div class="bc rv"><div class="sl" style="background:radial-gradient(circle,#FFF6EE 2.4px,transparent 3px) 0 0/17px 15px,radial-gradient(circle at 40% 40%,#F2B3B0,#E09A97)"></div><span class="k">La morbida</span><h3>Mortadella <em>Favola</em></h3><p>La mortadella Favola, tagliata sottile.</p></div>
+      <div class="bc rv"><div class="sl" style="background:repeating-linear-gradient(170deg,#F7E7DF 0 5px,#DE8F86 5px 14px)"></div><span class="k">La lombarda</span><h3>Giovanna <em>di Capitelli</em></h3><p>La celebre pancetta cotta del salumificio Capitelli.</p></div>
+    </div>
+    <div class="extra">
+      <div class="ph rv"><img src="img/michetta.jpg" alt="Panino rustico con salumi" loading="lazy"></div>
+      <div class="side rv">
+        <h3>Da sgranocchiare col vino</h3>
+        <ul>
+          <li>Toast col fiocco cotto<small>sempre di Capitelli</small></li>
+          <li>Olive taggiasche<small>da un produttore dell'entroterra di Imperia</small></li>
+          <li>Prodotti da forno<small>anche dal Forno Lambrate</small></li>
+          <li>In arrivo<small>nuovi piatti: pochi ingredienti, buoni, riconoscibili</small></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bquote rv"><div><q>Per noi la michetta è il pane della normalità. Un panino al salame fatto bene racconta Milano meglio di tante interpretazioni sofisticate.</q><cite>Bar Normale</cite></div></div>
+  </div>
+</section>
+
+<section class="sec who" id="noi">
+  <div class="wrap">
+    <span class="tag rv">Chi siamo</span>
+    <h2 class="h rv">Due sommelier, <em>documenti in regola.</em></h2>
+    <p class="intro rv">Si sono conosciuti dietro il banco di un'enoteca. Dopo mesi passati a cercare il locale giusto l'hanno trovato in uno spazio che frequentavano da clienti, dove prima c'era Statt.</p>
+    <div class="ids">
+      <div class="idc rv">
+        <div class="t"><span>Carta d'identità normale</span><span>N° 001</span></div>
+        <div class="body"><div class="face">RV</div>
+          <dl><dt>Cognome</dt><dd>Viale</dd><dt>Nome</dt><dd>Roberta</dd><dt>Cresciuta in</dt><dd>Liguria</dd><dt>Professione</dt><dd>Sommelier</dd><dt>Segni particolari</dt><dd>6 anni a Londra, tra hospitality e fotografia. Poi Tannico e l'enoteca Motelombroso al Mercato Centrale</dd></dl></div>
+        <div class="sig">Roberta</div>
+      </div>
+      <div class="idc rv">
+        <div class="t"><span>Carta d'identità normale</span><span>N° 002</span></div>
+        <div class="body"><div class="face">VT</div>
+          <dl><dt>Cognome</dt><dd>Todaro</dd><dt>Nome</dt><dd>Vincenzo, per tutti Vins</dd><dt>Origine</dt><dd>Brianza</dd><dt>Professione</dt><dd>Architetto, poi sommelier</dd><dt>Segni particolari</dt><dd>Corsi AIS e WSET a Londra. Il colloquio da Motelombroso glielo ha fatto Roberta</dd></dl></div>
+        <div class="sig">Vins</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-bottom:0">
+  <div class="wrap">
+    <span class="tag rv">Regole della casa</span>
+    <div class="house rv" style="margin-top:26px">
+      <div><b>1</b><span>Niente prenotazioni.</span><small>Si arriva, ci si siede, si beve.</small></div>
+      <div><b>2</b><span>Dalle 18 a mezzanotte.</span><small>Tutti i giorni tranne uno.</small></div>
+      <div><b>3</b><span>Martedì chiuso.</span><small>Anche i sommelier riposano.</small></div>
+      <div><b>4</b><span>Venite normale.</span><small>Non c'è dress code. Davvero.</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec visit" id="dove">
+  <div class="wrap">
+    <div>
+      <span class="tag rv">Dove siamo</span>
+      <h2 class="h rv">Via Venini 71, <em>NoLo.</em></h2>
+      <div class="rows rv">
+        <div><span>Indirizzo</span><p><a href="https://maps.google.com/?q=Bar+Normale+Via+Venini+71+Milano" target="_blank" rel="noopener">Via Giulio Venini 71, Milano</a></p></div>
+        <div><span>Orari</span><p>Dalle 18:00 a mezzanotte<small>martedì chiuso</small></p></div>
+        <div><span>WhatsApp</span><p><a href="https://wa.me/393522142309" target="_blank" rel="noopener">352 214 2309</a><small>niente prenotazioni, ma per tutto il resto scrivete pure</small></p></div>
+        <div><span>Social</span><p><a href="https://www.instagram.com/bar.normale/" target="_blank" rel="noopener">@bar.normale</a></p></div>
+      </div>
+    </div>
+    <div class="map rv"><iframe title="Mappa: Via Venini 71, Milano" loading="lazy" src="https://www.google.com/maps?q=Via+Giulio+Venini+71,+20127+Milano&z=16&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">Bar <em>Normale.</em></div>
+    <div class="sub">Niente di speciale. Ed è proprio questo il punto.</div>
+    <div class="row"><span>Bar Normale · Via Venini 71, Milano · @bar.normale</span><span>Anteprima del sito · foto d'esempio (Unsplash), da sostituire con quelle del locale</span></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a href="https://maps.google.com/?q=Bar+Normale+Via+Venini+71+Milano" target="_blank" rel="noopener">Portami lì</a><a href="https://wa.me/393522142309" target="_blank" rel="noopener">WhatsApp</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ---------- la michetta (three.js) ----------
+   Una sfera deformata in rosetta: 5 spicchi a spirale, il "cappello" in cima, base piatta.
+   Si apre in due e si farcisce: salame, mortadella o Giovanna. */
+(function(){
+  const stage=document.getElementById('stage'),cv=document.getElementById('bread'),fillEl=document.getElementById('fill');
+  if(!window.THREE){stage.classList.add('nogl');return}
+  let R;try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true})}catch(e){stage.classList.add('nogl');return}
+  R.setPixelRatio(Math.min(devicePixelRatio,2));R.outputEncoding=THREE.sRGBEncoding;R.toneMapping=THREE.ACESFilmicToneMapping;R.toneMappingExposure=1.05;
+  R.localClippingEnabled=true;R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
+  const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(30,1,.1,50);cam.position.set(0,3.1,6.3);cam.lookAt(0,.42,0);
+  const sm=x=>Math.max(0,Math.min(1,x)),ss=(a,b,x)=>{const t=sm((x-a)/(b-a));return t*t*(3-2*t)};
+
+  /* geometria della rosetta */
+  const geo=new THREE.SphereGeometry(1,200,140),pos=geo.attributes.position,col=new Float32Array(pos.count*3),v=new THREE.Vector3();
+  const gold=new THREE.Color('#B9692A').convertSRGBToLinear(),deep=new THREE.Color('#8A461A').convertSRGBToLinear(),pale=new THREE.Color('#E8C48A').convertSRGBToLinear(),under=new THREE.Color('#D4A066').convertSRGBToLinear(),c=new THREE.Color();
+  for(let i=0;i<pos.count;i++){
+    v.fromBufferAttribute(pos,i).normalize();
+    const th=Math.acos(Math.max(-1,Math.min(1,v.y))),ph=Math.atan2(v.z,v.x);
+    const u=5*(ph-.5*th),gd=1+Math.cos(u),groove=Math.exp(-Math.pow(gd/.32,2));
+    const mask=ss(.3,.45,th)*(1-ss(1.25,1.65,th));
+    const ring=Math.exp(-Math.pow((th-.36)/.05,2));
+    let r=1+.06*Math.cos(5*(ph-.5*th))*Math.sin(th)+.05*(1-groove)*mask-.16*groove*mask-.08*ring+.035*(1-ss(0,.36,th));
+    r+=.012*Math.sin(ph*13+th*7)*Math.sin(th*3);
+    let x=v.x*r,y=v.y*r,z=v.z*r;y=y>0?y*.8:y*.46;
+    pos.setXYZ(i,x*1.04,y,z*1.04);
+    const top=ss(-.1,.5,v.y);
+    c.copy(under).lerp(gold,top);c.lerp(deep,.35*(1-groove)*mask*Math.sin(th*1.4));c.lerp(pale,Math.min(1,groove*mask*1.1+ring*.55));
+    const n=.5+.5*Math.sin(x*37+z*29)*Math.sin(y*41+x*11);c.multiplyScalar(.93+.12*n);
+    col[i*3]=c.r;col[i*3+1]=c.g;col[i*3+2]=c.b;
+  }
+  geo.setAttribute('color',new THREE.BufferAttribute(col,3));geo.computeVertexNormals();
+  const CUT=.04;
+  const planeTop=new THREE.Plane(new THREE.Vector3(0,1,0),-CUT),planeBot=new THREE.Plane(new THREE.Vector3(0,-1,0),CUT);
+  const pT=planeTop.clone(),pB=planeBot.clone();
+  const crustT=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.5,clippingPlanes:[pT],side:THREE.DoubleSide});
+  const crustB=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.5,clippingPlanes:[pB],side:THREE.DoubleSide});
+  /* sezione: la mollica e il famoso vuoto della michetta */
+  const outline=[];{const bins=new Array(120).fill(0);for(let i=0;i<pos.count;i++){const y=pos.getY(i);if(Math.abs(y-CUT)<.03){const a=Math.atan2(pos.getZ(i),pos.getX(i)),k=((Math.floor((a+Math.PI)/(2*Math.PI)*120))%120+120)%120,rr=Math.hypot(pos.getX(i),pos.getZ(i));if(rr>bins[k])bins[k]=rr}}
+    for(let k=0;k<120;k++){if(!bins[k])bins[k]=bins[(k+119)%120]||1}
+    for(let k=0;k<120;k++){const a=(k+.5)/120*2*Math.PI-Math.PI,rr=(bins[(k+119)%120]+bins[k]+bins[(k+1)%120])/3-.012;outline.push(new THREE.Vector2(Math.cos(a)*rr,Math.sin(a)*rr))}}
+  function crumbTex(){const c=document.createElement('canvas');c.width=c.height=512;const g=c.getContext('2d');
+    const gr=g.createRadialGradient(256,256,30,256,256,256);gr.addColorStop(0,'#E6CFA4');gr.addColorStop(.62,'#F4E6C8');gr.addColorStop(.86,'#EFDDB8');gr.addColorStop(1,'#C98B4A');g.fillStyle=gr;g.fillRect(0,0,512,512);
+    g.fillStyle='rgba(170,130,80,.55)';g.beginPath();for(let a=0;a<6.3;a+=.2){const rr=118+24*Math.sin(a*3)+14*Math.sin(a*7);g.lineTo(256+Math.cos(a)*rr,256+Math.sin(a)*rr)}g.fill();
+    g.fillStyle='rgba(120,85,45,.45)';g.beginPath();for(let a=0;a<6.3;a+=.2){const rr=84+20*Math.sin(a*4+1);g.lineTo(256+Math.cos(a)*rr,256+Math.sin(a)*rr)}g.fill();
+    for(let i=0;i<900;i++){const a=Math.random()*6.28,rr=120+Math.random()*120,x=256+Math.cos(a)*rr,y=256+Math.sin(a)*rr;g.fillStyle=`rgba(${150+Math.random()*40|0},${115+Math.random()*30|0},70,${.25+Math.random()*.35})`;g.beginPath();g.ellipse(x,y,1+Math.random()*4,1+Math.random()*2.5,Math.random()*3,0,7);g.fill()}
+    const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;return t}
+  const capGeo=new THREE.ShapeGeometry(new THREE.Shape(outline),1);{const p=capGeo.attributes.position,uv=capGeo.attributes.uv;let m=0;for(let i=0;i<p.count;i++)m=Math.max(m,Math.hypot(p.getX(i),p.getY(i)));for(let i=0;i<p.count;i++)uv.setXY(i,p.getX(i)/(2*m)+.5,p.getY(i)/(2*m)+.5)}
+  const crumb=new THREE.MeshStandardMaterial({map:crumbTex(),roughness:.95});
+  const bread=new THREE.Group();scene.add(bread);
+  const bottom=new THREE.Group();bread.add(bottom);
+  const mB=new THREE.Mesh(geo,crustB);mB.castShadow=true;bottom.add(mB);
+  const capB=new THREE.Mesh(capGeo,crumb);capB.rotation.x=-Math.PI/2;capB.position.y=CUT;bottom.add(capB);
+  const hinge=new THREE.Group();hinge.position.set(0,CUT,-.98);bread.add(hinge);
+  const topG=new THREE.Group();topG.position.set(0,-CUT,.98);hinge.add(topG);
+  const mT=new THREE.Mesh(geo,crustT);mT.castShadow=true;topG.add(mT);
+  const capT=new THREE.Mesh(capGeo,crumb);capT.rotation.x=Math.PI/2;capT.position.y=CUT;topG.add(capT);
+  /* farciture */
+  function sliceTex(kind){const c=document.createElement('canvas');c.width=c.height=256;const g=c.getContext('2d');
+    if(kind===0){g.fillStyle='#9E2530';g.fillRect(0,0,256,256);for(let i=0;i<260;i++){g.fillStyle=Math.random()<.75?'rgba(255,240,235,.92)':'rgba(70,10,15,.5)';g.beginPath();g.ellipse(Math.random()*256,Math.random()*256,2+Math.random()*4,1.5+Math.random()*3,Math.random()*3,0,7);g.fill()}}
+    if(kind===1){const gr=g.createRadialGradient(128,128,10,128,128,128);gr.addColorStop(0,'#F4BDB9');gr.addColorStop(1,'#E59C98');g.fillStyle=gr;g.fillRect(0,0,256,256);for(let i=0;i<34;i++){g.fillStyle='rgba(255,248,242,.95)';const x=Math.random()*256,y=Math.random()*256,s=5+Math.random()*7;g.fillRect(x,y,s,s*.8)}for(let i=0;i<14;i++){g.fillStyle='rgba(60,90,40,.6)';g.beginPath();g.arc(Math.random()*256,Math.random()*256,2,0,7);g.fill()}}
+    if(kind===2){g.fillStyle='#E7A59C';g.fillRect(0,0,256,256);for(let i=0;i<9;i++){g.fillStyle=`rgba(250,236,228,${.6+Math.random()*.35})`;g.beginPath();const y=i*30+Math.random()*10;g.moveTo(0,y);for(let x=0;x<=256;x+=16)g.lineTo(x,y+Math.sin(x/30+i)*7);g.lineTo(256,y+10);g.lineTo(0,y+12);g.fill()}}
+    const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;return t}
+  const KINDS=[{name:'Salame Milano',n:7,r:.72,h:.02,spread:.26,side:'#7E1A24',tex:sliceTex(0)},{name:'Mortadella Favola',n:3,r:1.0,h:.02,spread:.08,side:'#D9918C',tex:sliceTex(1)},{name:'Giovanna di Capitelli',n:4,r:.8,h:.022,spread:.18,side:'#E2C2B6',tex:sliceTex(2)}];
+  const filling=new THREE.Group();bread.add(filling);
+  function makeSlices(k){const K=KINDS[k],arr=[];for(let i=0;i<K.n;i++){
+      const g=new THREE.CylinderGeometry(K.r,K.r*.98,K.h,64,1);if(k===1){const p=g.attributes.position;for(let j=0;j<p.count;j++){const x=p.getX(j),z=p.getZ(j);p.setY(j,p.getY(j)-.06*(x*x+z*z)+.025*Math.sin(x*4))}g.computeVertexNormals()}
+      const m=new THREE.Mesh(g,[new THREE.MeshStandardMaterial({color:K.side,roughness:.55}),new THREE.MeshStandardMaterial({map:K.tex,roughness:.45}),new THREE.MeshStandardMaterial({map:K.tex,roughness:.45})]);
+      m.castShadow=true;m.userData={rest:CUT+K.h/2+i*K.h*.92,off:new THREE.Vector2(Math.cos(i*2.4)*K.spread,Math.sin(i*2.4)*K.spread),rot:Math.random()*6.28,tilt:(Math.random()-.5)*.06};
+      m.position.set(m.userData.off.x,m.userData.rest,m.userData.off.y);m.rotation.set(m.userData.tilt,m.userData.rot,m.userData.tilt);filling.add(m);arr.push(m)}return arr}
+  const stackH=k=>KINDS[k].n*KINDS[k].h*.92;
+  /* luci e ombra */
+  scene.add(new THREE.HemisphereLight(0xFFF4E6,0x5B4632,.6));
+  const key=new THREE.DirectionalLight(0xFFE6C4,2.1);key.position.set(2.4,4,3);key.castShadow=true;key.shadow.mapSize.set(1024,1024);Object.assign(key.shadow.camera,{left:-2,right:2,top:2,bottom:-2,near:.5,far:12});scene.add(key);
+  const rim=new THREE.DirectionalLight(0xFFD2A0,1.1);rim.position.set(-3,1.5,-2.5);scene.add(rim);
+  const ground=new THREE.Mesh(new THREE.PlaneGeometry(8,8),new THREE.ShadowMaterial({opacity:.22}));ground.rotation.x=-Math.PI/2;ground.position.y=-.47;ground.receiveShadow=true;scene.add(ground);
+
+  /* stato: chiusa, si apre, svuota, riempie, si chiude */
+  let kind=0,slices=makeSlices(0),phase='idle',pt=0,openA=0,lift=stackH(0),leaving=[];
+  const easeIO=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2,easeOutBack=t=>{const c1=1.5,c3=c1+1;return 1+c3*Math.pow(t-1,3)+c1*Math.pow(t-1,2)};
+  function next(){if(phase!=='idle')return;phase='open';pt=0}
+  function update(dt){
+    pt+=dt;
+    if(phase==='open'){openA=easeIO(Math.min(1,pt/.55))*1.0;if(pt>=.55){phase='empty';pt=0;leaving=slices;slices=[]}}
+    else if(phase==='empty'){for(const m of leaving){m.position.y+=dt*3.2;m.rotation.z+=dt*2;m.material.forEach(x=>{x.transparent=true;x.opacity=Math.max(0,1-pt*2.6)})}
+      if(pt>.4){leaving.forEach(m=>{filling.remove(m);m.geometry.dispose()});leaving=[];kind=(kind+1)%3;slices=makeSlices(kind);slices.forEach(m=>m.position.y+=1.4);fillEl.style.opacity=0;setTimeout(()=>{fillEl.textContent=KINDS[kind].name;fillEl.style.opacity=1},150);phase='fill';pt=0}}
+    else if(phase==='fill'){slices.forEach((m,i)=>{const t=Math.max(0,Math.min(1,(pt-i*.09)/.42));m.position.y=m.userData.rest+(1-easeOutBack(t))*1.4});lift+=(stackH(kind)-lift)*Math.min(1,dt*6);if(pt>.42+slices.length*.09+.15){phase='close';pt=0}}
+    else if(phase==='close'){openA=1.0*(1-easeIO(Math.min(1,pt/.5)));if(pt>=.5){phase='idle';openA=0}}
+    hinge.position.y=CUT+lift;hinge.rotation.x=-openA;
+  }
+  /* trascina per girare, clic per farcire */
+  let rotY=-.5,vy=.0035,drag=false,lx=0,moved=0,touched=false,auto=performance.now()+2600;
+  cv.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;moved=0;touched=true});
+  addEventListener('pointerup',()=>{if(drag&&moved<6)next();drag=false});
+  cv.addEventListener('pointermove',e=>{if(!drag)return;const d=e.clientX-lx;moved+=Math.abs(d);rotY+=d*.01;vy=d*.0008;lx=e.clientX});
+  function size(){const w=cv.clientWidth,h=cv.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+  addEventListener('resize',size);size();
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let vis=true,prev=0;new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis){prev=0;requestAnimationFrame(loop)}}).observe(stage);
+  function loop(now){
+    if(!vis)return;const dt=prev?Math.min((now-prev)/1000,1/30):1/60;prev=now;
+    if(!touched&&!still&&now>auto){next();auto=now+6500}
+    update(dt);
+    if(!drag){vy+=(.0035-vy)*.02;if(!still)rotY+=vy}
+    bread.rotation.y=rotY;bread.position.y=still?0:Math.sin(now/1100)*.025;
+    bread.updateMatrixWorld(true);
+    pT.copy(planeTop).applyMatrix4(topG.matrixWorld);pB.copy(planeBot).applyMatrix4(bottom.matrixWorld);
+    R.render(scene,cam);requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const mbar=document.getElementById('mbar'),nav=document.getElementById('nav');
+addEventListener('scroll',()=>{mbar.classList.toggle('on',scrollY>innerHeight*.6);nav.classList.toggle('on',scrollY>20)},{passive:true});
+</script>
+<div id="pv" style="position:fixed;left:12px;bottom:12px;z-index:99;max-width:calc(100vw - 24px);background:rgba(20,18,16,.86);color:#fff;font:500 11.5px/1.35 -apple-system,'Helvetica Neue',Arial,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 6px 18px -8px rgba(0,0,0,.5);pointer-events:none">Anteprima non ufficiale · proposta di sito per Bar Normale</div>
+<style>@media (max-width:600px){#pv{bottom:calc(84px + env(safe-area-inset-bottom))!important}}</style>
+</body>
+</html>

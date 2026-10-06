@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Night Market 夜市 — Cicchetteria panasiatica · Via Giambellino 50, Milano</title>
+<meta name="description" content="Night Market, via Giambellino 50 a Milano: fermentati fatti in casa, piccoli piatti panasiatici da condividere, vini naturali e musica, in una macelleria del 1927. Da martedì a sabato, 18–24. We eat, we drink, we vibe.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Night Market 夜市 — Cicchetteria panasiatica · Via Giambellino 50, Milano">
+<meta property="og:description" content="Anteprima del sito: Night Market, via Giambellino 50 a Milano: fermentati fatti in casa, piccoli piatti panasiatici da condividere, vini naturali e musica, in una macelleria del 1927. Da martedì a sabato, 18–24. We eat, we drink, we vibe.">
+<meta property="og:image" content="https://guastallastudio-creator.github.io/anteprime/night-market-aa4cr/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0C0E'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23FF4FB4'%3ENM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Unbounded:wght@500..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&text=%E5%A4%9C%E5%B8%82&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0B0C0E; --night-2:#141619; --night-3:#1D2024; --paper:#EDE6DA; --muted:#9C978E; --rule:#2A2E33;
+  --pink:#FF4FB4; --cyan:#48F0FF; --red:#FF4436; --amber:#FFB547;
+  --d:"Unbounded", "Arial Black", sans-serif; --s:"IBM Plex Sans", -apple-system, "Helvetica Neue", Arial, sans-serif; --m:"IBM Plex Mono", ui-monospace, Menlo, monospace; --n:"Tilt Neon", "Arial Rounded MT Bold", sans-serif;
+  --pad:clamp(16px,4.5vw,48px);
+  --ease:cubic-bezier(.2,.75,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--night);color:var(--paper);font-family:var(--s);font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1260px;margin:0 auto;padding:0 var(--pad);position:relative}
+.d{font-family:var(--d);font-weight:800;letter-spacing:-.03em;line-height:.98;text-transform:uppercase}
+.neon-p{color:var(--pink);text-shadow:0 0 6px rgba(255,79,180,.8),0 0 22px rgba(255,79,180,.55)}
+.neon-c{color:var(--cyan);text-shadow:0 0 6px rgba(72,240,255,.8),0 0 22px rgba(72,240,255,.5)}
+.tag{display:inline-flex;align-items:center;gap:10px;font-family:var(--m);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--pink);box-shadow:0 0 10px var(--pink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s}
+.nav.on{background:rgba(11,12,14,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.logo{font-family:var(--d);font-weight:800;font-size:16px;letter-spacing:.02em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.logo b{font-family:"Noto Sans SC",sans-serif;font-weight:500;color:var(--red);font-size:19px;text-shadow:0 0 10px rgba(255,68,54,.7)}
+.nav nav{display:flex;gap:24px;font-family:var(--m);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.nav nav a{opacity:.7}.nav nav a:hover{opacity:1;color:var(--cyan)}
+.book{font-family:var(--m);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--pink);color:var(--pink);padding:9px 15px;border-radius:999px;box-shadow:0 0 14px rgba(255,79,180,.35),inset 0 0 10px rgba(255,79,180,.2);transition:background .25s,color .25s}
+.book:hover{background:var(--pink);color:var(--night)}
+
+/* hero */
+.hero{position:relative;height:100vh;height:100svh;min-height:620px;overflow:hidden;background:#07080A}
+#street{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero .fallback{position:absolute;inset:0;background:url(img/neon.jpg) center/cover;opacity:0}
+.hero.nogl .fallback{opacity:.6}
+.hero .over{position:absolute;left:0;right:0;bottom:0;padding:60px 0 clamp(22px,4vh,44px);background:linear-gradient(transparent,rgba(7,8,10,.85) 55%);pointer-events:none}
+.hero .over .wrap{display:grid;grid-template-columns:1fr auto;gap:20px 30px;align-items:end;pointer-events:auto}
+.hero .over p{font-size:clamp(16.5px,1.35vw,19.5px);color:#CFC8BC;max-width:30em;margin-top:14px}
+.hero .over p b{color:#fff;font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:999px;font-family:var(--m);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;transition:transform .3s var(--ease),background .25s,color .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:var(--pink);color:var(--night);box-shadow:0 0 24px rgba(255,79,180,.45)}
+.btn-o{border:1.5px solid rgba(237,230,218,.5)}
+.btn-o:hover{border-color:var(--cyan);color:var(--cyan)}
+.status{justify-self:end;display:flex;align-items:center;gap:14px;background:rgba(20,22,25,.75);border:1px solid var(--rule);border-radius:18px;padding:14px 18px}
+.status .lamp{font-family:var(--n);font-size:26px;letter-spacing:.06em;padding:4px 12px;border:2px solid currentColor;border-radius:10px}
+.status .lamp.open{color:#7CFF8A;text-shadow:0 0 8px #7CFF8A,0 0 22px #3BD45A;box-shadow:0 0 14px rgba(124,255,138,.35),inset 0 0 10px rgba(124,255,138,.2)}
+.status .lamp.closed{color:#5A4A4A;border-color:#3A3030}
+.status div{font-family:var(--m);font-size:12.5px;line-height:1.5;color:var(--muted);letter-spacing:.04em}
+.status div b{display:block;color:var(--paper);font-weight:500;font-size:13.5px}
+.hint{position:absolute;right:var(--pad);top:84px;font-family:var(--m);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#6C6860}
+
+/* banda */
+.band{background:var(--night-2);border-block:1px solid var(--rule);overflow:hidden;white-space:nowrap}
+.band .track{display:inline-flex;padding:18px 0;animation:slide 38s linear infinite}
+.band span{font-family:var(--n);font-size:clamp(22px,2.4vw,32px);display:inline-flex;align-items:center;gap:28px;padding-right:28px}
+.band span:nth-child(3n+1){color:var(--pink);text-shadow:0 0 12px rgba(255,79,180,.6)}
+.band span:nth-child(3n+2){color:var(--cyan);text-shadow:0 0 12px rgba(72,240,255,.55)}
+.band span:nth-child(3n){color:var(--amber);text-shadow:0 0 12px rgba(255,181,71,.55)}
+.band span::after{content:"✦";font-size:.5em;color:#4A4E54;text-shadow:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(84px,11vw,150px) 0}
+
+.intro{padding:clamp(70px,9vw,120px) 0 0}.intro p{font-family:var(--d);font-weight:700;font-size:clamp(26px,3.4vw,50px);line-height:1.15;letter-spacing:-.03em;max-width:20em}.intro p b{font-weight:800}
+/* storia */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,7vw,100px);align-items:center}
+.story h2{font-size:clamp(34px,4.2vw,64px);margin:18px 0 26px}
+.story p{color:#BDB6AA;font-size:17.5px;margin-bottom:16px;max-width:34em}
+.story p b{color:#fff;font-weight:600}
+.quote{margin-top:26px;border-left:2px solid var(--pink);padding:4px 0 4px 22px;box-shadow:-8px 0 18px -14px var(--pink)}
+.quote q{display:block;font-size:clamp(20px,1.9vw,26px);font-weight:500;line-height:1.35;quotes:"“" "”"}
+.quote cite{display:block;margin-top:10px;font-style:normal;font-family:var(--m);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.shop{background:var(--night-2);border:1px solid var(--rule);border-radius:24px;overflow:hidden}
+.shop .tiles{height:250px;background:
+  linear-gradient(rgba(11,12,14,.0),rgba(11,12,14,.55)),
+  repeating-linear-gradient(0deg,#2B3036 0 2px,transparent 2px 26px),
+  repeating-linear-gradient(90deg,#2B3036 0 2px,transparent 2px 52px),#E7E2D6;position:relative;filter:brightness(.42) sepia(.2)}
+.shop .sign{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--n);font-size:clamp(34px,4vw,54px);color:var(--amber);text-shadow:0 0 10px var(--amber),0 0 30px rgba(255,181,71,.6);white-space:nowrap;z-index:2}
+.shop .top{position:relative}
+.timeline{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:24px 26px}
+.timeline div{font-family:var(--m);font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.timeline b{display:block;font-family:var(--d);font-size:34px;color:var(--paper);letter-spacing:-.03em}
+.timeline .arrow{font-size:26px;color:var(--pink)}
+.keep{display:flex;flex-wrap:wrap;gap:8px;padding:0 26px 26px}
+.keep span{border:1px solid var(--rule);border-radius:999px;padding:7px 13px;font-size:14px;color:#CFC8BC}
+
+/* menu scontrino */
+.menu .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,6vw,80px);align-items:start}
+.menu h2{font-size:clamp(36px,4.6vw,70px);margin:18px 0 22px}
+.menu .intro{color:#BDB6AA;max-width:30em}
+.receipt{background:#F2EEE6;color:#1B1A18;font-family:var(--m);font-size:14px;padding:30px 28px 34px;position:relative;box-shadow:0 30px 60px -30px rgba(0,0,0,.8);transform:rotate(1.2deg)}
+.receipt::before,.receipt::after{content:"";position:absolute;left:0;right:0;height:12px;background:radial-gradient(circle at 8px 0,transparent 7px,#F2EEE6 7.5px) 0 0/16px 12px repeat-x}
+.receipt::before{top:-12px;transform:rotate(180deg)}
+.receipt::after{bottom:-12px}
+.receipt .hd{text-align:center;border-bottom:1.5px dashed #9A958C;padding-bottom:14px;margin-bottom:12px}
+.receipt .hd b{display:block;font-family:var(--d);font-size:22px;letter-spacing:-.02em}
+.receipt .hd span{font-size:12px;color:#5E5A54}
+.receipt h4{display:flex;justify-content:space-between;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin:18px 0 6px}
+.receipt li{list-style:none;display:grid;grid-template-columns:22px 1fr;gap:4px;padding:5px 0;line-height:1.4}
+.receipt li::before{content:"1×";color:#7A756D}
+.receipt li small{grid-column:2;color:#6A655E;font-size:12px}
+.receipt .tot{display:flex;justify-content:space-between;border-top:1.5px dashed #9A958C;margin-top:18px;padding-top:12px;font-weight:600;font-size:15px}
+.receipt .bc{height:44px;margin-top:16px;background:repeating-linear-gradient(90deg,#1B1A18 0 2px,transparent 2px 4px,#1B1A18 4px 5px,transparent 5px 8px,#1B1A18 8px 11px,transparent 11px 12px)}
+.receipt .ft{text-align:center;font-size:11.5px;color:#6A655E;margin-top:8px;letter-spacing:.08em}
+.dishes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.dishes figure{border-radius:20px;overflow:hidden;position:relative;border:1px solid var(--rule)}
+.dishes img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.dishes figcaption{position:absolute;left:12px;bottom:12px;font-family:var(--n);font-size:21px;color:#fff;text-shadow:0 0 10px rgba(0,0,0,.9),0 0 18px var(--pink)}
+.dishes figure:first-child{grid-column:span 2}
+.dishes figure:first-child img{aspect-ratio:16/9}
+
+/* fermentati */
+.ferm{background:var(--night-2);border-block:1px solid var(--rule);overflow:hidden}
+.ferm .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.ferm h2{font-size:clamp(36px,4.6vw,70px);margin:18px 0 22px}
+.ferm p{color:#BDB6AA;max-width:31em;margin-bottom:14px}
+.shelf{position:relative;padding:20px 10px 0}
+.jars{display:flex;justify-content:center;align-items:flex-end;gap:clamp(12px,2vw,24px)}
+.jar{width:clamp(80px,9vw,118px);aspect-ratio:1/1.5;border-radius:16px 16px 22px 22px;position:relative;background:linear-gradient(90deg,rgba(255,255,255,.14),rgba(255,255,255,.03) 30%,rgba(255,255,255,.08) 80%,rgba(255,255,255,.18));border:1.5px solid rgba(255,255,255,.22);overflow:hidden}
+.jar::before{content:"";position:absolute;left:-2px;right:-2px;top:-2px;height:16%;background:linear-gradient(#4A4E54,#2B2F34);border-radius:10px 10px 4px 4px}
+.jar .fill{position:absolute;left:5%;right:5%;bottom:4%;border-radius:4px 4px 16px 16px}
+.jar .lbl{position:absolute;left:12%;right:12%;top:44%;background:#F2EEE6;color:#1B1A18;font-family:var(--m);font-size:10.5px;font-weight:600;text-align:center;padding:5px 2px;letter-spacing:.06em;text-transform:uppercase;transform:rotate(-3deg)}
+.bub{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);animation:bub 4s linear infinite}
+@keyframes bub{0%{transform:translateY(0);opacity:0}15%{opacity:.8}100%{transform:translateY(-120px);opacity:0}}
+.plank{height:16px;border-radius:6px;background:linear-gradient(#5B4632,#3B2D20);margin-top:-2px;box-shadow:0 14px 26px -12px rgba(0,0,0,.8)}
+.shelf .note{text-align:center;margin-top:18px;font-family:var(--m);font-size:12.5px;color:var(--muted);letter-spacing:.06em}
+
+/* vino */
+.wine .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,90px);align-items:center}
+.wine h2{font-size:clamp(36px,4.6vw,70px);margin:18px 0 22px}
+.wine p{color:#BDB6AA;max-width:31em;margin-bottom:14px}
+.regions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.regions span{font-family:var(--m);font-size:13px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--cyan);color:var(--cyan);border-radius:999px;padding:8px 14px;box-shadow:0 0 12px rgba(72,240,255,.2)}
+.wine figure{border-radius:24px;overflow:hidden;border:1px solid var(--rule)}
+.wine figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.also{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.also div{background:var(--night-2);border:1px solid var(--rule);border-radius:16px;padding:14px 16px;font-size:14.5px;color:#BDB6AA}
+.also b{display:block;color:#fff;font-weight:600}
+
+/* musica */
+.music{background:radial-gradient(80% 60% at 70% 40%,rgba(255,79,180,.12),transparent 70%),var(--night)}
+.music .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.music h2{font-size:clamp(36px,4.6vw,70px);margin:18px 0 22px}
+.music p{color:#BDB6AA;max-width:31em;margin-bottom:14px}
+.radio{background:var(--night-2);border:1px solid var(--rule);border-radius:26px;padding:28px}
+.radio .top{display:flex;justify-content:space-between;align-items:center;font-family:var(--m);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.radio .top b{color:var(--red);text-shadow:0 0 10px rgba(255,68,54,.7);font-weight:600;display:flex;align-items:center;gap:8px}
+.radio .top b::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+.radio .name{font-family:var(--n);font-size:clamp(52px,6vw,84px);line-height:1;margin:22px 0 6px;color:var(--cyan);text-shadow:0 0 10px var(--cyan),0 0 30px rgba(72,240,255,.5)}
+.radio .sub{font-family:var(--m);font-size:13px;color:var(--muted)}
+.eq{display:flex;align-items:flex-end;gap:5px;height:90px;margin-top:26px}
+.eq i{flex:1;background:linear-gradient(to top,var(--pink),var(--amber));border-radius:3px 3px 0 0;animation:eq 1.2s ease-in-out infinite alternate;transform-origin:bottom}
+@keyframes eq{0%{transform:scaleY(.15)}100%{transform:scaleY(1)}}
+.radio .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+
+/* lavora con noi */
+.help{padding:0 0 clamp(84px,11vw,150px)}
+.helpbox{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;border:1.5px solid var(--amber);border-radius:26px;padding:clamp(24px,3.4vw,40px);box-shadow:0 0 30px rgba(255,181,71,.12),inset 0 0 30px rgba(255,181,71,.06)}
+.helpbox .big{font-family:var(--n);font-size:clamp(40px,5vw,72px);color:var(--amber);text-shadow:0 0 10px var(--amber),0 0 30px rgba(255,181,71,.55);line-height:1;white-space:nowrap}
+.helpbox p{color:#CFC8BC;font-size:17px;max-width:32em}
+.helpbox p b{color:#fff}
+.btn-a{border:1.5px solid var(--amber);color:var(--amber)}
+.btn-a:hover{background:var(--amber);color:var(--night)}
+
+/* dove */
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,80px);align-items:stretch}
+.visit h2{font-size:clamp(36px,4.6vw,70px);margin:18px 0 30px}
+.rows div{display:grid;grid-template-columns:120px 1fr;padding:15px 0;border-bottom:1px solid var(--rule);font-size:17px}
+.rows span{font-family:var(--m);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.rows a{border-bottom:1.5px solid var(--pink)}
+.rows small{display:block;color:var(--muted);font-size:14px}
+.map{border-radius:24px;overflow:hidden;position:relative;min-height:460px;border:1px solid var(--rule)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:invert(.92) hue-rotate(180deg) contrast(.95)}
+
+footer{border-top:1px solid var(--rule);padding:70px 0 34px;font-size:14px;color:var(--muted);overflow:hidden}
+footer .big{font-family:var(--n);font-size:clamp(60px,11vw,170px);line-height:1;color:var(--pink);text-shadow:0 0 12px var(--pink),0 0 40px rgba(255,79,180,.45)}
+footer .big span{color:var(--cyan);text-shadow:0 0 12px var(--cyan),0 0 40px rgba(72,240,255,.45)}
+footer .sub{font-family:var(--m);font-size:14px;letter-spacing:.06em;color:#CFC8BC;margin-top:18px}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:42px;padding-top:22px;border-top:1px solid var(--rule);font-size:12.5px}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.mbar{display:none}
+
+@media (max-width:900px){
+  .nav nav{display:none}
+  .hero .over .wrap,.story,.menu .grid,.ferm .wrap,.wine .wrap,.music .wrap,.visit .wrap{grid-template-columns:1fr}
+  .status{justify-self:start}
+  .helpbox{grid-template-columns:1fr}
+  .hint{display:none}
+  .receipt{transform:none}
+}
+@media (max-width:600px){
+  .book{display:none}
+  .hero{min-height:700px}
+  .timeline b{font-size:26px}
+  .also{grid-template-columns:1fr}
+  .rows div{grid-template-columns:96px 1fr}
+  .map{min-height:300px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;transform:translateY(150%);transition:transform .45s var(--ease)}
+  .mbar.on{transform:none}
+  .mbar a{display:flex;justify-content:center;align-items:center;padding:15px;border-radius:999px;font-family:var(--m);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--rule);background:var(--night-2)}
+  .mbar a:last-child{background:var(--pink);border-color:var(--pink);color:var(--night)}
+  footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Night Market, home">Night Market <b>夜市</b></a>
+    <nav aria-label="Sezioni"><a href="#storia">La storia</a><a href="#menu">Menu</a><a href="#fermentati">Fermentati</a><a href="#vino">Vino</a><a href="#musica">Musica</a><a href="#dove">Dove</a></nav>
+    <a class="book" href="https://live.tebi.co/ecom/reservations/436276_9346cb2b451b48246b6fc9565ab85148fc0a4b09e282c1a3625c545d94edfe2d" target="_blank" rel="noopener">Prenota</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="street" aria-hidden="true"></canvas>
+  <div class="fallback"></div>
+  <h1 class="sr">Night Market 夜市, cicchetteria panasiatica a Milano</h1>
+  <div class="hint">muovi il mouse sull'asfalto bagnato</div>
+  <div class="over">
+    <div class="wrap">
+      <div>
+        <span class="tag"><i></i>Cicchetteria panasiatica · Giambellino 50</span>
+        <div class="ctas">
+          <a class="btn btn-p" href="https://live.tebi.co/ecom/reservations/436276_9346cb2b451b48246b6fc9565ab85148fc0a4b09e282c1a3625c545d94edfe2d" target="_blank" rel="noopener">Prenota un tavolo</a>
+          <a class="btn btn-o" href="#menu">Guarda il menu</a>
+        </div>
+      </div>
+      <div class="status"><span class="lamp" id="lamp">CHIUSO</span><div><b id="stxt">Mar – Sab · 18:00 – 24:00</b><span id="ssub">Via Giambellino 50</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="track">
+  <span>we eat</span><span>we drink</span><span>we vibe</span><span>kimchi</span><span>vini naturali</span><span>Giambellino 50</span><span>bao</span><span>dj set</span><span>夜市</span>
+  <span>we eat</span><span>we drink</span><span>we vibe</span><span>kimchi</span><span>vini naturali</span><span>Giambellino 50</span><span>bao</span><span>dj set</span><span>夜市</span>
+</div></div>
+
+<section class="intro"><div class="wrap"><p class="rv"><b>Fermentati fatti in casa</b>, piccoli piatti da condividere, <span class="neon-c">vini naturali</span> e musica. In una <span class="neon-p">macelleria del 1927</span>, al Giambellino.</p></div></section>
+
+<section class="sec" id="storia">
+  <div class="wrap story">
+    <div>
+      <span class="tag rv"><i></i>La storia</span>
+      <h2 class="d rv">Dai mercati <span class="neon-p">notturni</span> alla bottega di quartiere.</h2>
+      <p class="rv"><b>Kei Shu</b> è veneziano, di origini cinesi. Ha fatto l'alberghiero e anni di eventi e catering, anche al fianco di chef come Vissani. Durante la pandemia ha lasciato Product Design per tornare alla sua prima passione, il cibo. Nel 2022 ha aperto con la sorella lo Shu Asian Bar a Mirano.</p>
+      <p class="rv">A Milano lo hanno portato due passioni: la <b>musica elettronica</b> (suona al Tempio del Futuro Perduto) e le <b>fermentazioni</b>. Il nome viene dai mercati notturni asiatici, dove la gente si trova dopo il tramonto per assaggiare tanti piatti diversi allo stesso tavolo.</p>
+      <div class="quote rv"><q>Con Shu siamo andati abbastanza sul sicuro. Night Market invece è un progetto che sento molto più mio.</q><cite>Kei Shu, fondatore</cite></div>
+    </div>
+    <div class="shop rv">
+      <div class="top"><div class="tiles"></div><div class="sign">macelleria</div></div>
+      <div class="timeline"><div><b>1927</b>macelleria-gastronomia</div><span class="arrow">→</span><div style="text-align:right"><b class="neon-p">2026</b>Night Market</div></div>
+      <div class="keep"><span>Il vecchio bancone</span><span>Le pareti piastrellate</span><span>Il legno massello originale</span><span>Acciaio e dettagli industriali</span><span>Progetto OTS Studio</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec menu" id="menu">
+  <div class="wrap grid">
+    <div>
+      <span class="tag rv"><i></i>Il menu</span>
+      <h2 class="d rv">Prova un po' <span class="neon-c">di tutto.</span></h2>
+      <p class="intro rv">Piccoli assaggi da condividere, a metà tra i cicchetti veneziani e lo street food asiatico. Niente cucina di un solo paese: sapori da tutta l'Asia, anche quelli che in Italia si vedono poco.</p>
+      <div class="quote rv"><q>Nei night market si va per provare tante cose diverse. È esattamente quello che vorremmo ricreare qui.</q><cite>Kei Shu</cite></div>
+      <div class="dishes">
+        <figure class="rv"><img src="img/1706586347241-1ee2f7d3bb1a.jpg" alt="Bao ripieno in una ciotola" loading="lazy"><figcaption>bao al manzo speziato</figcaption></figure>
+        <figure class="rv"><img src="img/pollo.jpg" alt="Pollo fritto coreano glassato" loading="lazy"><figcaption>pollo fritto coreano</figcaption></figure>
+        <figure class="rv"><img src="img/kimchi.jpg" alt="Ciotola di kimchi" loading="lazy"><figcaption>kimchi della casa</figcaption></figure>
+      </div>
+    </div>
+    <div class="receipt rv">
+      <div class="hd"><b>NIGHT MARKET 夜市</b><span>Via Giambellino 50 · Milano<br>menu d'apertura · può cambiare</span></div>
+      <h4><span>Bocconi</span><span>3,50 – 5 €</span></h4>
+      <ul>
+        <li>Giardiniera al curry</li>
+        <li>Chips di riso alla nori<small>con salsa agrodolce</small></li>
+        <li>Arancini gorgonzola e kimchi</li>
+        <li>Uovo marinato<small>shiitake e togarashi</small></li>
+      </ul>
+      <h4><span>Piatti</span><span>8 – 12,50 €</span></h4>
+      <ul>
+        <li>Muhammara con pane arabo</li>
+        <li>Pajeon di zucchine<small>la frittella coreana, agrumata</small></li>
+        <li>Pollo fritto coreano<small>salsa yangnyeom, daikon marinato</small></li>
+        <li>Bao al manzo speziato<small>noci e coriandolo</small></li>
+        <li>Katsusando<small>kebab di manzo, cavolo viola, maionese kimchi e gochujang</small></li>
+      </ul>
+      <h4><span>Dolci</span><span>7 €</span></h4>
+      <ul>
+        <li>Torta al cioccolato<small>miso e tahina</small></li>
+        <li>Crumble di noci e matcha<small>crema di yogurt, mascarpone e limone</small></li>
+      </ul>
+      <div class="tot"><span>TOTALE</span><span>da condividere</span></div>
+      <div class="bc"></div>
+      <div class="ft">LE COSE BELLE SI CONDIVIDONO</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ferm" id="fermentati">
+  <div class="wrap">
+    <div>
+      <span class="tag rv"><i></i>Fermentati</span>
+      <h2 class="d rv">Il tempo è <span class="neon-p">l'ingrediente.</span></h2>
+      <p class="rv">Il tempo che serve per fermentare un kimchi, far maturare un miso, affinare un vino naturale. Qui i fermentati si fanno in casa: kimchi classici e sperimentali, verdure lattofermentate, miso.</p>
+      <div class="quote rv"><q>Non sarà soltanto un bistrot, ma anche una vetrina dove sperimentare prodotti che un domani vorremmo sviluppare e vendere con un nostro marchio.</q><cite>Kei Shu</cite></div>
+    </div>
+    <div class="shelf rv">
+      <div class="jars" id="jars">
+        <div class="jar"><div class="fill" style="height:70%;background:linear-gradient(#E2482F,#A3261A)"></div><div class="lbl">Kimchi</div></div>
+        <div class="jar" style="height:auto"><div class="fill" style="height:58%;background:linear-gradient(#C99A5B,#8C6230)"></div><div class="lbl">Miso</div></div>
+        <div class="jar"><div class="fill" style="height:66%;background:linear-gradient(#B7C76A,#6E8A3A)"></div><div class="lbl">Latto&shy;fermentati</div></div>
+        <div class="jar"><div class="fill" style="height:48%;background:linear-gradient(#E7A24A,#B5641E)"></div><div class="lbl">Sperimentale</div></div>
+      </div>
+      <div class="plank"></div>
+      <div class="note">fatti in casa · lasciati lavorare</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wine" id="vino">
+  <div class="wrap">
+    <div>
+      <span class="tag rv"><i></i>Da bere</span>
+      <h2 class="d rv">Vini naturali, <span class="neon-c">vignaioli indipendenti.</span></h2>
+      <p class="rv">La carta è fatta soprattutto di vini naturali da piccoli vignaioli indipendenti, scelti tra Lombardia, Piemonte ed Emilia-Romagna. Il vino è il protagonista: tutto il resto gli sta intorno.</p>
+      <div class="regions rv"><span>Lombardia</span><span>Piemonte</span><span>Emilia-Romagna</span></div>
+      <div class="also rv"><div><b>Birre artigianali</b>a rotazione</div><div><b>Cocktail pre-batch</b>pochi ed essenziali, per lasciare spazio al vino</div></div>
+    </div>
+    <figure class="rv"><img src="img/vino.jpg" alt="Un calice di vino macerato su un tavolo di pietra" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec music" id="musica">
+  <div class="wrap">
+    <div>
+      <span class="tag rv"><i></i>Musica</span>
+      <h2 class="d rv">Si mangia, si beve, <span class="neon-p">si balla un po'.</span></h2>
+      <p class="rv">Kei fa il DJ, e il locale ha un'anima musicale. In calendario ci sono eventi di design, arte e musica, e sta per nascere una radio tutta sua, con DJ set e podcast sulla scena creativa di Milano.</p>
+    </div>
+    <div class="radio rv">
+      <div class="top"><span>Radio del locale</span><b>presto in onda</b></div>
+      <div class="name">NMR</div>
+      <div class="sub">dj set · podcast · scena creativa milanese</div>
+      <div class="eq" id="eq"></div>
+      <div class="links"><a class="btn btn-o" href="https://www.instagram.com/nmr.milano/" target="_blank" rel="noopener">@nmr.milano</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="help">
+  <div class="wrap">
+    <div class="helpbox rv">
+      <div class="big">Help wanted!</div>
+      <p><b>Night Market cerca persone.</b> Se ti piacciono la cucina, il vino naturale e la musica, e vuoi lavorare in un posto nuovo al Giambellino, scrivi.</p>
+      <a class="btn btn-a" href="https://ig.me/m/nightmarket_mi" target="_blank" rel="noopener">Candidati su Instagram →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec visit" id="dove" style="padding-top:0">
+  <div class="wrap">
+    <div>
+      <span class="tag rv"><i></i>Dove siamo</span>
+      <h2 class="d rv">Via Giambellino 50, <span class="neon-c">Milano.</span></h2>
+      <div class="rows rv">
+        <div><span>Indirizzo</span><p><a href="https://maps.google.com/?q=Night+Market+Via+Giambellino+50+Milano" target="_blank" rel="noopener">Via Giambellino 50, Milano</a></p></div>
+        <div><span>Orari</span><p>Da martedì a sabato<small>18:00 – 24:00</small></p></div>
+        <div><span>Telefono</span><p><a href="tel:+390238290691">02 3829 0691</a></p></div>
+        <div><span>Prenota</span><p><a href="https://live.tebi.co/ecom/reservations/436276_9346cb2b451b48246b6fc9565ab85148fc0a4b09e282c1a3625c545d94edfe2d" target="_blank" rel="noopener">Prenotazione online</a></p></div>
+        <div><span>Social</span><p><a href="https://www.instagram.com/nightmarket_mi/" target="_blank" rel="noopener">@nightmarket_mi</a><small>musica: @nmr.milano</small></p></div>
+      </div>
+    </div>
+    <div class="map rv"><iframe title="Mappa: Via Giambellino 50, Milano" loading="lazy" src="https://www.google.com/maps?q=Via+Giambellino+50,+20146+Milano&z=16&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">Night <span>Market</span></div>
+    <div class="sub">le cose belle si condividono · via Giambellino 50</div>
+    <div class="row"><span>Night Market 夜市 · Mar–Sab 18–24 · 02 3829 0691 · @nightmarket_mi</span><span>Anteprima del sito · foto d'esempio (Unsplash), da sostituire con quelle del locale</span></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a href="https://maps.google.com/?q=Night+Market+Via+Giambellino+50+Milano" target="_blank" rel="noopener">Portami lì</a><a href="https://live.tebi.co/ecom/reservations/436276_9346cb2b451b48246b6fc9565ab85148fc0a4b09e282c1a3625c545d94edfe2d" target="_blank" rel="noopener">Prenota</a></div>
+
+<script>
+/* ---------- aperto o chiuso, ora di Milano ---------- */
+(function(){
+  const f=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Rome',weekday:'short',hour:'2-digit',hour12:false}).formatToParts(new Date());
+  const wd=f.find(p=>p.type==='weekday').value,h=+f.find(p=>p.type==='hour').value%24;
+  const days=['Tue','Wed','Thu','Fri','Sat'],open=days.includes(wd)&&h>=18;
+  const lamp=document.getElementById('lamp'),stxt=document.getElementById('stxt'),ssub=document.getElementById('ssub');
+  lamp.textContent=open?'APERTO':'CHIUSO';lamp.className='lamp '+(open?'open':'closed');
+  if(open){stxt.textContent='Aperto fino a mezzanotte';ssub.textContent='Via Giambellino 50 · senza prenotazione si prova'}
+  else{const next=days.includes(wd)&&h<18?'stasera alle 18':(wd==='Sat'||wd==='Sun'||wd==='Mon')?'martedì alle 18':'domani alle 18';stxt.textContent='Riapriamo '+next;ssub.textContent='Mar – Sab · 18:00 – 24:00'}
+  window.__nmOpen=open;
+})();
+
+/* ---------- l'insegna al neon e la strada bagnata ----------
+   L'insegna si disegna in 2D (tubo per tubo, con il bagliore); WebGL2 la usa come texture:
+   sopra la parete di piastrelle illuminata, sotto il riflesso che si increspa con la pioggia e col mouse. */
+(function(){
+  const hero=document.querySelector('.hero'),cv=document.getElementById('street');
+  let gl=null;try{gl=cv.getContext('webgl2',{alpha:false,antialias:false})}catch(e){}
+  if(!gl){hero.classList.add('nogl');return}
+  const sign=document.createElement('canvas'),g=sign.getContext('2d');
+  let W=0,H=0,dpr=1,dirty=true;
+  const parts=[];/* lettere: {ch,x,y,size,color,font,b} */
+  function layout(){
+    parts.length=0;const mob=W<700*dpr;
+    const size=Math.min(W*(mob?.19:.12),H*(mob?.11:.15)),cx=W*.5,y2=H*.5-size*.42,y1=y2-size*1.02;
+    const lines=[['Night',y1,'#FF4FB4'],['Market',y2,'#48F0FF']];
+    g.font=`${size}px "Tilt Neon"`;
+    for(const [txt,y,color] of lines){const w=g.measureText(txt).width;let x=cx-w/2;for(const ch of txt){const cw=g.measureText(ch).width;parts.push({ch,x,y,size,color,font:`${size}px "Tilt Neon"`,b:0,on:Math.random()*1.4+.25,flick:0});x+=cw}}
+    /* insegna verticale 夜市 */
+    const cs=size*.62,bx=cx-g.measureText('Market').width/2-cs*1.65,by=y1-size*.78;
+    parts.push({box:[bx,by,cs*1.2,cs*2.45],color:'#FF4436',b:0,on:.15,flick:0});
+    parts.push({ch:'夜',x:bx+cs*.1,y:by+cs*1.05,size:cs,color:'#FFB547',font:`500 ${cs}px "Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif`,b:0,on:.4,flick:0});
+    parts.push({ch:'市',x:bx+cs*.1,y:by+cs*2.15,size:cs,color:'#FFB547',font:`500 ${cs}px "Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif`,b:0,on:.55,flick:0});
+    /* piccola scritta sotto */
+    parts.push({ch:'WE EAT · WE DRINK · WE VIBE',x:cx,y:y1-size*1.02,size:size*.17,color:'#EDE6DA',font:`${size*.17}px "Tilt Neon"`,b:0,on:1.6,flick:0,center:true});
+  }
+  function drawSign(){
+    g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,W,H);g.shadowBlur=0;
+    for(const p of parts){const b=Math.min(1,p.b);if(b<=.02)continue;
+      if(p.box){const [x,y,w,h]=p.box;g.lineJoin='round';
+        for(const [lw,c,a] of [[7,p.color,.9],[3,'#FFD9D4',.9]]){g.strokeStyle=c;g.globalAlpha=b*a;g.lineWidth=lw*dpr;g.beginPath();g.roundRect?g.roundRect(x,y,w,h,14*dpr):g.rect(x,y,w,h);g.stroke()}
+        continue}
+      g.font=p.font;g.textBaseline='alphabetic';g.textAlign=p.center?'center':'left';
+      g.globalAlpha=b;g.fillStyle=p.color;g.fillText(p.ch,p.x,p.y);
+      g.globalAlpha=b*(p.buzz?.6:.3);g.fillStyle='#FFFFFF';g.fillText(p.ch,p.x,p.y);
+    }
+    g.globalAlpha=1;
+  }
+  const VS=`#version 300 es
+  in vec2 a;out vec2 uv;void main(){uv=a*.5+.5;gl_Position=vec4(a,0,1);}`;
+  const FS=`#version 300 es
+  precision highp float;in vec2 uv;out vec4 o;
+  uniform sampler2D S;uniform float t,asp;uniform vec4 drops[12];
+  float hash(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+  float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x),f.y);}
+  vec3 sig(vec2 q,float lod){q.y=1.-q.y;return textureLod(S,q,lod).rgb;}
+  void main(){
+    float hz=.5;vec3 col;
+    if(uv.y>hz){
+      /* parete di piastrelle della vecchia macelleria */
+      vec2 tp=vec2(uv.x*asp*16.,(uv.y-hz)*32.);float row=floor(tp.y);tp.x+=mod(row,2.)*.5;
+      vec2 f=fract(tp);float grout=1.-smoothstep(.0,.05,min(min(f.x,1.-f.x)*.5,min(f.y,1.-f.y)));
+      float tn=noise(floor(tp)*3.1);
+      vec3 base=mix(vec3(.055,.058,.062)*(.8+.4*tn),vec3(.02),grout*.85);
+      vec3 glow=sig(uv,6.5)*2.2+sig(uv,4.5)*.9;
+      float bev=(1.-grout)*smoothstep(.0,.2,f.y)*.5;
+      vec3 halo=sig(uv,1.5)*.9+sig(uv,2.8)*1.1+sig(uv,4.)*.9;
+      col=base+base*glow*7.+glow*.12+glow*bev*.15+sig(uv,0.)+halo;
+      /* luce sul bordo del marciapiede */
+      col+=sig(vec2(uv.x,hz+.02),7.)*.5*exp(-(uv.y-hz)*40.);
+    }else{
+      float dist=(hz-uv.y)/hz;
+      vec2 d=vec2(0);
+      for(int i=0;i<12;i++){vec4 D=drops[i];float age=t-D.z;if(age<0.||age>3.)continue;
+        vec2 v=(uv-D.xy)*vec2(asp,2.6);float r=length(v);
+        float front=age*.22;float w=sin((r-front)*95.)*exp(-pow((r-front)/.05,2.))*exp(-age*1.4)*D.w;
+        d+=normalize(v+1e-5)*w*.012;}
+      d.x+=sin(uv.y*150.+t*1.7)*.0012*(1.-dist*.5)+noise(vec2(uv.x*40.,uv.y*120.+t))*.002-.001;
+      vec2 m=vec2(uv.x,2.*hz-uv.y)+d;
+      vec3 refl=(sig(m,1.+dist*4.)+sig(m,3.+dist*2.)*1.2)*(.62-.42*dist)+sig(m,5.5)*.5;
+      float asph=noise(uv*vec2(asp,1.)*420.)*.6+noise(uv*vec2(asp,1.)*90.)*.4;
+      vec3 base=vec3(.028,.030,.034)*(.7+.6*asph);
+      float puddle=smoothstep(.45,.62,noise(uv*vec2(asp,1.)*5.+3.));
+      col=base+refl*mix(.45,1.,puddle)+sig(vec2(uv.x,hz),7.)*.08*(1.-dist);
+    }
+    vec2 vq=uv-.5;col*=1.-.55*dot(vq*vec2(.9,1.2),vq*vec2(.9,1.2));
+    col=1.-exp(-col*1.25);
+    o=vec4(pow(col,vec3(.95)),1);
+  }`;
+  function sh(ty,s){const x=gl.createShader(ty);gl.shaderSource(x,s);gl.compileShader(x);if(!gl.getShaderParameter(x,gl.COMPILE_STATUS))throw gl.getShaderInfoLog(x);return x}
+  let P;try{P=gl.createProgram();gl.attachShader(P,sh(gl.VERTEX_SHADER,VS));gl.attachShader(P,sh(gl.FRAGMENT_SHADER,FS));gl.bindAttribLocation(P,0,'a');gl.linkProgram(P);if(!gl.getProgramParameter(P,gl.LINK_STATUS))throw gl.getProgramInfoLog(P)}catch(e){console.warn(e);hero.classList.add('nogl');return}
+  gl.useProgram(P);const uT=gl.getUniformLocation(P,'t'),uA=gl.getUniformLocation(P,'asp'),uD=gl.getUniformLocation(P,'drops');
+  const vb=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,vb);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);
+  const tex=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tex);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.uniform1i(gl.getUniformLocation(P,'S'),0);
+  function size(){dpr=Math.min(devicePixelRatio||1,1.5);W=Math.round(cv.clientWidth*dpr);H=Math.round(cv.clientHeight*dpr);cv.width=W;cv.height=H;sign.width=W;sign.height=H;layout();parts.forEach(p=>p.b=p.done?1:p.b);dirty=true}
+  /* gocce: pioggia leggera + il mouse */
+  const drops=new Float32Array(48);let di=0;
+  function drop(x,y,t,s){drops.set([x,y,t,s],di*4);di=(di+1)%12}
+  let lastDrop=0;
+  hero.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=1-(e.clientY-r.top)/r.height;const now=performance.now()/1000;
+    if(y<.5&&now-lastDrop>.07){drop(x,y,now,1.2);lastDrop=now}
+    for(const p of parts){if(p.box||p.center)continue;const px=p.x/W,py=1-p.y/H;p.buzz=Math.hypot((x-px-.03)*1.6,y-py-.04)<.06?1:0}});
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let t0=-1,nextFlick=3,vis=true;
+  new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis)requestAnimationFrame(loop)}).observe(hero);
+  function loop(now){
+    if(!vis)return;const t=now/1000;if(t0<0)t0=t;const k=t-t0;
+    /* accensione a scatti, poi qualche tubo che sfarfalla */
+    for(const p of parts){let b;
+      if(still)b=1;
+      else if(k<p.on)b=0;
+      else if(k<p.on+.45){const s=Math.floor((k-p.on)*22);b=(s%3===0||s>7)?1:(s%2?.15:.6)}
+      else b=1;
+      if(p.flick>0){p.flick-=1/60;b*=(Math.sin(t*90)>.2?1:.12)}
+      if(p.buzz)b=Math.min(1.25,b*1.2);
+      if(Math.abs(b-p.b)>.01){p.b=b;dirty=true}}
+    if(!still&&k>nextFlick){const c=parts.filter(p=>!p.box&&!p.center);const p=c[Math.floor(Math.random()*c.length)];p.flick=.35+Math.random()*.4;nextFlick=k+3+Math.random()*4}
+    if(!still&&Math.random()<.06)drop(Math.random(),Math.random()*.48,t,.35+Math.random()*.4);
+    if(dirty){drawSign();gl.bindTexture(gl.TEXTURE_2D,tex);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,true);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,sign);gl.generateMipmap(gl.TEXTURE_2D);dirty=false}
+    gl.viewport(0,0,W,H);gl.uniform1f(uT,t);gl.uniform1f(uA,W/H);gl.uniform4fv(uD,drops);
+    gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+    requestAnimationFrame(loop);
+  }
+  addEventListener('resize',()=>{size()});
+  (document.fonts&&document.fonts.load?Promise.all([document.fonts.load('100px "Tilt Neon"'),document.fonts.load('500 100px "Noto Sans SC"','夜市')]).catch(()=>{}):Promise.resolve()).then(()=>{size();requestAnimationFrame(loop)});
+})();
+
+/* equalizzatore e bollicine */
+(function(){const eq=document.getElementById('eq');for(let i=0;i<28;i++){const b=document.createElement('i');b.style.animationDuration=(.5+Math.random()*.9)+'s';b.style.animationDelay=(-Math.random())+'s';eq.appendChild(b)}
+  document.querySelectorAll('.jar').forEach(j=>{for(let i=0;i<5;i++){const b=document.createElement('span');b.className='bub';const s=3+Math.random()*5;Object.assign(b.style,{width:s+'px',height:s+'px',left:(15+Math.random()*65)+'%',bottom:(6+Math.random()*20)+'%',animationDelay:(-Math.random()*4)+'s',animationDuration:(3+Math.random()*3)+'s'});j.appendChild(b)}})})();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const mbar=document.getElementById('mbar'),nav=document.getElementById('nav');
+addEventListener('scroll',()=>{mbar.classList.toggle('on',scrollY>innerHeight*.6);nav.classList.toggle('on',scrollY>20)},{passive:true});
+</script>
+<div id="pv" style="position:fixed;left:12px;bottom:12px;z-index:99;max-width:calc(100vw - 24px);background:rgba(20,18,16,.86);color:#fff;font:500 11.5px/1.35 -apple-system,'Helvetica Neue',Arial,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 6px 18px -8px rgba(0,0,0,.5);pointer-events:none">Anteprima non ufficiale · proposta di sito per Night Market</div>
+<style>@media (max-width:600px){#pv{bottom:calc(84px + env(safe-area-inset-bottom))!important}}</style>
+</body>
+</html>
