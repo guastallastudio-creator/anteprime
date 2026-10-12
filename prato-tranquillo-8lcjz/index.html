@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ferramenta T. Prato · Ferramenta e casalinghi dal 1927 · Viale Bligny 66, Milano</title>
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ferramenta T. Prato · Ferramenta e casalinghi dal 1927 · Viale Bligny 66, Milano">
+<meta property="og:description" content="Anteprima del sito: Ferramenta Prato Tranquillo, viale Bligny 66 a Milano: ferramenta e casalinghi dal 1927, duplicazione chiavi, bricolage e giardinaggio. Bottega storica, nel 2027 compie cento anni.">
+<meta property="og:image" content="https://guastallastudio-creator.github.io/anteprime/prato-tranquillo-8lcjz/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="description" content="Ferramenta Prato Tranquillo, viale Bligny 66 a Milano: ferramenta e casalinghi dal 1927, duplicazione chiavi, bricolage e giardinaggio. Bottega storica, nel 2027 compie cento anni.">
+<meta name="theme-color" content="#1C362D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231C362D'/%3E%3Ccircle cx='22' cy='32' r='11' fill='none' stroke='%23C79C4A' stroke-width='6'/%3E%3Cpath d='M32 29h24v6h-4v5h-5v-5h-4v4h-5v-4h-6z' fill='%23C79C4A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#1C362D; --verde-2:#24453A; --verde-3:#36594B; --verde-ink:#13261F;
+  --carta:#F2ECE0; --carta-2:#E8DFCD; --bianco:#FBF8F2;
+  --ink:#1A1613; --muted:#6B6155; --rule:#D8CCB7;
+  --ottone:#C79C4A; --ottone-2:#E4C47F; --ottone-3:#9A732D;
+  --rosso:#B2462C;
+  --legno:#6E472B; --legno-2:#4C2F1B; --legno-3:#2E1B0F;
+  --d:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;
+  --s:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --m:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --pad:clamp(16px,4.5vw,48px);
+  --ease:cubic-bezier(.2,.75,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--carta);color:var(--ink);font-family:var(--d);font-size:16px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.06;mix-blend-mode:multiply;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{max-width:1260px;margin:0 auto;padding:0 var(--pad)}
+.h{font-family:var(--d);font-weight:760;font-stretch:76%;letter-spacing:-.025em;line-height:.9}
+.h em{font-family:var(--s);font-style:italic;font-weight:400;font-stretch:100%;letter-spacing:-.01em;color:var(--ottone)}
+.tag{display:inline-flex;align-items:center;gap:10px;font-family:var(--m);font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tag::before{content:"";width:9px;height:9px;border-radius:50%;background:linear-gradient(45deg,transparent 42%,rgba(0,0,0,.55) 42% 58%,transparent 58%),radial-gradient(circle at 35% 30%,var(--ottone-2),var(--ottone-3));flex:none}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;color:var(--carta);transition:background .4s,color .4s,box-shadow .4s}
+.nav.on{background:rgba(242,236,224,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.logo{display:flex;align-items:baseline;gap:10px;line-height:1}
+.logo b{font-weight:780;font-stretch:72%;font-size:28px;letter-spacing:-.02em}
+.logo small{font-family:var(--m);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+.nav nav{display:flex;gap:30px;font-size:14.5px;font-weight:500}
+.nav nav a{position:relative;opacity:.8;transition:opacity .2s}
+.nav nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:1.5px;background:var(--ottone);transition:right .35s var(--ease)}
+.nav nav a:hover{opacity:1}.nav nav a:hover::after{right:0}
+.call{display:inline-flex;align-items:center;gap:8px;border:1.5px solid currentColor;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;transition:background .25s,color .25s,border-color .25s}
+.call:hover{background:var(--ottone);border-color:var(--ottone);color:var(--ink)}
+.call svg{width:16px;height:16px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--verde);color:var(--carta);padding-top:70px}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle,rgba(0,0,0,.42) 0 2.3px,rgba(255,255,255,.06) 2.4px 3.1px,transparent 3.2px);background-size:28px 28px;background-position:14px 14px;
+  -webkit-mask-image:linear-gradient(100deg,transparent 18%,#000 62%);mask-image:linear-gradient(100deg,transparent 18%,#000 62%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(42% 52% at 72% 46%,rgba(228,196,127,.20),transparent 72%),linear-gradient(180deg,transparent 70%,rgba(0,0,0,.18))}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:24px;min-height:calc(100vh - 70px);min-height:calc(100svh - 70px);padding-top:20px;padding-bottom:40px}
+.hero .tag{color:#B7C4B9}
+.yr{font-family:var(--m);font-size:13px;letter-spacing:.2em;color:var(--ottone-2);margin-top:26px;display:flex;align-items:center;gap:12px}
+.yr i{width:46px;height:1px;background:linear-gradient(90deg,var(--ottone-2),transparent)}
+.hero h1{font-size:clamp(60px,7.8vw,124px);margin:14px 0 26px}
+.hero h1 em{font-size:.8em;white-space:nowrap}
+.hero h1 span{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 span>b{display:block;font-weight:inherit;transform:translateY(110%);animation:up 1.1s var(--ease) forwards}
+.hero h1 span:nth-child(2)>b{animation-delay:.1s}
+@keyframes up{to{transform:none}}
+.lead{max-width:31em;font-size:clamp(16.5px,1.3vw,19px);color:#C9D2C9}
+.lead b{color:var(--carta);font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:650;font-size:15.5px;transition:transform .35s var(--ease),background .25s,color .25s,border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn-b{background:var(--ottone);color:var(--ink)}
+.btn-b:hover{background:var(--ottone-2)}
+.btn-o{border:1.5px solid rgba(242,236,224,.5)}
+.btn-o:hover{border-color:var(--carta)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
+.badges span{font-family:var(--m);font-size:11.5px;letter-spacing:.06em;border:1px solid rgba(242,236,224,.22);border-radius:6px;padding:7px 11px;color:#C9D2C9}
+.badges b{color:var(--ottone-2);font-weight:500}
+
+.stage{position:relative;width:100%;aspect-ratio:1.22/1;max-width:700px;justify-self:center}
+#key{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y;cursor:crosshair;display:block}
+.stage .fallback{position:absolute;inset:8% 4% 14%;width:92%;height:78%;object-fit:cover;border-radius:10px;display:none;box-shadow:0 30px 60px -24px rgba(0,0,0,.6)}
+.stage.nogl .fallback{display:block}
+.stage.nogl #key,.stage.nogl .kui{display:none}
+.ticket{position:absolute;left:2%;top:4%;z-index:2;background:var(--carta);color:var(--ink);padding:11px 16px 11px 30px;transform:rotate(-5deg);transform-origin:left center;
+  clip-path:polygon(14px 0,100% 0,100% 100%,14px 100%,0 50%);filter:drop-shadow(0 10px 14px rgba(0,0,0,.3));pointer-events:none}
+.ticket::before{content:"";position:absolute;left:12px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--verde);box-shadow:inset 0 1px 2px rgba(0,0,0,.5)}
+.ticket small{display:block;font-family:var(--m);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--rosso)}
+.ticket b{display:block;font-weight:760;font-stretch:78%;font-size:22px;line-height:1.05;letter-spacing:-.01em}
+.kui{position:absolute;left:0;right:0;bottom:2%;z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;pointer-events:none}
+.khint{font-family:var(--s);font-style:italic;font-size:clamp(18px,1.6vw,22px);color:var(--carta);transition:opacity .5s}
+.kbar{display:flex;align-items:center;gap:12px;font-family:var(--m);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#AFC0B5}
+.kbar i{position:relative;width:150px;height:3px;border-radius:3px;background:rgba(242,236,224,.16);overflow:hidden}
+.kbar i::after{content:"";position:absolute;inset:0;transform-origin:left;transform:scaleX(var(--p,0));background:linear-gradient(90deg,var(--ottone-3),var(--ottone-2));transition:transform .2s}
+.kdone{pointer-events:auto;display:none;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;font-size:15px;color:var(--carta);max-width:30em}
+.kdone button{font-family:var(--m);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ottone-2);color:var(--ottone-2);border-radius:999px;padding:7px 14px}
+.kdone button:hover{background:var(--ottone-2);color:var(--ink)}
+.stage.done .kdone{display:flex}
+.stage.done .khint,.stage.done .kbar{display:none}
+
+/* banda */
+.band{background:var(--ink);color:var(--carta);overflow:hidden;white-space:nowrap}
+.band .track{display:inline-flex;padding:19px 0;animation:slide 46s linear infinite}
+.band span{font-family:var(--m);font-weight:500;font-size:clamp(13px,1.2vw,15px);letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:30px;padding-right:30px}
+.band span::after{content:"";width:13px;height:13px;border-radius:50%;background:linear-gradient(45deg,transparent 42%,#1A1613 42% 58%,transparent 58%),radial-gradient(circle at 35% 30%,var(--ottone-2),var(--ottone-3))}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(84px,11vw,150px) 0}
+
+/* cento anni */
+.cento .top{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:end}
+.cento h2{font-size:clamp(54px,7.4vw,118px);margin:20px 0 26px}
+.cento p{color:var(--muted);font-size:17.5px;max-width:31em;margin-bottom:14px}
+.cento p b{color:var(--ink);font-weight:650}
+.odo{justify-self:end;text-align:right}
+.odo .digits{display:inline-flex;gap:8px;padding:12px;border-radius:14px;background:linear-gradient(180deg,#2A2420,#17130F);box-shadow:inset 0 2px 0 rgba(255,255,255,.06),0 30px 50px -30px rgba(26,22,19,.7)}
+.reel{display:block;width:clamp(58px,7.2vw,104px);height:clamp(84px,10.4vw,150px);overflow:hidden;border-radius:7px;position:relative;
+  background:linear-gradient(180deg,#0E0C0A 0%,#2B2520 18%,#3A332C 50%,#2B2520 82%,#0E0C0A 100%)}
+.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),transparent 28%,transparent 72%,rgba(0,0,0,.55));pointer-events:none}
+.reel::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(0,0,0,.45);z-index:1}
+.strip{display:block;transition:transform .16s cubic-bezier(.3,.7,.3,1)}
+.strip i{display:flex;align-items:center;justify-content:center;height:clamp(84px,10.4vw,150px);font-style:normal;font-family:var(--d);font-weight:700;font-stretch:76%;font-size:clamp(64px,8vw,118px);color:var(--carta);line-height:1}
+.odo.c100 .reel:last-child .strip i{color:var(--ottone-2)}
+.odo .lab{display:block;margin-top:16px;font-family:var(--m);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.odo .lab b{color:var(--rosso);font-weight:600}
+.line{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:26px;margin-top:clamp(60px,8vw,100px);padding-top:34px;list-style:none}
+.line::before{content:"";position:absolute;left:0;right:0;top:0;height:1.5px;background:linear-gradient(90deg,var(--ink) 80%,transparent)}
+.line li{position:relative}
+.line li::before{content:"";position:absolute;top:-41px;left:0;width:13px;height:13px;border-radius:50%;background:var(--carta);border:1.5px solid var(--ink)}
+.line li.hot::before{background:var(--ottone);border-color:var(--ottone-3)}
+.line li:last-child::before{border-style:dashed}
+.line .y{font-family:var(--m);font-size:12.5px;letter-spacing:.14em;color:var(--rosso);font-weight:600}
+.line h3{font-weight:720;font-stretch:80%;font-size:24px;letter-spacing:-.01em;line-height:1.05;margin:8px 0 8px}
+.line p{font-size:15px;color:var(--muted);line-height:1.5}
+
+/* cassetti */
+.cass{background:var(--carta-2)}
+.cass .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,5vw,60px)}
+.cass h2{font-size:clamp(54px,7vw,112px);margin-top:20px}
+.cass .head p{max-width:24em;color:var(--muted);font-size:17.5px}
+.cass .grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,4vw,56px);align-items:start}
+.cab{position:relative;padding:clamp(12px,1.6vw,20px);border-radius:10px;background:linear-gradient(180deg,#3A2414,#24150B);box-shadow:0 40px 70px -40px rgba(46,27,15,.8),inset 0 1px 0 rgba(255,255,255,.08)}
+.cab .drawers{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,1vw,12px)}
+.drw{position:relative;aspect-ratio:1.05/1;border-radius:4px;background:#120A05;box-shadow:inset 0 6px 14px rgba(0,0,0,.8);display:block;width:100%;text-align:center;z-index:1}
+.drw .in{position:absolute;inset:0;border-radius:4px;overflow:hidden;opacity:0;transition:opacity .4s}
+.drw .in img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.85)}
+.drw .in::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.65),transparent 45%)}
+.front{position:absolute;inset:0;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10%;
+  background:linear-gradient(180deg,rgba(255,236,200,.10),transparent 32%,rgba(0,0,0,.20)),repeating-linear-gradient(91deg,rgba(0,0,0,.07) 0 1px,transparent 1px 8px),repeating-linear-gradient(88deg,rgba(255,214,160,.05) 0 2px,transparent 2px 21px),var(--legno);
+  box-shadow:inset 0 0 0 2px rgba(0,0,0,.35),inset 0 2px 0 3px rgba(255,255,255,.05);
+  transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.drw:hover .front{transform:translateY(3%)}
+.drw.open{z-index:3}
+.drw.open .in{opacity:1}
+.drw.open .front{transform:translateY(58%) scale(1.07);box-shadow:inset 0 0 0 2px rgba(0,0,0,.35),inset 0 2px 0 3px rgba(255,255,255,.05),0 24px 30px -12px rgba(0,0,0,.75)}
+.lbl{display:block;padding:3px;border-radius:3px;background:linear-gradient(180deg,var(--ottone-2),var(--ottone-3));box-shadow:0 1px 2px rgba(0,0,0,.5);max-width:84%}
+.lbl span{display:block;background:#F4EEDF;border-radius:2px;padding:4px 8px 3px;font-family:var(--m);font-weight:600;font-size:clamp(10.5px,.95vw,12.5px);letter-spacing:.08em;text-transform:uppercase;color:#17110C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pull{display:block;width:34%;height:12%;min-height:9px;border-radius:0 0 40px 40px;background:linear-gradient(180deg,var(--ottone-3),var(--ottone-2) 40%,var(--ottone-3));box-shadow:0 3px 5px rgba(0,0,0,.45)}
+.cab .note{display:block;text-align:center;font-family:var(--m);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#B89A78;margin-top:14px}
+.panel{background:var(--bianco);border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(26,22,19,.5);position:sticky;top:96px}
+.panel figure{aspect-ratio:4/3;overflow:hidden;background:var(--carta-2)}
+.panel img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.panel .bd{padding:24px 26px 28px}
+.panel .n{font-family:var(--m);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rosso)}
+.panel h3{font-weight:760;font-stretch:76%;font-size:clamp(34px,3.2vw,46px);letter-spacing:-.02em;line-height:1;margin:8px 0 12px}
+.panel p{color:var(--muted);font-size:16px}
+
+/* autentica */
+.aut{background:var(--ink);color:var(--carta);overflow:hidden}
+.aut .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(40px,7vw,110px);align-items:center}
+.aut .tag{color:#A39886}
+.aut h2{font-size:clamp(44px,5.6vw,88px);margin:20px 0 26px}
+.aut p{color:#BDB3A3;font-size:17.5px;max-width:32em}
+.aut p b{color:var(--carta);font-weight:600}
+.dozen{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.4vw,16px);max-width:420px;justify-self:center;width:100%}
+.dozen i{aspect-ratio:1;border-radius:8px;border:1.5px solid #4A423A;position:relative}
+.dozen i:nth-child(odd){border-radius:50%}
+.dozen i.me{border:0;background:radial-gradient(circle at 35% 30%,var(--ottone-2),var(--ottone-3));box-shadow:0 0 0 6px rgba(199,156,74,.14),0 0 40px rgba(228,196,127,.35);animation:glow 2.8s ease-in-out infinite}
+.dozen i.me::after{content:"T. Prato";position:absolute;left:50%;top:calc(100% + 10px);transform:translateX(-50%);font-family:var(--m);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ottone-2);white-space:nowrap}
+@keyframes glow{50%{box-shadow:0 0 0 10px rgba(199,156,74,.08),0 0 60px rgba(228,196,127,.5)}}
+.aut small{display:block;margin-top:26px;font-family:var(--m);font-size:11.5px;letter-spacing:.1em;color:#7F7567}
+
+/* foto */
+.shots{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;align-items:stretch}
+.shots figure{border-radius:12px;overflow:hidden;position:relative}
+.shots img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.shots figure:hover img{transform:scale(1.03)}
+.shots figure:first-child{aspect-ratio:3/2}
+
+/* recensioni */
+.voci .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.voci h2{font-size:clamp(50px,6.4vw,100px);margin-top:20px}
+.rail{position:relative;margin-top:clamp(48px,6vw,70px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px);padding-top:46px}
+.rail::before{content:"";position:absolute;left:-2%;right:-2%;top:0;height:6px;border-radius:6px;background:linear-gradient(180deg,#8E8A84,#4F4B46);box-shadow:0 4px 8px -2px rgba(0,0,0,.3)}
+.tk{position:relative;background:var(--bianco);padding:34px 26px 24px;border-radius:6px;box-shadow:0 26px 40px -30px rgba(26,22,19,.6);transform-origin:50% -46px;transition:transform .8s var(--ease)}
+.tk:nth-child(1){transform:rotate(-2deg)}.tk:nth-child(2){transform:rotate(1.4deg)}.tk:nth-child(3){transform:rotate(-1deg)}
+.tk:hover{transform:rotate(0)}
+.tk::before{content:"";position:absolute;left:50%;top:-46px;width:1.5px;height:58px;background:#8B7D6A;transform:translateX(-50%)}
+.tk::after{content:"";position:absolute;left:50%;top:10px;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--carta-2);box-shadow:inset 0 1px 2px rgba(0,0,0,.35)}
+.tk q{display:block;font-family:var(--s);font-style:italic;font-size:clamp(23px,2.1vw,29px);line-height:1.2;quotes:"“" "”"}
+.tk cite{display:flex;justify-content:space-between;gap:10px;margin-top:20px;padding-top:14px;border-top:1.5px dashed var(--rule);font-style:normal;font-family:var(--m);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.score{display:flex;align-items:center;gap:16px;padding:14px 22px 14px 18px;border-radius:14px;background:var(--bianco);box-shadow:0 20px 40px -30px rgba(26,22,19,.55)}
+.score b{font-weight:780;font-stretch:76%;font-size:clamp(52px,5vw,68px);line-height:.9;letter-spacing:-.02em}
+.score span{display:flex;flex-direction:column;gap:4px;font-family:var(--m);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.stars{font-style:normal;font-size:20px;letter-spacing:.08em;background:linear-gradient(90deg,var(--ottone) 92%,var(--rule) 92%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.voci .src{margin-top:34px;font-family:var(--m);font-size:11.5px;letter-spacing:.08em;color:var(--muted)}
+
+/* orari */
+.visit{background:var(--verde);color:var(--carta)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,80px);align-items:stretch}
+.visit .tag{color:#A9BBAF}
+.visit h2{font-size:clamp(50px,6.4vw,100px);margin:20px 0 26px}
+.now{display:inline-flex;align-items:center;gap:10px;font-family:var(--m);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(242,236,224,.25);border-radius:999px;padding:8px 14px;margin-bottom:22px}
+.now i{width:8px;height:8px;border-radius:50%;background:#8E9A92}
+.now.open i{background:#7BD389;box-shadow:0 0 0 4px rgba(123,211,137,.2)}
+.hours{list-style:none;border-top:1px solid rgba(242,236,224,.18)}
+.hours li{display:grid;grid-template-columns:110px 1fr;padding:12px 0;border-bottom:1px solid rgba(242,236,224,.18);font-size:16.5px}
+.hours li span:first-child{font-family:var(--m);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#A9BBAF;padding-top:3px}
+.hours li.today{color:var(--ottone-2)}
+.hours li.today span:first-child{color:var(--ottone-2)}
+.rows{margin-top:30px;display:grid;gap:2px}
+.rows a,.rows div{display:grid;grid-template-columns:110px 1fr;padding:12px 0;font-size:16.5px}
+.rows span{font-family:var(--m);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#A9BBAF;padding-top:3px}
+.rows a p{border-bottom:1.5px solid var(--ottone);justify-self:start}
+.map{border-radius:16px;overflow:hidden;position:relative;min-height:520px;background:var(--verde-2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.85) sepia(.18) contrast(1.02)}
+.map .pin{position:absolute;left:16px;bottom:16px;z-index:1;background:var(--carta);color:var(--ink);border-radius:999px;padding:10px 16px;font-weight:650;font-size:14px;box-shadow:0 14px 26px -12px rgba(0,0,0,.5)}
+
+footer{background:var(--verde-ink);color:#93A69A;padding:72px 0 36px;font-size:14px;overflow:hidden}
+footer .big{font-weight:800;font-stretch:72%;font-size:clamp(100px,22vw,320px);color:var(--ottone);line-height:.8;letter-spacing:-.04em;white-space:nowrap}
+footer .big em{margin-left:.06em;font-family:var(--s);font-style:italic;font-weight:400;font-stretch:100%;color:var(--carta);letter-spacing:-.02em}
+footer .sub{font-family:var(--m);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#C9D2C9;margin-top:22px}
+footer .row{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin-top:44px;padding-top:22px;border-top:1px solid rgba(242,236,224,.12);font-size:12.5px;line-height:1.6}
+footer a:hover{color:var(--carta)}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.mbar{display:none}
+
+@media (max-width:1000px){
+  .line{grid-template-columns:1fr;gap:0;padding-top:0;padding-left:34px;margin-top:56px}
+  .line::before{left:6px;right:auto;top:6px;bottom:6px;width:1.5px;height:auto;background:var(--ink)}
+  .line li{padding-bottom:28px}
+  .line li::before{top:3px;left:-34px}
+  .cass .grid{grid-template-columns:1fr}
+  .panel{position:relative;top:0}
+}
+@media (max-width:900px){
+  .nav nav{display:none}
+  .hero .wrap,.cento .top,.aut .wrap,.visit .wrap,.shots{grid-template-columns:1fr}
+  .hero .wrap{min-height:auto;padding-top:30px;padding-bottom:30px;gap:0}
+  .hero .txt{display:contents}
+  .hero .tag{order:1;justify-self:start}.hero .yr{order:2}.hero h1{order:3;margin-bottom:6px}.hero .stage{order:4}.hero .lead{order:5}.hero .ctas{order:6}.hero .badges{order:7}
+  .stage{aspect-ratio:1.12/1;max-width:560px;margin:30px auto 18px}
+  .odo{justify-self:start;text-align:left}
+  .dozen{max-width:300px;justify-self:start;margin-bottom:30px}
+  .rail{grid-template-columns:1fr;gap:56px}
+  .rail::before{display:none}
+  .tk::before{top:-40px;height:50px}
+  .map{min-height:380px}
+}
+@media (max-width:600px){
+  .logo small{display:none}
+  .call span{display:none}
+  .call{padding:9px}
+  .hero h1{font-size:clamp(52px,15vw,68px);margin:12px 0 4px}
+  .btn{padding:15px 20px;font-size:15px}
+  .badges{margin-top:26px}
+  .ticket{left:0;top:3%}
+  .ticket b{font-size:19px}
+  .cab .drawers{grid-template-columns:repeat(2,1fr)}
+  .lbl span{font-size:10.5px}
+  .hours li,.rows a,.rows div{grid-template-columns:96px 1fr;font-size:16px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;transform:translateY(150%);transition:transform .45s var(--ease)}
+  .mbar.on{transform:none}
+  .mbar a{display:flex;justify-content:center;align-items:center;gap:7px;padding:14px 8px;border-radius:999px;font-weight:650;font-size:14.5px;background:var(--bianco);color:var(--ink);box-shadow:0 12px 30px -10px rgba(0,0,0,.45);border:1px solid var(--rule)}
+  .mbar a:first-child{background:var(--ottone);border-color:var(--ottone-3)}
+  .mbar svg{width:17px;height:17px}
+  footer{padding-bottom:110px}
+  footer .big{font-size:21vw}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Ferramenta T. Prato, inizio pagina"><b>T. Prato</b><small>Ferramenta · 1927</small></a>
+    <nav aria-label="Sezioni"><a href="#cento">Cento anni</a><a href="#cassetti">Cosa trovi</a><a href="#voci">Dicono</a><a href="#orari">Orari e dove</a></nav>
+    <a class="call" href="tel:+390258315702" aria-label="Chiama lo 02 5831 5702"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>02 5831 5702</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="txt">
+      <span class="tag">Ferramenta · Casalinghi · Viale Bligny 66</span>
+      <div class="yr">1927 <i></i> 2027</div>
+      <h1 class="h"><span><b>Cento anni,</b></span><span><b><em>l'anno prossimo.</em></b></span></h1>
+      <p class="lead">Ferramenta e casalinghi in viale Bligny, <b>dal 1927</b>. Tre generazioni si sono date il cambio al banco, e oggi è un piccolo emporio dove si trova quasi di tutto: dalla vite che ti manca alla pentola nuova.</p>
+      <div class="ctas">
+        <a class="btn btn-b" href="tel:+390258315702"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Chiama il negozio</a>
+        <a class="btn btn-o" href="#orari">Orari e indirizzo →</a>
+      </div>
+      <div class="badges"><span>Bottega storica · <b>Comune di Milano</b></span><span>Attività storica · <b>Regione Lombardia</b></span></div>
+    </div>
+    <div class="stage" id="stage">
+      <canvas id="key" aria-label="Una chiave d'ottone da duplicare: passa il dito o il mouse sul bordo superiore per tagliarla"></canvas>
+      <img class="fallback" src="img/chiave-nera.jpg" alt="Una chiave di metallo su fondo nero">
+      <div class="ticket"><small>Al banco</small><b>Duplicazione chiavi</b></div>
+      <div class="kui">
+        <div class="khint" id="khint">passa il dito sul bordo della chiave</div>
+        <div class="kbar" id="kbar">taglio <i></i> <span id="kpct">0%</span></div>
+        <div class="kdone">Fatta. Quella vera te la facciamo in negozio: porta l'originale. <button id="kagain" type="button">Un'altra</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="track">
+  <span>Ferramenta</span><span>Casalinghi</span><span>Duplicazione chiavi</span><span>Pentole</span><span>Piatti e bicchieri</span><span>Bricolage</span><span>Giardinaggio</span><span>Dal 1927</span>
+  <span>Ferramenta</span><span>Casalinghi</span><span>Duplicazione chiavi</span><span>Pentole</span><span>Piatti e bicchieri</span><span>Bricolage</span><span>Giardinaggio</span><span>Dal 1927</span>
+</div></div>
+
+<section class="sec cento" id="cento">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <span class="tag rv">Cento anni</span>
+        <h2 class="h rv">Nel 2027 <em>fanno cento.</em></h2>
+        <p class="rv">La ferramenta apre nel <b>1927</b>. Da allora tre generazioni si sono date il cambio al banco, e l'assortimento è cresciuto un cassetto alla volta: ferramenta, casalinghi, giardinaggio, fai da te.</p>
+        <p class="rv">Oggi la bottega è di <b>Raffaella e Claudio Borloni</b>.</p>
+      </div>
+      <div class="odo rv" id="odo" aria-label="Contatore degli anni, dal 1927 al 2027">
+        <span class="digits" aria-hidden="true"><span class="reel"><span class="strip"></span></span><span class="reel"><span class="strip"></span></span><span class="reel"><span class="strip"></span></span><span class="reel"><span class="strip"></span></span></span>
+        <span class="lab" id="odolab">1927 · si apre</span>
+      </div>
+    </div>
+    <ol class="line">
+      <li class="rv hot"><span class="y">1927</span><h3>Si apre</h3><p>Nasce la ferramenta T.&nbsp;Prato: ferramenta e casalinghi.</p></li>
+      <li class="rv"><span class="y">Tre generazioni</span><h3>Di mano in mano</h3><p>Tre generazioni si danno il cambio al banco. Oggi il negozio è gestito dalla famiglia.</p></li>
+      <li class="rv"><span class="y">Bottega storica</span><h3>Riconosciuta</h3><p>Bottega storica per il Comune di Milano, attività storica per Regione Lombardia.</p></li>
+      <li class="rv hot"><span class="y">2022</span><h3>Dolce&amp;Gabbana</h3><p>Tra le dodici botteghe storiche di Milano scelte per il progetto «Autentica».</p></li>
+      <li class="rv"><span class="y">2027</span><h3>Cento anni</h3><p>Manca poco. Ci vediamo al banco.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec cass" id="cassetti">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv">Cosa trovi</span><h2 class="h rv">Un cassetto <em>per ogni cosa.</em></h2></div>
+      <p class="rv">Ferramenta e casalinghi nello stesso negozio. Apri un cassetto e guarda cosa c'è dentro.</p>
+    </div>
+    <div class="grid">
+      <div class="cab rv">
+        <div class="drawers" id="cab"></div>
+        <span class="note">tocca un cassetto</span>
+      </div>
+      <aside class="panel rv" id="panel" aria-live="polite">
+        <figure><img id="pimg" src="img/viti.jpg" alt=""></figure>
+        <div class="bd">
+          <span class="n" id="pn">Cassetto N° 01</span>
+          <h3 id="ph">Ferramenta</h3>
+          <p id="pp"></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec aut" id="autentica">
+  <div class="wrap">
+    <div>
+      <span class="tag rv">Febbraio 2022 · Settimana della moda</span>
+      <h2 class="h rv">Dodici botteghe storiche di Milano. <em>Una era la nostra.</em></h2>
+      <p class="rv">Per <b>«Autentica»</b> Dolce&amp;Gabbana ha scelto dodici botteghe storiche della città e le ha vestite, dentro e fuori, con la grafica del progetto: vetrine, bancone, cartellini dei prezzi. Dal 22 al 28 febbraio 2022, anche viale Bligny 66.</p>
+    </div>
+    <div class="dozen rv" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i class="me"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-bottom:0">
+  <div class="wrap shots">
+    <figure class="rv"><img src="img/cassetti.jpg" alt="Una parete di vecchi cassetti di legno per la minuteria" loading="lazy"></figure>
+    <figure class="rv"><img src="img/bottega.jpg" alt="Cassettiera di legno e scaffali pieni di articoli in una bottega" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec voci" id="voci">
+  <div class="wrap">
+    <div class="head"><div><span class="tag rv">Dicono di noi</span><h2 class="h rv">Il negozio <em>più utile del quartiere.</em></h2></div>
+      <div class="score rv" aria-label="4,6 su 5, 80 recensioni Google"><b>4,6</b><span><i class="stars" aria-hidden="true">★★★★★</i>su 5 · 80 recensioni Google</span></div></div>
+    <div class="rail">
+      <figure class="tk rv"><q>Il negozio più utile del quartiere.</q><cite><span>Letizia M.</span><span>recensione</span></cite></figure>
+      <figure class="tk rv"><q>Competenti, gentili, si fanno in quattro per aiutarti. Hanno tutto, o quasi.</q><cite><span>Paolo B.</span><span>recensione</span></cite></figure>
+      <figure class="tk rv"><q>Hanno subito trovato soluzione per le viti del casco da sci (non era scontato...)</q><cite><span>Giorgio C.</span><span>recensione</span></cite></figure>
+    </div>
+    <p class="src rv">Recensioni Google dei clienti, riportate su TuttaMilano.it.</p>
+  </div>
+</section>
+
+<section class="sec visit" id="orari">
+  <div class="wrap">
+    <div>
+      <span class="tag rv">Orari e dove</span>
+      <h2 class="h rv">Viale Bligny 66, <em>Porta Romana.</em></h2>
+      <div class="now rv" id="now"><i></i><span>Orari</span></div>
+      <ul class="hours rv" id="hours">
+        <li data-d="1"><span>Lunedì</span><span>15:00 – 19:30</span></li>
+        <li data-d="2"><span>Martedì</span><span>9:30 – 12:30 · 15:00 – 19:30</span></li>
+        <li data-d="3"><span>Mercoledì</span><span>9:30 – 12:30 · 15:00 – 19:30</span></li>
+        <li data-d="4"><span>Giovedì</span><span>9:30 – 12:30 · 15:00 – 19:30</span></li>
+        <li data-d="5"><span>Venerdì</span><span>9:30 – 12:30 · 15:00 – 19:30</span></li>
+        <li data-d="6"><span>Sabato</span><span>9:30 – 12:30 · 15:00 – 19:00</span></li>
+        <li data-d="0"><span>Domenica</span><span>Chiuso</span></li>
+      </ul>
+      <div class="rows rv">
+        <a href="tel:+390258315702"><span>Telefono</span><p>02 5831 5702</p></a>
+        <a href="mailto:prato1927@libero.it"><span>Email</span><p>prato1927@libero.it</p></a>
+        <a href="https://maps.google.com/?q=Viale+Bligny+66,+20136+Milano" target="_blank" rel="noopener"><span>Indirizzo</span><p>Viale Bligny 66, 20136 Milano</p></a>
+      </div>
+    </div>
+    <div class="map rv">
+      <iframe title="Mappa: Viale Bligny 66, Milano" loading="lazy" src="https://maps.google.com/maps?q=Viale+Bligny+66,+20136+Milano&z=16&output=embed"></iframe>
+      <a class="pin" href="https://maps.google.com/?q=Viale+Bligny+66,+20136+Milano" target="_blank" rel="noopener">Portami lì →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">T. Prato <em>1927</em></div>
+    <div class="sub">Ferramenta · Casalinghi · Viale Bligny 66, Milano</div>
+    <div class="row">
+      <span>Prato Tranquillo snc di Borloni Raffaella Maria &amp; Borloni Claudio Tranquillo<br>Viale Bligny 66, 20136 Milano · <a href="tel:+390258315702">02 5831 5702</a> · <a href="mailto:prato1927@libero.it">prato1927@libero.it</a></span>
+      <span>Foto d'esempio, da sostituire con le vostre</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a href="tel:+390258315702"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Chiama</a>
+  <a href="mailto:prato1927@libero.it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg>Email</a>
+  <a href="https://maps.google.com/?q=Viale+Bligny+66,+20136+Milano" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Mappa</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ---------- la chiave da duplicare (three.js) ----------
+   Una chiave d'ottone estrusa da un profilo 2D. Il bordo superiore della lama
+   è un array di profondità: la fresa (un disco col filo a V) segue il puntatore
+   e scava tacche a V. Ogni volta che il profilo cambia, la geometria si rifà. */
+(function(){
+  const stage=document.getElementById('stage'), cv=document.getElementById('key');
+  const khint=document.getElementById('khint'), kbar=document.getElementById('kbar'), kpct=document.getElementById('kpct');
+  if(!window.THREE){stage.classList.add('nogl');return}
+  let renderer;
+  try{renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});if(!renderer.getContext())throw 0}
+  catch(e){stage.classList.add('nogl');return}
+  renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
+  renderer.outputEncoding=THREE.sRGBEncoding;
+  renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.08;
+  if(matchMedia('(pointer:coarse)').matches)khint.textContent='passa il dito sul bordo della chiave';
+  else khint.textContent='passa il mouse sul bordo della chiave';
+
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(28,1,.1,100);
+
+  /* ambiente: una stanza buia con tre luci morbide, per i riflessi dell'ottone */
+  const pm=new THREE.PMREMGenerator(renderer);
+  const env=new THREE.Scene();
+  env.add(new THREE.Mesh(new THREE.BoxGeometry(30,30,30),new THREE.MeshBasicMaterial({color:0x2a2520,side:THREE.BackSide})));
+  function softbox(w,h,col,k,p){const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:new THREE.Color(col).multiplyScalar(k),side:THREE.DoubleSide}));m.position.set(p[0],p[1],p[2]);m.lookAt(0,0,0);env.add(m)}
+  softbox(12,3,0xfff0d6,5,[-4,9,6]);
+  softbox(3,10,0xffdcaa,2.6,[10,1,3]);
+  softbox(14,1.6,0xffffff,2.2,[0,-3,11]);
+  softbox(10,10,0x2f5a49,1.2,[-11,0,-3]);
+  softbox(6,3,0xffe6c0,1.4,[3,6,-9]);
+  scene.environment=pm.fromScene(env,.035).texture;
+  scene.add(new THREE.HemisphereLight(0xfff1dc,0x1c362d,.55));
+  const sun=new THREE.DirectionalLight(0xfff0d8,1.1);sun.position.set(-3,6,7);scene.add(sun);
+
+  /* geometria della chiave (unità arbitrarie) */
+  const TOP=.42,BOT=-.36,MAXD=.34,BL=-.60,BR=2.16,N=200;
+  const cut=new Float32Array(N);
+  const CX=-2.08,CY=.08,RX=1.04,RY=1.0,NE=2.6;
+  const X0=-3.3,X1=3.0,Y0=-1.2,Y1=1.2;
+  function bowPt(t){const c=Math.cos(t),s=Math.sin(t);return[CX+RX*Math.sign(c)*Math.pow(Math.abs(c),2/NE),CY+RY*Math.sign(s)*Math.pow(Math.abs(s),2/NE)]}
+  const tA=Math.asin(Math.pow((.56-CY)/RY,NE/2)), tB=2*Math.PI-Math.asin(Math.pow((CY-BOT)/RY,NE/2));
+  function keyShape(){
+    const s=new THREE.Shape(), b=bowPt(tB);
+    s.moveTo(b[0],BOT);
+    s.lineTo(2.40,BOT);s.lineTo(2.62,-.16);s.lineTo(2.70,.06);s.lineTo(2.44,TOP);
+    for(let i=N-1;i>=0;i--)s.lineTo(BL+(BR-BL)*i/(N-1),TOP-cut[i]);
+    s.lineTo(-.84,TOP);s.lineTo(-.84,.56);
+    for(let k=0;k<=72;k++){const p=bowPt(tA+(tB-tA)*k/72);s.lineTo(p[0],p[1])}
+    const h=new THREE.Path();h.absarc(-2.64,CY,.21,0,Math.PI*2,true);s.holes.push(h);
+    return s;
+  }
+  const EXT={depth:.11,bevelEnabled:true,bevelThickness:.022,bevelSize:.02,bevelSegments:2,curveSegments:6,steps:1};
+  function keyGeo(){const g=new THREE.ExtrudeGeometry(keyShape(),EXT);g.translate(0,0,-.055);return g}
+
+  /* incisione e scanalature: una canvas usata come mappa, rilievo e ruvidità */
+  function keyTex(){
+    const W=1024,H=Math.round(W*(Y1-Y0)/(X1-X0));
+    const mk=()=>{const c=document.createElement('canvas');c.width=W;c.height=H;return c};
+    const P=(x,y)=>[(x-X0)/(X1-X0)*W,(1-(y-Y0)/(Y1-Y0))*H], S=u=>u/(X1-X0)*W;
+    const cb=mk(),cc=mk(),cr=mk();const b=cb.getContext('2d'),c=cc.getContext('2d'),r=cr.getContext('2d');
+    b.fillStyle='#808080';b.fillRect(0,0,W,H);c.fillStyle='#fff';c.fillRect(0,0,W,H);r.fillStyle='#9a9a9a';r.fillRect(0,0,W,H);
+    /* spazzolatura */
+    for(let i=0;i<900;i++){const y=Math.random()*H,x=Math.random()*W,l=20+Math.random()*120,a=Math.random()*.08;
+      b.strokeStyle=`rgba(${Math.random()<.5?0:255},${Math.random()<.5?0:255},${Math.random()<.5?0:255},${a})`;b.lineWidth=1;b.beginPath();b.moveTo(x,y);b.lineTo(x+l,y);b.stroke()}
+    /* scanalature della lama */
+    [[.10,.085],[-.15,.07]].forEach(([y,w])=>{
+      const [x0,yy]=P(-.75,y),[x1]=P(2.35,y),hw=S(w)/2;
+      const g=b.createLinearGradient(0,yy-hw,0,yy+hw);g.addColorStop(0,'#909090');g.addColorStop(.25,'#3a3a3a');g.addColorStop(.75,'#3a3a3a');g.addColorStop(1,'#707070');
+      b.fillStyle=g;b.fillRect(x0,yy-hw,x1-x0,hw*2);
+      c.fillStyle='rgba(120,90,40,.10)';c.fillRect(x0,yy-hw,x1-x0,hw*2);
+    });
+    /* bordino in rilievo sulla testa */
+    b.save();b.beginPath();for(let k=0;k<=96;k++){const t=tA+(tB-tA)*k/96,p=bowPt(t),q=[CX+(p[0]-CX)*.86,CY+(p[1]-CY)*.86],pp=P(q[0],q[1]);k?b.lineTo(pp[0],pp[1]):b.moveTo(pp[0],pp[1])}
+    b.strokeStyle='#c8c8c8';b.lineWidth=S(.045);b.stroke();b.restore();
+    /* scritte incise */
+    const txt=(ctx,col,blur)=>{ctx.save();ctx.fillStyle=col;ctx.textAlign='center';ctx.textBaseline='middle';if(blur)ctx.filter='blur(1px)';
+      let p=P(-1.82,.34);ctx.font=`700 ${S(.24)}px "Bricolage Grotesque","Arial Narrow",Arial,sans-serif`;ctx.fillText('T. PRATO',p[0],p[1]);
+      p=P(-1.82,-.08);ctx.font=`600 ${S(.30)}px "IBM Plex Mono",Menlo,monospace`;ctx.fillText('1927',p[0],p[1]);
+      p=P(-1.82,-.44);ctx.font=`500 ${S(.11)}px "IBM Plex Mono",Menlo,monospace`;ctx.fillText('V.LE BLIGNY 66',p[0],p[1]);ctx.restore()};
+    txt(b,'#262626',true);txt(c,'#8f8170');txt(r,'#ffffff');
+    const T=cnv=>{const t=new THREE.CanvasTexture(cnv);t.repeat.set(1/(X1-X0),1/(Y1-Y0));t.offset.set(-X0/(X1-X0),-Y0/(Y1-Y0));t.anisotropy=4;return t};
+    const map=T(cc);map.encoding=THREE.sRGBEncoding;
+    return{map,bump:T(cb),rough:T(cr)};
+  }
+  let tex=keyTex();
+  const brass=new THREE.MeshStandardMaterial({color:0xd9b46c,metalness:1,roughness:.42,map:tex.map,bumpMap:tex.bump,bumpScale:.018,roughnessMap:tex.rough,envMapIntensity:1.2});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{const t=keyTex();brass.map=t.map;brass.bumpMap=t.bump;brass.roughnessMap=t.rough;brass.needsUpdate=true});
+
+  const keyG=new THREE.Group();scene.add(keyG);
+  const key=new THREE.Mesh(keyGeo(),brass);keyG.add(key);
+
+  /* la fresa: disco col filo a V, asse lungo la chiave */
+  const cutter=new THREE.Group();keyG.add(cutter);
+  const R=.56;
+  const prof=[new THREE.Vector2(0,-.075),new THREE.Vector2(.44,-.075),new THREE.Vector2(.49,-.05),new THREE.Vector2(R,0),new THREE.Vector2(.49,.05),new THREE.Vector2(.44,.075),new THREE.Vector2(0,.075)];
+  const teeth=document.createElement('canvas');teeth.width=512;teeth.height=16;{const g=teeth.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,512,16);for(let i=0;i<48;i++){g.fillStyle='#555';g.fillRect(i*512/48,0,4,16)}}
+  const tt=new THREE.CanvasTexture(teeth);tt.wrapS=THREE.RepeatWrapping;
+  const steel=new THREE.MeshStandardMaterial({color:0xc4c8cc,metalness:1,roughness:.3,map:tt,bumpMap:tt,bumpScale:.01,envMapIntensity:1.1});
+  const discG=new THREE.LatheGeometry(prof,96);discG.rotateZ(Math.PI/2);
+  const disc=new THREE.Mesh(discG,steel);cutter.add(disc);
+  const dark=new THREE.MeshStandardMaterial({color:0x0e1712,metalness:.5,roughness:.42,envMapIntensity:.35});
+  const axle=new THREE.Mesh(new THREE.CylinderGeometry(.07,.07,1.0,24).rotateZ(Math.PI/2),new THREE.MeshStandardMaterial({color:0x8d9296,metalness:1,roughness:.35}));axle.position.x=.42;cutter.add(axle);
+  const head=new THREE.Mesh(new THREE.BoxGeometry(.34,.5,.34),dark);head.position.set(.92,0,0);cutter.add(head);
+  const arm=new THREE.Mesh(new THREE.BoxGeometry(.22,4,.22),dark);arm.position.set(.92,2.2,0);cutter.add(arm);
+  const nut=new THREE.Mesh(new THREE.CylinderGeometry(.11,.11,.06,6).rotateZ(Math.PI/2),new THREE.MeshStandardMaterial({color:0xb08a45,metalness:1,roughness:.35}));nut.position.x=-.1;cutter.add(nut);
+
+  /* trucioli d'ottone */
+  const MAXP=420,pp=new Float32Array(MAXP*3),pc=new Float32Array(MAXP*3),pv=new Float32Array(MAXP*3),pl=new Float32Array(MAXP),pL=new Float32Array(MAXP);let pi=0;
+  for(let i=0;i<MAXP;i++)pp[i*3+1]=-99;
+  const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pp,3));pg.setAttribute('color',new THREE.BufferAttribute(pc,3));
+  const dot=document.createElement('canvas');dot.width=dot.height=64;{const g=dot.getContext('2d'),gr=g.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'#fff');gr.addColorStop(.35,'rgba(255,255,255,.6)');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,64,64)}
+  const sparks=new THREE.Points(pg,new THREE.PointsMaterial({size:.07,map:new THREE.CanvasTexture(dot),vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
+  sparks.frustumCulled=false;scene.add(sparks);
+  const tmp=new THREE.Vector3();
+  function emit(x,y,n){
+    for(let k=0;k<n;k++){
+      tmp.set(x+(Math.random()-.5)*.08,y,(Math.random()-.5)*.1);keyG.localToWorld(tmp);
+      const i=pi;pi=(pi+1)%MAXP;
+      pp[i*3]=tmp.x;pp[i*3+1]=tmp.y;pp[i*3+2]=tmp.z;
+      pv[i*3]=(Math.random()-.5)*1.6;pv[i*3+1]=.6+Math.random()*2.2;pv[i*3+2]=.8+Math.random()*2.4;
+      pl[i]=pL[i]=.45+Math.random()*.55;
+    }
+  }
+  function stepSparks(dt){
+    for(let i=0;i<MAXP;i++){
+      if(pl[i]<=0){pc[i*3]=pc[i*3+1]=pc[i*3+2]=0;continue}
+      pl[i]-=dt;const f=Math.max(pl[i]/pL[i],0);
+      pv[i*3+1]-=7*dt;
+      pp[i*3]+=pv[i*3]*dt;pp[i*3+1]+=pv[i*3+1]*dt;pp[i*3+2]+=pv[i*3+2]*dt;
+      pc[i*3]=1*f;pc[i*3+1]=.78*f;pc[i*3+2]=.42*f;
+    }
+    pg.attributes.position.needsUpdate=true;pg.attributes.color.needsUpdate=true;
+  }
+
+  /* taglio */
+  let dirty=false;
+  function cutAt(x,d){
+    let ch=0;
+    for(let i=0;i<N;i++){const xi=BL+(BR-BL)*i/(N-1),v=Math.min(d-Math.abs(xi-x)*1.05,MAXD);if(v>cut[i]){ch+=v-cut[i];cut[i]=v}}
+    if(ch>0){dirty=true;return ch}return 0;
+  }
+  function progress(){let n=0;for(let i=0;i<N;i++)if(cut[i]>.04)n++;return n/N}
+
+  /* puntatore → coordinate della chiave */
+  const ray=new THREE.Raycaster(),ndc=new THREE.Vector2(),plane=new THREE.Plane(),nrm=new THREE.Vector3(),hit=new THREE.Vector3();
+  let target=null,user=false,lastSeen=0;
+  function toKey(e){
+    const r=cv.getBoundingClientRect();ndc.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height)*2+1);
+    ray.setFromCamera(ndc,camera);keyG.updateMatrixWorld();
+    nrm.set(0,0,1).transformDirection(keyG.matrixWorld);plane.setFromNormalAndCoplanarPoint(nrm,keyG.getWorldPosition(tmp));
+    if(!ray.ray.intersectPlane(plane,hit))return null;
+    return keyG.worldToLocal(hit.clone());
+  }
+  function onMove(e){const p=toKey(e);if(!p)return;target={x:p.x,y:p.y};lastSeen=performance.now();
+    if(!user&&p.x>BL-.6&&p.x<BR+.6&&p.y<TOP+1.2&&p.y>BOT){startUser()}}
+  cv.addEventListener('pointermove',onMove);
+  cv.addEventListener('pointerdown',onMove);
+  cv.addEventListener('pointerleave',()=>{target=null});
+  cv.addEventListener('pointercancel',()=>{target=null});
+
+  /* stato: demo automatica finché nessuno tocca */
+  let flip=null,demo=null,done=false;
+  const tip={x:BL-.8,y:TOP+.7};
+  function newDemo(now){const pins=[];for(let i=0;i<6;i++)pins.push({x:BL+(BR-BL)*(i+.5)/6,d:.07+Math.random()*.24});demo={t0:now,pins}}
+  function startFlip(now){flip={t0:now,reset:false}}
+  function startUser(){user=true;demo=null;if(progress()>0)startFlip(performance.now())}
+  function resetCut(){cut.fill(0);dirty=true;done=false;stage.classList.remove('done');setP(0)}
+  function setP(p){kbar.style.setProperty('--p',p.toFixed(3));kpct.textContent=Math.round(p*100)+'%'}
+  document.getElementById('kagain').addEventListener('click',()=>{startFlip(performance.now())});
+
+  function size(){const w=cv.clientWidth,h=cv.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;
+    const f=Math.tan(camera.fov*Math.PI/360),D=Math.max(6.9/(2*f*camera.aspect),4.3/(2*f));
+    camera.position.set(0,1.3,D);camera.lookAt(0,.34,0);camera.updateProjectionMatrix()}
+  addEventListener('resize',size);size();
+
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let vis=true,prev=0,t0=performance.now();
+  if(!still)newDemo(t0+900);
+  new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis){prev=0;requestAnimationFrame(loop)}}).observe(stage);
+
+  function loop(now){
+    if(!vis)return;
+    const dt=prev?Math.min((now-prev)/1000,1/30):1/60;prev=now;const t=(now-t0)/1000;
+
+    /* dove deve andare la punta della fresa */
+    let goal;
+    if(demo){
+      const k=(now-demo.t0)/1000;
+      if(k<0)goal={x:BL-.8,y:TOP+.7};
+      else if(k<4.2){const s=k/4.2,x=BL-.45+(BR-BL+.8)*s;let d=-.5;demo.pins.forEach(p=>{d=Math.max(d,p.d-Math.abs(x-p.x)*1.7)});goal={x,y:TOP-Math.min(d,.32)}}
+      else if(k<6.6)goal={x:BR+.55,y:TOP+.75};
+      else{startFlip(now);newDemo(now+1300);goal={x:BL-.8,y:TOP+.7}}
+    }else if(target&&!flip){goal={x:Math.max(BL-.7,Math.min(BR+.6,target.x)),y:Math.max(TOP-MAXD,Math.min(TOP+1.0,target.y))}}
+    else goal={x:tip.x,y:Math.max(tip.y,TOP+.5)};
+
+    /* la fresa segue a passetti, così il taglio non salta */
+    const k=demo?1:Math.min(1,dt*22),nx=tip.x+(goal.x-tip.x)*k,ny=tip.y+(goal.y-tip.y)*k;
+    const steps=Math.max(1,Math.ceil(Math.abs(nx-tip.x)/.015));let removed=0;
+    for(let s=1;s<=steps;s++){const x=tip.x+(nx-tip.x)*s/steps,y=tip.y+(ny-tip.y)*s/steps;if(!flip&&y<TOP&&x>BL-.4&&x<BR+.4)removed+=cutAt(x,TOP-y)}
+    tip.x=nx;tip.y=ny;
+    if(removed>0)emit(tip.x,tip.y,Math.min(16,2+Math.round(removed*90)));
+    cutter.position.set(tip.x,tip.y+R,0);
+    const busy=tip.y<TOP+.02;
+    disc.rotation.x-=dt*(busy?38:12);
+
+    if(dirty){key.geometry.dispose();key.geometry=keyGeo();dirty=false;
+      if(user&&!flip){const p=progress();setP(p);if(p>.8&&!done){done=true;stage.classList.add('done')}}
+      if(user&&progress()>0)khint.style.opacity=.0;}
+
+    /* giro della chiave per ricominciare */
+    let rx=0;
+    if(flip){const f=Math.min((now-flip.t0)/900,1),e=f<.5?2*f*f:1-Math.pow(-2*f+2,2)/2;rx=e*Math.PI*2;
+      if(f>.5&&!flip.reset){flip.reset=true;resetCut();khint.style.opacity=1}
+      if(f>=1)flip=null}
+    const sway=still?0:1;
+    keyG.rotation.set(-.12+Math.sin(t*.5)*.025*sway+rx,-.34+Math.sin(t*.37)*.07*sway,Math.sin(t*.29)*.012*sway);
+    keyG.position.set(-.08,0,0);
+
+    stepSparks(dt);
+    renderer.render(scene,camera);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+
+/* ---------- contatore 1927 → 2027 ---------- */
+(function(){
+  const odo=document.getElementById('odo'),lab=document.getElementById('odolab'),strips=[...odo.querySelectorAll('.strip')];
+  strips.forEach(s=>{s.innerHTML=Array.from({length:10},(_,i)=>`<i>${i}</i>`).join('')});
+  function show(y){String(y).split('').forEach((d,i)=>{strips[i].style.transform=`translateY(-${d*10}%)`})}
+  show(1927);
+  let ran=false;
+  new IntersectionObserver((es,o)=>{if(!es[0].isIntersecting||ran)return;ran=true;o.disconnect();
+    const t0=performance.now(),T=2600;
+    (function tick(now){const f=Math.min((now-t0)/T,1),e=1-Math.pow(1-f,3),y=1927+Math.round(e*99);show(y);
+      if(f<1)return requestAnimationFrame(tick);
+      lab.innerHTML='2026 · <b>99 anni</b>';
+      setTimeout(()=>{show(2027);odo.classList.add('c100');lab.innerHTML='2027 · <b>cento anni</b>'},1100);
+    })(t0);
+  },{threshold:.5}).observe(odo);
+})();
+
+/* ---------- cassettiera ---------- */
+(function(){
+  const D=[
+    ['Ferramenta','viti','Ferramenta','Viti, tasselli, chiodi, cerniere: la minuteria che serve per finire il lavoro.'],
+    ['Chiavi','chiavi','Chiavi','Duplicazione delle chiavi di casa, al banco. Porta l\'originale.'],
+    ['Pentole','pentola','Pentole','Pentole per la cucina di tutti i giorni.'],
+    ['Piatti e bicchieri','piatti','Tavola','Piatti, bicchieri e quello che serve per apparecchiare.'],
+    ['Cucina','cucina','Cucina','Accessori per la casa e per la cucina.'],
+    ['Pulizia','scope','Pulizia','Articoli per la pulizia della casa.'],
+    ['Bricolage','attrezzi','Bricolage','Attrezzi e materiali per il fai da te e i lavori di casa.'],
+    ['Giardinaggio','giardino','Giardino','Articoli per il giardinaggio, dal balcone al giardino.']
+  ];
+  const cab=document.getElementById('cab'),img=document.getElementById('pimg'),pn=document.getElementById('pn'),ph=document.getElementById('ph'),pp=document.getElementById('pp');
+  cab.innerHTML=D.map((d,i)=>`<button class="drw" type="button" aria-pressed="false" data-i="${i}"><span class="in"><img src="img/${d[1]}.jpg" alt="" loading="lazy"></span><span class="front"><span class="lbl"><span>${d[2]}</span></span><i class="pull"></i></span></button>`).join('');
+  const bs=[...cab.children];
+  function open(i){bs.forEach((b,j)=>{b.classList.toggle('open',j===i);b.setAttribute('aria-pressed',j===i)});
+    const d=D[i];img.style.opacity=0;setTimeout(()=>{img.src=`img/${d[1]}.jpg`;img.alt=d[0];img.style.opacity=1},180);
+    pn.textContent='Cassetto N° '+String(i+1).padStart(2,'0');ph.textContent=d[0];pp.textContent=d[3]}
+  bs.forEach((b,i)=>b.addEventListener('click',()=>open(i)));
+  img.src=`img/${D[0][1]}.jpg`;pp.textContent=D[0][3];bs[0].classList.add('open');bs[0].setAttribute('aria-pressed','true');
+})();
+
+/* ---------- orari: aperto adesso? (ora di Milano) ---------- */
+(function(){
+  const H={0:[],1:[[900,1170]],2:[[570,750],[900,1170]],3:[[570,750],[900,1170]],4:[[570,750],[900,1170]],5:[[570,750],[900,1170]],6:[[570,750],[900,1140]]};
+  const fmt=m=>Math.floor(m/60)+':'+String(m%60).padStart(2,'0');
+  let d,m;
+  try{const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Rome',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    const g=t=>p.find(x=>x.type===t).value;d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));m=(+g('hour')%24)*60+(+g('minute'))}
+  catch(e){const n=new Date();d=n.getDay();m=n.getHours()*60+n.getMinutes()}
+  const li=document.querySelector(`#hours li[data-d="${d}"]`);if(li)li.classList.add('today');
+  const now=document.getElementById('now'),sp=now.querySelector('span');
+  const slot=H[d].find(s=>m>=s[0]&&m<s[1]);
+  if(slot){now.classList.add('open');sp.textContent='Aperto adesso · chiude alle '+fmt(slot[1])}
+  else{let next=H[d].find(s=>s[0]>m),dd=d,k=0;while(!next&&k<7){dd=(dd+1)%7;k++;next=H[dd][0]}
+    const gg=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+    sp.textContent='Chiuso adesso · riapre '+(dd===d?'alle ':(k===1?'domani alle ':gg[dd]+' alle '))+fmt(next[0])}
+})();
+
+/* ---------- reveal, nav, barra mobile ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const mbar=document.getElementById('mbar'),nav=document.getElementById('nav'),hero=document.getElementById('top');
+function onScroll(){mbar.classList.toggle('on',scrollY>innerHeight*.6);nav.classList.toggle('on',scrollY>hero.offsetHeight-80)}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+</script>
+<div id="pv" style="position:fixed;left:12px;bottom:12px;z-index:99;max-width:calc(100vw - 24px);background:rgba(20,18,16,.86);color:#fff;font:500 11.5px/1.35 -apple-system,'Helvetica Neue',Arial,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 6px 18px -8px rgba(0,0,0,.5);pointer-events:none">Anteprima non ufficiale · proposta di sito per Ferramenta T. Prato</div>
+<style>@media (max-width:600px){#pv{bottom:calc(84px + env(safe-area-inset-bottom))!important}}</style>
+</body>
+</html>
