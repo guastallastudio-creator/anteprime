@@ -23,5 +23,10 @@
   "check": "phone-number",
   "target": "https://wa.me/393466209685",
   "reason": "WhatsApp reale dalle loro locandine, richiesto dal brief"
+ },
+ {
+  "check": "vat-number",
+  "target": "Partita IVA 01938070156",
+  "reason": "Dato reale del negozio, obbligatorio per legge in un sito con vendita online"
  }
 ]
