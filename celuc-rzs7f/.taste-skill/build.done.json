@@ -1,0 +1,11 @@
+{
+ "page": "index.html",
+ "url": null,
+ "root": null,
+ "kind": "place",
+ "category": "libreria universitaria e casa editrice",
+ "primary": "Chiedi un libro su WhatsApp",
+ "rounds": 3,
+ "start": "2026-11-23T19:50:32.011Z",
+ "by": "gate.mjs --start"
+}

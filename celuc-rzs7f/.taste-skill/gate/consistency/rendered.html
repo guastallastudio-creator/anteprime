@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="it" data-type="place" class="m-enter"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Celuc Libri – libreria in via Santa Valeria, Milano</title>
+<meta name="description" content="Libreria universitaria vicino alla Cattolica: libri nuovi e usati, cartoleria, stampa e rilegatura tesi, caffè. Via Santa Valeria 5, Milano.">
+<meta name="page-type" content="place"><meta name="site-kind" content="other"><meta name="page-kind" content="place">
+<meta name="theme-color" content="#f3ede1">
+<script>document.documentElement.classList.add("m-enter")</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%238a2b21'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-size='40' text-anchor='middle' fill='%23f3ede1'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3ede1; --paper2:#e9e0cf; --ink:#1c1a16; --muted:#4a453a; --line:#cfc5b0;
+  --accent:#8a2b21; --accent-d:#6f2018; --green:#1f3a31; --green-ink:#eaf0e4;
+  --serif:"Newsreader",Georgia,serif; --sans:"Instrument Sans",system-ui,sans-serif;
+  --wrap:min(1200px,100% - 48px);
+}
+*{box-sizing:border-box;margin:0}
+
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased;padding-bottom:0}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:fixed;left:8px;top:8px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:99;transform:translateY(-200%)}
+.skip:focus{transform:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;line-height:1.02}
+h2{font-size:clamp(38px,5.2vw,72px)}
+.eyebrow{font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+p.lead{font-size:clamp(18px,1.6vw,21px);max-width:34em;color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:600 16px/1 var(--sans);text-decoration:none;border:2px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer;transition:transform .18s,background .18s,color .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 -2px rgba(28,26,22,.25)}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.link{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .25s;padding-bottom:2px}
+.link:hover{background-size:100% 2px}
+
+/* header */
+header.top{position:fixed;left:0;right:0;top:0;z-index:20;background:rgba(243,237,225,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.brand{font:500 26px/1 var(--serif);text-decoration:none;letter-spacing:-.02em}
+.brand b{color:var(--accent);font-weight:600}
+nav.main{display:flex;gap:30px;font-size:15px;font-weight:500}
+nav.main a{text-decoration:none;padding:22px 0;background:linear-gradient(var(--accent),var(--accent)) 0 calc(100% - 18px)/0 2px no-repeat;transition:background-size .25s}
+nav.main a:hover{background-size:100% 2px}
+.top .btn{min-height:44px;padding:0 20px;font-size:15px}
+
+/* hero */
+.hero{display:flex;align-items:center}
+.hero h1{font-size:clamp(42px,5.3vw,78px);margin-bottom:24px}
+.hero h1 em{font-style:italic;font-weight:400}
+.hero .lead{margin-bottom:34px}
+.ask{display:flex;border:2px solid var(--ink);background:#fbf8f1;max-width:560px;transition:box-shadow .2s}
+.ask:focus-within{box-shadow:0 0 0 3px var(--accent)}
+.ask-label{display:block;font:600 14px var(--sans);margin-bottom:8px}
+.ask input{flex:1;min-width:0;border:0;background:transparent;padding:0 18px;font:400 17px var(--sans);min-height:60px;color:var(--ink)}
+.ask button{border:0;border-left:2px solid var(--ink);background:var(--accent);color:#fff;font:600 16px var(--sans);padding:0 22px;cursor:pointer;transition:background .18s}
+.ask button:hover{background:var(--accent-d)}
+.ask-note{font-size:14px;color:var(--muted);margin-top:12px}
+.hero-facts{display:flex;gap:34px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.hero-facts div{font-size:14px;color:var(--muted);line-height:1.35}
+.hero-facts strong{display:block;font:500 24px/1.1 var(--serif);color:var(--ink);margin-bottom:4px}
+.hero-photo{position:relative;aspect-ratio:1/1;max-height:62vh;width:100%;overflow:hidden;background:var(--paper2)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.hero-photo:hover img{transform:scale(1.03)}
+.hero-tag{position:absolute;left:0;bottom:0;background:var(--paper);padding:14px 20px;font:500 15px/1.3 var(--sans)}
+.hero-tag b{display:block;font:500 22px/1.1 var(--serif);color:var(--accent)}
+[data-enter]>*{opacity:0;transform:translateY(18px);animation:in .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes in{to{opacity:1;transform:none}}
+
+
+/* layout: 12 colonne, 24 di gutter, split sempre 6/6 */
+.grid12{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center;width:100%}
+.c-l{grid-column:1/7}.c-r{grid-column:7/13}.c-full{grid-column:1/13}
+main>section{display:flex;align-items:center}
+main>section>.wrap{width:var(--wrap)}
+@media (min-width:981px){
+  main>section{height:100vh;min-height:640px;padding:84px 0 56px;border-top:1px solid var(--line)}
+  main>section.hero{padding-top:92px;border-top:0}
+}
+.hero .wrap{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center}
+.hero .wrap>div:first-child{grid-column:1/7;padding-right:24px}
+.hero .wrap>.hero-photo{grid-column:7/13}
+section.s{padding:0}
+
+/* servizi */
+.rows{border-top:2px solid var(--ink)}
+.row{display:block;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none}
+a.row{transition:background .2s,padding .2s}
+a.row:hover{background:var(--paper2);padding-inline:14px}
+.row h3{display:flex;align-items:center;gap:14px;font-size:clamp(24px,2.4vw,32px);margin-bottom:4px}
+.row .n{width:10px;height:10px;background:var(--accent);flex:none;transition:transform .2s}
+a.row:hover .n{transform:scale(1.5)}
+.row p{color:var(--muted);max-width:32em;padding-left:24px}
+.svc-photo{margin-top:36px;aspect-ratio:3/2;overflow:hidden;background:var(--paper2)}
+.svc-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.svc-photo:hover img{transform:scale(1.03)}
+
+/* usato */
+.usato{background:var(--green);color:var(--green-ink)}
+.usato .eyebrow{color:#e9b28a}
+.usato h2{margin-bottom:22px}
+.usato h2 em{font-style:italic;color:#e9b28a;font-weight:400}
+.usato p.t{color:#d4dfd2;max-width:30em;margin-bottom:28px;font-size:19px}
+.usato .btn{border-color:var(--paper)}
+.usato :focus-visible{outline-color:#fff}
+.usato ol{list-style:none;padding:0;counter-reset:s;border-top:1px solid rgba(234,240,228,.3);margin-top:36px}
+.usato li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;padding:14px 0;border-bottom:1px solid rgba(234,240,228,.3);font:500 22px/1.2 var(--serif)}
+.usato li::before{content:counter(s);font:italic 400 18px var(--serif);color:#e9b28a;padding-top:2px}
+.usato li span{display:block;font:400 15px/1.4 var(--sans);color:#d4dfd2;margin-top:2px}
+.poster{overflow:hidden;background:#17302a}
+.poster img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .7s}
+.poster:hover img{transform:scale(1.03)}
+
+/* word highlight moment */
+.story .wrap{width:var(--wrap)}
+.story-ph{aspect-ratio:4/3}
+.story p{font:400 clamp(28px,3.1vw,42px)/1.18 var(--serif);letter-spacing:-.015em}
+.story .w{color:#8a8170;transition:color .35s}
+.story .w.on{color:var(--ink)}
+.story .w.hot.on{color:var(--accent);font-style:italic}
+.story small{display:block;margin-top:36px;font:500 15px var(--sans);color:var(--muted)}
+
+/* casa editrice */
+.edi{background:var(--paper2)}
+.edi .big{font:italic 400 clamp(56px,5vw,72px)/.9 var(--serif);color:var(--accent);letter-spacing:-.03em}
+.edi .c-l p{margin-top:20px;color:var(--muted);max-width:24em}
+.covers{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:32px}
+.covers img{width:100%;aspect-ratio:2/3;object-fit:cover;transition:transform .3s}
+.covers img:hover{transform:translateY(-2px)}
+.books{list-style:none;padding:0;border-top:2px solid var(--ink)}
+.books li{display:flex;justify-content:space-between;gap:24px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font:500 clamp(19px,1.8vw,24px)/1.2 var(--serif)}
+.books li span.sub{display:block;font:400 15px var(--sans);color:var(--muted);margin-top:4px}
+.books .pr{font:500 22px var(--serif);white-space:nowrap;color:var(--accent)}
+.books-note{margin-top:16px;font-size:15px;color:var(--muted)}
+
+/* incontri */
+.ev-list{list-style:none;padding:0;margin-top:32px;border-top:2px solid var(--ink)}
+.ev-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.ev-list b{display:block;font:500 clamp(22px,2.2vw,30px)/1.1 var(--serif);font-weight:500}
+.ev-list span{font-size:15px;color:var(--muted)}
+.posters{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.posters .ph{aspect-ratio:3/5}
+
+/* cafe */
+.cafe .txt{margin-bottom:32px}
+.cafe .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.ph{overflow:hidden;background:var(--paper2)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.ph:hover img{transform:scale(1.03)}
+.cafe .a{grid-column:1/7;height:300px}
+.cafe .b{grid-column:7/13;height:300px}
+.cafe .c{grid-column:1/5;height:230px}
+.cafe .d{grid-column:5/9;height:230px}
+.cafe .e{grid-column:9/13;height:230px}
+
+/* visita */
+.orari{list-style:none;padding:0;margin:20px 0 26px;border-top:2px solid var(--ink)}
+.orari li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:18px}
+.orari li b{font-weight:500}
+.orari .chiuso{color:var(--muted)}
+.indirizzo{font:500 clamp(28px,3vw,40px)/1.1 var(--serif);margin-bottom:6px}
+.arrivo{display:grid;grid-template-columns:1fr;gap:10px;margin-top:24px;font-size:15px;color:var(--muted)}
+.arrivo b{color:var(--ink);font:600 13px var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-right:8px}
+.mappa{height:min(560px,70vh);border:2px solid var(--ink)}
+.mappa iframe{width:100%;height:100%;border:0;filter:sepia(.25) saturate(.8)}
+.contatti{display:flex;gap:12px;flex-wrap:wrap}
+
+footer{background:var(--ink);color:#d8d0bd;padding:56px 0 110px}
+footer .wrap{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+footer .f-l{grid-column:1/7}.footer .f-r{grid-column:7/13}
+footer .f-r{grid-column:7/13;display:flex;gap:56px;font-size:15px}
+footer .brand{color:var(--paper);font-size:34px}
+footer p{font-size:15px;max-width:26em;margin-top:10px;color:#b8b09c}
+footer .f-r b{display:block;color:var(--paper);margin-bottom:8px;font-weight:600}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+.bar{display:none}
+
+@media (max-width:980px){
+  nav.main{display:none}
+  main>section{min-height:100svh;padding:72px 0 56px}
+  main>section.hero{padding:96px 0 48px}
+  .hero .wrap,.grid12{display:grid;grid-template-columns:1fr;gap:36px}
+  .hero .wrap>div:first-child,.hero .wrap>.hero-photo,.c-l,.c-r{grid-column:1/-1;padding-right:0}
+  .hero-photo{order:-1;aspect-ratio:4/3;max-height:none}
+  .cafe .a,.cafe .b{grid-column:1/-1;height:auto;aspect-ratio:3/2}
+  .cafe .c,.cafe .d{grid-column:span 6;height:auto;aspect-ratio:1}
+  .cafe .e{grid-column:1/-1;height:auto;aspect-ratio:3/2}
+  .cafe .txt{margin-bottom:24px}
+  footer .wrap{grid-template-columns:1fr;gap:28px}
+  footer .f-l,footer .f-r{grid-column:1/-1}
+  .mappa{height:380px}
+}
+@media (max-width:640px){
+  :root{--wrap:min(1200px,100% - 32px)}
+  body{font-size:16px;padding-bottom:76px}
+  header.top .btn{display:none}
+  main>section.hero{padding:84px 0 40px}
+  .hero-photo{aspect-ratio:1}
+  .hero-facts{gap:22px}
+  .row p{padding-left:0}
+  .ask{flex-direction:column}
+  .ask button{border-left:0;border-top:2px solid var(--ink);min-height:52px}
+  .contatti .btn{width:100%}
+  footer .f-r{flex-direction:column;gap:20px}
+  .btn{width:100%}
+  .bar{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink)}
+  .bar a{display:flex;align-items:center;justify-content:center;min-height:60px;color:var(--paper);text-decoration:none;font:600 15px var(--sans);border-right:1px solid #3a362d}
+  .bar a:last-child{border-right:0}
+  .bar a.wa{background:var(--accent)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  [data-enter]>*{opacity:1;transform:none}
+  .story .w{color:var(--ink)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Celuc Libri, inizio pagina">Celuc <b>Libri</b></a>
+    <nav class="main" aria-label="Principale">
+      <a href="#cosa-trovi">Cosa trovi</a>
+      <a href="#usato">Libri usati</a>
+      <a href="#incontri">Incontri</a>
+      <a href="#cafe">Caffè</a>
+      <a href="#visita">Orari</a>
+    </nav>
+    <a class="btn" href="tel:+390286450776">Chiama in libreria</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" data-enter="">
+  <div class="wrap">
+    <div>
+      <h1>La libreria di via Santa Valeria. A due passi dalla <em>Cattolica.</em></h1>
+      <p class="lead">Libri nuovi e usati, cartoleria, stampa e rilegatura della tesi. E un caffè, quando serve.</p>
+      <label class="ask-label" for="titolo">Che libro cerchi?</label>
+      <form class="ask" id="ask" action="#">
+        <input id="titolo" name="titolo" type="text" placeholder="Titolo o autore" autocomplete="off">
+        <button type="submit">Chiedi su WhatsApp</button>
+      </form>
+      <p class="ask-note">Scrivi il titolo: ti rispondiamo se c'è o lo ordiniamo.</p>
+      <div class="hero-facts">
+        <div><strong>8:30–19:30</strong>lunedì–venerdì</div>
+        <div><strong>dal 1974</strong>la casa editrice</div>
+        <div><strong>Via Santa Valeria 5</strong>20123 Milano</div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero-caffe-libri.jpg" alt="Cappuccino con biscotto e un quaderno su una pila di libri in libreria" width="1440" height="1358">
+    </div>
+  </div>
+</section>
+
+<section class="s" id="cosa-trovi">
+  <div class="wrap grid12">
+    <div class="c-l">
+      <h2>Servizi della libreria: libri, copisteria, cartoleria.</h2>
+      <div class="svc-photo"><img src="img/scaffali.jpg" alt="Gli scaffali pieni di libri e cartoleria della libreria" loading="lazy"></div>
+    </div>
+    <div class="c-r rows">
+      <div class="row"><h3><span class="n" aria-hidden="true"></span>Libri nuovi e usati</h3><p>Testi universitari, saggistica, narrativa e libri per ragazzi. Se non c'è, lo ordiniamo.</p></div>
+      <a class="row" href="#usato"><h3><span class="n" aria-hidden="true"></span>Libri usati: compravendita</h3><p>Valutiamo e ritiriamo i tuoi libri, soprattutto le adozioni della Cattolica.</p></a>
+      <div class="row"><h3><span class="n" aria-hidden="true"></span>Copisteria e rilegatura</h3><p>Fotocopie, stampa digitale, rilegatura di dispense e tesi di laurea.</p></div>
+      <div class="row"><h3><span class="n" aria-hidden="true"></span>Cartoleria</h3><p>Quaderni, penne e articoli per lo studio e l'ufficio. Fattura immediata per aziende e professionisti.</p></div>
+      <div class="row"><h3><span class="n" aria-hidden="true"></span>Corone d'alloro</h3><p>Corone e bouquet di laurea su misura.</p></div>
+      <div class="row"><h3><span class="n" aria-hidden="true"></span>Pacchi e minimarket</h3><p>Ritiro e spedizione pacchi, più prodotti confezionati e bevande per la pausa pranzo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s usato" id="usato">
+  <div class="wrap grid12">
+    <div class="c-l">
+      <p class="eyebrow">Libri usati</p>
+      <h2>Compravendita di libri usati: li <em>compriamo.</em></h2>
+      <p class="t">Compriamo e vendiamo libri usati, soprattutto le adozioni dell'Università Cattolica. Portali in negozio o scrivici prima.</p>
+      <a class="btn" href="https://wa.me/393466209685?text=Buongiorno%2C%20ho%20dei%20libri%20usati%20da%20vendere">Vendi i tuoi libri usati</a>
+      <ol>
+        <li><div>Ce lo dici<span>Ci scrivi su WhatsApp o passi in via Santa Valeria 5.</span></div></li>
+        <li><div>Valutazione gratuita<span>Guardiamo i libri e ti diciamo subito quanto valgono.</span></div></li>
+        <li><div>Ricevi il pagamento<span>I tuoi libri tornano in circolo a chi li cerca.</span></div></li>
+      </ol>
+    </div>
+    <div class="c-r poster"><img src="img/usato-seconda-vita.jpg" alt="Locandina della libreria: dai una seconda vita ai libri" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="story" aria-label="Chi siamo">
+  <div class="wrap grid12">
+    <div class="c-l"><p id="story"><span class="w">Celuc</span> <span class="w">Libri</span> <span class="w">è</span> <span class="w">una</span> <span class="w">libreria</span> <span class="w hot">indipendente</span> <span class="w">che</span> <span class="w">per</span> <span class="w">decenni</span> <span class="w">è</span> <span class="w">stata</span> <span class="w">un</span> <span class="w">punto</span> <span class="w">di</span> <span class="w">riferimento</span> <span class="w">per</span> <span class="w">studenti,</span> <span class="w">lettori</span> <span class="w">e</span> <span class="w">abitanti</span> <span class="w">del</span> <span class="w">quartiere.</span> <span class="w hot">Libri,</span> <span class="w">cartoleria,</span> <span class="w hot">caffè</span> <span class="w">e</span> <span class="w">pacchi,</span> <span class="w">tutto</span> <span class="w">sotto</span> <span class="w">lo</span> <span class="w">stesso</span> <span class="w">tetto.</span></p>
+    <small>Fa parte di Librerie Indipendenti Milano e dell'Albo delle Librerie Milanesi di Quartiere.</small></div>
+    <div class="c-r ph story-ph"><img src="img/buffet.jpg" alt="Il buffet del Celuc Café con bicchieri e stuzzichini" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="s edi" id="edizioni">
+  <div class="wrap grid12">
+    <div class="c-l">
+      <div class="big">Edizioni La Salamandra, dal 1974</div>
+      <p>Celuc è anche casa editrice: un catalogo storico e specialistico per la ricerca universitaria.</p>
+      <div class="covers"><img src="img/copertina-05.jpg" alt="Copertina: Donne bianche e donne nere" loading="lazy"><img src="img/copertina-02.jpg" alt="Copertina: Il marxismo da pensiero radicale a pensiero istituzionale" loading="lazy"><img src="img/copertina-07.jpg" alt="Copertina: Gli anarchici nella rivoluzione russa" loading="lazy"><img src="img/copertina-06.jpg" alt="Copertina: La sinistra comunista in Germania" loading="lazy"></div>
+    </div>
+    <div class="c-r">
+      <ul class="books">
+        <li><div>Donne bianche e donne nere nell'America dell'uomo bianco<span class="sub">Ann D. Gordon, Mari Jo Buhle, Nancy E. Schrom, Angela Davis</span></div><span class="pr">13 €</span></li>
+        <li><div>Il marxismo da pensiero radicale a pensiero istituzionale, vol. I e II<span class="sub">AA.VV.</span></div><span class="pr">26 €</span></li>
+        <li><div>Gli anarchici nella rivoluzione russa<span class="sub">Paul Avrich</span></div><span class="pr">13 €</span></li>
+        <li><div>La sinistra comunista in Germania 1918–1921<span class="sub">D. Authier, J. Barrot</span></div><span class="pr">22 €</span></li>
+      </ul>
+      <p class="books-note">Una scelta dal catalogo. <a class="link" href="https://www.celuclibri.it/negozio" rel="noopener" style="font-weight:600;color:var(--accent)">Sfoglia il catalogo completo e ordina →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="incontri">
+  <div class="wrap grid12">
+    <div class="c-l">
+      <h2>Presentazioni di libri in libreria.</h2>
+      <ul class="ev-list">
+        <li><b>Le cronache di Dracula</b><span>con Luca Arnau</span></li>
+        <li><b>99 ricette senza istamina</b><span>con Davide Iozzi e Paola Grazia Mattina</span></li>
+        <li><b>Il potere dell'invisibile</b><span>con Stefano Bertacchi</span></li>
+        <li><b>Echi</b><span>con Massimo Grilli</span></li>
+      </ul>
+    </div>
+    <div class="c-r posters">
+      <div class="ph"><img src="img/incontro-1.jpg" alt="Locandina della presentazione de Le cronache di Dracula" loading="lazy"></div>
+      <div class="ph"><img src="img/incontro-2.jpg" alt="Locandina della presentazione di 99 ricette senza istamina" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="s cafe" id="cafe">
+  <div class="wrap">
+    <div class="grid12 txt">
+      <h2 class="c-l">Celuc Café, il bar dentro la libreria.</h2>
+      <p class="c-r lead">Un caffè, un dolce o una pausa pranzo senza uscire dalla libreria.</p>
+    </div>
+    <div class="grid">
+      <div class="ph a"><img src="img/cafe-bancone.jpg" alt="Il bancone del Celuc Café" loading="lazy"></div>
+      <div class="ph b"><img src="img/dolce-1.jpg" alt="Caffè con panna e granella" loading="lazy"></div>
+      <div class="ph c"><img src="img/cioccolata.jpg" alt="Cioccolata calda con panna" loading="lazy"></div>
+      <div class="ph d"><img src="img/dolce-2.jpg" alt="Dolce al caffè con crema" loading="lazy"></div>
+      <div class="ph e"><img src="img/bar-bicchieri.jpg" alt="Il bancone del bar con i bicchieri" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="s visita" id="visita">
+  <div class="wrap grid12">
+    <div class="c-l">
+      <p class="eyebrow">Vieni a trovarci</p>
+      <p class="indirizzo">Via Santa Valeria 5</p>
+      <p style="color:var(--muted)">20123 Milano · Sant'Ambrogio</p>
+      <ul class="orari">
+        <li><b>Lunedì – venerdì</b><span>8:30 – 19:30</span></li>
+        <li><b>Sabato</b><span>9:30 – 19:00</span></li>
+        <li class="chiuso"><b>Domenica</b><span>chiuso</span></li>
+      </ul>
+      <div class="contatti">
+        <a class="btn" href="https://wa.me/393466209685">Scrivici su WhatsApp</a>
+        <a class="btn ghost" href="tel:+390286450776">Chiama 02 8645 0776</a>
+      </div>
+      <div class="arrivo">
+        <div><b>Metro</b>M1 Cadorna o Cairoli; M2 e M4 Sant'Ambrogio.</div>
+        <div><b>Tram</b>1, 16, 19 e 4, fermata Corso Magenta / Via Nirone.</div>
+        <div><b>Bus</b>50, 58, 96 e 97, fermata Largo d'Ancona.</div>
+      </div>
+    </div>
+    <div class="c-r mappa"><iframe tabindex="-1" title="Mappa: Celuc Libri, via Santa Valeria 5, Milano" loading="lazy" src="https://maps.google.com/maps?q=Via%20Santa%20Valeria%205%2C%20Milano&amp;output=embed"></iframe></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-l"><a class="brand" href="#main">Celuc Libri</a><p>Libreria universitaria e casa editrice, Via Santa Valeria 5, 20123 Milano.</p></div>
+    <div class="f-r">
+      <div><b>Contatti</b><a href="tel:+390286450776">02 8645 0776</a><br><a href="mailto:celuclibri@libero.it">celuclibri@libero.it</a></div>
+      <div><b>Orari</b>Lun–Ven 8:30–19:30<br>Sab 9:30–19:00</div>
+    </div>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Contatti rapidi">
+  <a href="tel:+390286450776">Chiama</a>
+  <a class="wa" href="https://wa.me/393466209685">WhatsApp</a>
+  <a href="https://maps.google.com/maps?q=Via%20Santa%20Valeria%205%2C%20Milano">Mappa</a>
+</nav>
+
+<script>
+// "Ce l'avete?": il titolo digitato diventa il messaggio WhatsApp
+document.getElementById('ask').addEventListener('submit',function(e){
+  e.preventDefault();
+  var t=document.getElementById('titolo').value.trim();
+  var msg=t?'Buongiorno, avete "'+t+'"?':'Buongiorno, vorrei chiedervi un libro.';
+  window.open('https://wa.me/393466209685?text='+encodeURIComponent(msg),'_blank','noopener');
+});
+// momento: la frase si accende parola per parola mentre scorri la sezione
+(function(){
+  var el=document.getElementById('story'); if(!el) return;
+  var hot={'indipendente':1,'libri,':1,'caffè':1};
+  var words=el.textContent.trim().split(/\s+/);
+  el.innerHTML=words.map(function(w){return '<span class="w'+(hot[w.toLowerCase().replace(/[.,]$/,'')]||hot[w.toLowerCase()]?' hot':'')+'">'+w+'</span>'}).join(' ');
+  var sp=el.querySelectorAll('.w');
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){sp.forEach(function(s){s.classList.add('on')});return}
+  function upd(){
+    var r=el.getBoundingClientRect(),vh=innerHeight;
+    var p=(vh*0.85-r.top)/(r.height+vh*0.25);
+    var n=Math.round(Math.max(0,Math.min(1,p))*sp.length);
+    sp.forEach(function(s,i){s.classList.toggle('on',i<n)});
+  }
+  addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
+</script>
+
+
+</body></html>

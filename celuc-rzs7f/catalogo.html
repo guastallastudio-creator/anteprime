@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="it" data-type="place">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogo Edizioni La Salamandra – Celuc Libri</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Il catalogo delle Edizioni La Salamandra di Celuc Libri: 123 titoli, ordinabili dalla libreria di via Santa Valeria, Milano.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%238a2b21'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-size='40' text-anchor='middle' fill='%23f3ede1'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --paper:#f3ede1; --paper2:#e9e0cf; --ink:#1c1a16; --muted:#4a453a; --line:#cfc5b0;
+  --accent:#8a2b21; --accent-d:#6f2018; --green:#1f3a31; --green-ink:#eaf0e4;
+  --serif:"Newsreader",Georgia,serif; --sans:"Instrument Sans",system-ui,sans-serif;
+  --wrap:min(1200px,100% - 48px);
+}
+*{box-sizing:border-box;margin:0}
+
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased;padding-bottom:0}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:fixed;left:8px;top:8px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:99;transform:translateY(-200%)}
+.skip:focus{transform:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;line-height:1.02}
+h2{font-size:clamp(38px,5.2vw,72px)}
+.eyebrow{font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+p.lead{font-size:clamp(18px,1.6vw,21px);max-width:34em;color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font:600 16px/1 var(--sans);text-decoration:none;border:2px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer;transition:transform .18s,background .18s,color .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 -2px rgba(28,26,22,.25)}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.link{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .25s;padding-bottom:2px}
+.link:hover{background-size:100% 2px}
+
+/* header */
+header.top{position:fixed;left:0;right:0;top:0;z-index:20;background:rgba(243,237,225,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.brand{font:500 26px/1 var(--serif);text-decoration:none;letter-spacing:-.02em}
+.brand b{color:var(--accent);font-weight:600}
+nav.main{display:flex;gap:30px;font-size:15px;font-weight:500}
+nav.main a{text-decoration:none;padding:22px 0;background:linear-gradient(var(--accent),var(--accent)) 0 calc(100% - 18px)/0 2px no-repeat;transition:background-size .25s}
+nav.main a:hover{background-size:100% 2px}
+.top .btn{min-height:44px;padding:0 20px;font-size:15px}
+
+
+header.top .cart-btn{position:relative;background:transparent;color:var(--ink);border-color:var(--ink)}
+header.top .cart-btn:hover{background:var(--ink);color:var(--paper)}
+.cart-btn b{display:inline-grid;place-items:center;min-width:24px;height:24px;border-radius:12px;background:var(--accent);color:#fff;font-size:13px;padding:0 6px}
+.cat-hero{padding:128px 0 40px}
+.cat-hero h1{font-size:clamp(40px,5vw,72px);margin-bottom:16px;max-width:14em}
+.cat-hero p{color:var(--muted);max-width:36em;font-size:19px}
+.tools{display:flex;gap:16px;align-items:end;justify-content:space-between;flex-wrap:wrap;padding:28px 0;border-top:2px solid var(--ink)}
+.tools label{display:block;font:600 14px var(--sans);margin-bottom:8px}
+.tools input{width:min(520px,100%);min-height:56px;padding:0 18px;border:2px solid var(--ink);background:#fbf8f1;font:400 17px var(--sans);color:var(--ink)}
+.tools input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.tools .count{color:var(--muted);font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:40px 24px;padding-bottom:40px}
+.card{display:flex;flex-direction:column}
+.card .cv{aspect-ratio:2/3;background:var(--paper2);overflow:hidden;margin-bottom:14px;display:grid;place-items:center}
+.card .cv img{width:100%;height:100%;object-fit:contain;transition:transform .5s}
+.card:hover .cv img{transform:scale(1.03)}
+.card h3{font:500 19px/1.2 var(--serif);letter-spacing:-.01em;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:6px}
+.card .au{font-size:14px;color:var(--muted);margin-bottom:10px;min-height:1.3em}
+.card .row2{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card .pr{font:500 22px var(--serif);color:var(--accent)}
+.card .btn{min-height:44px;padding:0 16px;font-size:15px}
+.more{display:flex;justify-content:center;padding:16px 0 96px}
+.more .btn{width:auto}
+/* carrello */
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--paper);border-left:2px solid var(--ink);z-index:60;transform:translateX(102%);transition:transform .3s;display:flex;flex-direction:column}
+.drawer.open{transform:none}
+.drawer header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid var(--line)}
+.drawer h2{font-size:30px}
+.drawer .x{border:0;background:none;font-size:30px;line-height:1;cursor:pointer;width:44px;height:44px;color:var(--ink)}
+.drawer ul{list-style:none;padding:0 24px;overflow:auto;flex:1}
+.drawer li{display:grid;grid-template-columns:52px 1fr auto;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.drawer li img{width:52px;height:78px;object-fit:contain;background:var(--paper2)}
+.drawer li b{font:500 16px/1.2 var(--serif);display:block}
+.drawer li small{color:var(--muted)}
+.qty{display:flex;align-items:center;gap:6px;margin-top:6px}
+.qty button{width:32px;height:32px;border:1px solid var(--ink);background:transparent;cursor:pointer;font-size:18px;color:var(--ink)}
+.drawer .foot{padding:20px 24px;border-top:2px solid var(--ink)}
+.drawer .tot{display:flex;justify-content:space-between;font:500 26px var(--serif);margin-bottom:6px}
+.drawer .note{font-size:14px;color:var(--muted);margin-bottom:14px}
+.drawer .foot .btn{width:100%;margin-bottom:10px}
+.empty{padding:40px 24px;color:var(--muted)}
+.scrim{position:fixed;inset:0;background:rgba(28,26,22,.4);z-index:55;opacity:0;pointer-events:none;transition:opacity .3s}
+.scrim.open{opacity:1;pointer-events:auto}
+footer{padding:48px 0 48px}
+footer .wrap{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+footer .f-l{grid-column:1/7}
+footer .f-r{grid-column:7/13}
+@media (max-width:980px){nav.main{display:none}.cards{grid-template-columns:repeat(3,1fr)}footer .f-l,footer .f-r{grid-column:1/-1}}
+@media (max-width:640px){:root{--wrap:min(1200px,100% - 32px)}.cards{grid-template-columns:repeat(2,1fr);gap:28px 14px}.card h3{font-size:16px}.card .row2{flex-direction:column;align-items:stretch}.card .btn{width:100%}.cat-hero{padding-top:96px}header.top .btn.cta{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.cassa{position:fixed;inset:0;z-index:200;background:var(--paper,#f3ede1);overflow:auto;display:none;padding:72px 0 40px}
+.cassa.open{display:block}
+.cassa .bar{position:fixed;top:0;left:0;right:0;height:56px;background:var(--paper,#f3ede1);border-bottom:1px solid rgba(28,26,22,.15);display:flex;align-items:center;justify-content:space-between;padding:0 24px;z-index:2}
+.cassa .bar b{font-family:'Newsreader',serif;font-size:20px;font-weight:500}
+.cassa .bar button{font:inherit;font-weight:600;background:none;border:1px solid currentColor;border-radius:0;padding:8px 14px;cursor:pointer;color:inherit}
+.cassa .in{width:min(1000px,100% - 32px);margin:0 auto}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Celuc Libri, home">Celuc <b>Libri</b></a>
+    <nav class="main" aria-label="Principale">
+      <a href="index.html#cosa-trovi">Cosa trovi</a>
+      <a href="index.html#usato">Libri usati</a>
+      <a href="index.html#incontri">Incontri</a>
+      <a href="catalogo.html" aria-current="page">Catalogo</a>
+      <a href="index.html#cafe">Caffè</a>
+      <a href="index.html#visita">Orari</a>
+    </nav>
+    <button class="btn cart-btn" id="open-cart" type="button">Il tuo ordine <b id="n">0</b></button>
+  </div>
+</header>
+<main id="main">
+  <section class="cat-hero"><div class="wrap">
+    <h1>Catalogo delle Edizioni La Salamandra</h1>
+    <p>123 titoli della casa editrice di Celuc Libri. Scegli i libri, vai alla cassa e paga online: scegli se ritirarli in libreria o riceverli a casa.</p>
+  </div></section>
+  <section><div class="wrap">
+    <div class="tools">
+      <div><label for="q">Cerca per titolo o autore</label><input id="q" type="search" placeholder="Per esempio: Avrich" autocomplete="off"></div>
+      <p class="count" id="count" aria-live="polite"></p>
+    </div>
+    <div class="cards" id="cards"></div>
+    <div class="more"><button class="btn ghost" id="more" type="button">Mostra altri titoli</button></div>
+  </div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="f-l"><a class="brand" href="index.html">Celuc Libri</a><p>Libreria universitaria e casa editrice, Via Santa Valeria 5, 20123 Milano.</p></div>
+    <div class="f-r">
+      <div><b>Contatti</b><a href="tel:+390286450776">02 8645 0776</a><br><a href="mailto:celuclibri@libero.it">celuclibri@libero.it</a></div>
+      <div><b>Orari</b>Lun–Ven 8:30–19:30<br>Sab 9:30–19:00</div>
+    </div>
+  </div>
+</footer>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Il tuo ordine" aria-hidden="true">
+  <header><h2>Il tuo ordine</h2><button class="x" id="close-cart" type="button" aria-label="Chiudi">×</button></header>
+  <ul id="items"></ul>
+  <div class="foot">
+    <div class="tot"><span>Totale libri</span><span id="tot">0 €</span></div>
+    <p class="note">Spedizione e pagamento si scelgono alla cassa. Il negozio riceve l'ordine subito.</p>
+    <button class="btn" id="pay" type="button">Vai alla cassa</button>
+    <a class="btn ghost" id="send" href="#">Preferisci ordinare su WhatsApp?</a>
+  </div>
+</aside>
+<div class="cassa" id="cassa" role="dialog" aria-label="Cassa" aria-hidden="true"><div class="bar"><b>Cassa · Celuc Libri</b><button type="button" id="cassa-x">← Torna al catalogo</button></div><div class="in"><div id="my-store-25582038"></div></div></div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?25582038&data_platform=code&data_date=2026-11-23" charset="utf-8"></script>
+<script>
+var ecwidReady=false;
+window.ec=window.ec||{};ec.config=ec.config||{};
+function startStore(){ if(typeof xProductBrowser==='function'&&!ecwidReady){xProductBrowser("categoriesPerRow=3","views=grid(20,3)","categoryView=grid","searchView=list","id=my-store-25582038");ecwidReady=true} }
+window.addEventListener('load',startStore);
+</script>
+<script>
+var DATA=[{"id": "199269916", "t": "Internazionale situazionista. (Ce n'a e'te' qu'un debut)", "a": "(a cura di) Ghirardi S. / Varini D.", "p": 20.0, "i": "img/cat/199269916.jpg"}, {"id": "199269876", "t": "Le strutture della dominazione", "a": "AA.VV.", "p": 16.0, "i": "img/cat/199269876.jpg"}, {"id": "199269875", "t": "Il marxismo da pensiero radicale a pensiero istituzionale Vol I e II", "a": "AA.VV.", "p": 26.0, "i": "img/cat/199269875.jpg"}, {"id": "199269877", "t": "Mustfaram. Una storia metropolitana. (Testo di: Jonathan / Meo Cataldo Dino; disegni di: G. Aragona- P. Carnelutti- L. Lepori- A. Loconte- M. Pracchia)", "a": "AA.VV.", "p": 12.0, "i": "img/cat/199269877.jpg"}, {"id": "199269925", "t": "Aborto libero? Il metodo Karman e la sperimentazione sulle donne. a cura del Gruppo femminista per una medicina della donna", "a": "", "p": 5.0, "i": "img/cat/199269925.jpg"}, {"id": "199269880", "t": "Ariete. 21 marzo - 20 aprile", "a": "", "p": 20.0, "i": "img/cat/199269880.jpg"}, {"id": "199269873", "t": "Donne bianche e donne nere nell'America dell'uomo bianco. Due contributi sulla storia di ieri e per la liberazione di oggi.", "a": "Ann D. Gordon, Mari Jo Buhle, Nancy E. Schrom, Angela Davis", "p": 13.0, "i": "img/cat/199269873.jpg"}, {"id": "199269881", "t": "La sinistra comunista in germania 1918-1921", "a": "Authier D. / Barrot J.", "p": 22.0, "i": "img/cat/199269881.jpg"}, {"id": "199269882", "t": "Gli anarchici nella rivoluzione russa", "a": "Avrich P.", "p": 13.0, "i": "img/cat/199269882.jpg"}, {"id": "199269883", "t": "Orizzonti del mondo. Postfazione e cura di F. D'Agostini", "a": "Axelos K.", "p": 13.0, "i": "img/cat/199269883.jpg"}, {"id": "199269884", "t": "Josephine", "a": "Baker J. / Bouillon J.", "p": 29.0, "i": "img/cat/199269884.jpg"}, {"id": "199269885", "t": "Azione diretta e coscienza operaia - L'internazionale dei lavoratori contro il capitale. Introduzione di M. Antonioli", "a": "Bakunin M.", "p": 14.0, "i": "img/cat/199269885.jpg"}, {"id": "199269886", "t": "Clandestini a milano. Prefazione di G. Galli", "a": "Baldi G.", "p": 13.0, "i": "img/cat/199269886.jpg"}, {"id": "199269887", "t": "Donne di picche. Riflessioni sulla violenza e sulle forme del negativo", "a": "Bassanesi D.", "p": 13.0, "i": "img/cat/199269887.jpg"}, {"id": "199269888", "t": "Il fondo del barile. Riorganizzazione del ciclo produttivo e composizione operaia alla Fiat dopo le nuove assunzioni. Prefazione di A. Magnaghi", "a": "Belforte S. / Ciatti M.", "p": 18.0, "i": "img/cat/199269888.jpg"}, {"id": "199269889", "t": "Che cos'e' l'anarco comunismo. Introduzioni di E. Goldman e P. Avrich", "a": "Berkman A.", "p": 18.0, "i": "img/cat/199269889.jpg"}, {"id": "199269890", "t": "Le riforme in urss. Da Liberman al XXV Congresso dei Pcus- (con saggi di: Birman- Kantorovich- Leontev- Novozhilov- Omarov e altri)", "a": "Bernocchi P.", "p": 17.0, "i": "img/cat/199269890.jpg"}, {"id": "199269891", "t": "L'acqua in gabbia. Voci di donne dentro il sindacato", "a": "Bocchio F. / Torchi A.", "p": 13.0, "i": "img/cat/199269891.jpg"}, {"id": "199269892", "t": "L'universale pregiudizio. Le interpretazioni della critica marxiana della politica", "a": "Bongiovanni B.", "p": 12.0, "i": "img/cat/199269892.jpg"}, {"id": "199269893", "t": "Post-scarcity anarchism. L'Anarchismo nell'età dell'abbondanza", "a": "Bookchin M.", "p": 20.0, "i": "img/cat/199269893.jpg"}, {"id": "199269894", "t": "Con sylvia (nata Plath)", "a": "Brawer A.", "p": 8.0, "i": "img/cat/199269894.jpg"}, {"id": "199269895", "t": "Sciopero!  Storia dell'insorgenza operaia di massa negli Usa dal 1877 ai giorni nostri. Due volumi indivisibili", "a": "Brecher J.", "p": 18.0, "i": "img/cat/199269895.jpg"}, {"id": "199269896", "t": "Alice attraverso il microscopio. Il potere della scienza sulla vita delle donne", "a": "Brighton Women and Science Group (a cura di)", "p": 16.0, "i": "img/cat/199269896.jpg"}, {"id": "199269897", "t": "Il dialogo nascosto. Interazione madre - bambino durante la gravidanza", "a": "Carbonetto M. G. / Filingeri L.", "p": 12.0, "i": "img/cat/199269897.jpg"}, {"id": "199269898", "t": "Nottole ad aprile. Introduzione di G. Raboni G.", "a": "Cassani V.", "p": 14.0, "i": "img/cat/199269898.jpg"}, {"id": "199269899", "t": "Il morto è IN TAVOLA. I servizi segreti negli \"affari\" italiani", "a": "Catilina L.", "p": 11.0, "i": "img/cat/199269899.jpg"}, {"id": "199269900", "t": "Attilio bertolucci. I giorni di un poeta. Prefazione di G. Pontiggia", "a": "Cherin S.", "p": 15.0, "i": "img/cat/199269900.jpg"}, {"id": "199269901", "t": "La sfida dei primitivi", "a": "Clarke R. / Hindley G.", "p": 20.0, "i": "img/cat/199269901.jpg"}, {"id": "199269902", "t": "Archeologia della violenza e altri scritti di antropologia politica. La prima organica riflessione sui nessi tra lavoro guerra scambio sesso e religione nelle culture selvagge", "a": "Clastres P.", "p": 21.0, "i": "img/cat/199269902.jpg"}, {"id": "199269903", "t": "La tolleranza del dolore. Stato diritto psicoanalisi", "a": "Contri G.", "p": 20.0, "i": "img/cat/199269903.jpg"}, {"id": "199269904", "t": "Introduzione all'arte alla mitologia dell'india. Prefazione di A. Schwarz", "a": "Coomaraswamy A.", "p": 18.0, "i": "img/cat/199269904.jpg"}, {"id": "199269905", "t": "Canto per un capro", "a": "Dettori G.", "p": 20.0, "i": "img/cat/199269905.jpg"}, {"id": "199269906", "t": "Sovversione perversione", "a": "Dufrenne M.", "p": 12.0, "i": "img/cat/199269906.jpg"}, {"id": "199269907", "t": "Le streghe siamo noi. Il ruolo della medicina nella repressione della donna", "a": "Ehrenreich B.  / English D.", "p": 15.0, "i": "img/cat/199269907.jpg"}, {"id": "199269908", "t": "Giurisprudenza psicoanalitica. Da Platone a Freud e oltre. Prefazione di G. Contri", "a": "Ehrenzweigh A. A.", "p": 30.0, "i": "img/cat/199269908.jpg"}, {"id": "199269909", "t": "La politica estera degli zar - a cura di B. Bongiovanni", "a": "Engels F.", "p": 11.0, "i": "img/cat/199269909.jpg"}, {"id": "199269910", "t": "Le filosofie dell'india", "a": "Filliozat J.", "p": 15.0, "i": "img/cat/199269910.jpg"}, {"id": "199269912", "t": "Teoria dell'arte sociologica. Introduzione di F. Torriani", "a": "Fischer H.", "p": 15.0, "i": "img/cat/199269912.jpg"}, {"id": "199269913", "t": "Henry ford. La mia vita e la mia opera. Scritto in collaborazione con S. Crowther. Introduzione e postfazione di P. Ortoleva", "a": "Ford H.", "p": 25.0, "i": "img/cat/199269913.jpg"}, {"id": "199269914", "t": "Verso al libertà in amore. Prefazione e cura di D. Guerin", "a": "Fourier C.", "p": 16.0, "i": "img/cat/199269914.jpg"}, {"id": "199269874", "t": "F. Guattari- D. Gue'rin- L. Irigaray- J. Lauritsen- O. F. Pucciani- M. Steglitz- D. Thorstad)", "a": "GAY GAY. Storia e coscienza omosessuale. (Scritti di: T. Graf", "p": 13.0, "i": "img/cat/199269874.jpg"}, {"id": "199269915", "t": "Fantascienza e comunismo", "a": "Gabutti D.", "p": 18.0, "i": "img/cat/199269915.jpg"}, {"id": "199269917", "t": "Dall'arte alla vita dalla vita all'arte.", "a": "Gilardi P.", "p": 30.0, "i": "img/cat/199269917.jpg"}, {"id": "199269918", "t": "Anarchia femminismo e altri saggi", "a": "Goldman E.", "p": 15.0, "i": "img/cat/199269918.jpg"}, {"id": "199269921", "t": "Emma goldman. Vivendo la mia vita. Vol. III. 1908-1917", "a": "Goldman E.", "p": 22.0, "i": "img/cat/199269921.jpg"}, {"id": "199269922", "t": "La sconfitta della rivoluzione russa e le sue cause. Introduzione di R. Rocker", "a": "Goldman E.", "p": 6.5, "i": "img/cat/199269922.jpg"}, {"id": "199269919", "t": "Emma goldman. Vivendo la mia vita. Vol. I. 1889-1899", "a": "Goldman E.", "p": 22.0, "i": "img/cat/199269919.jpg"}, {"id": "199269920", "t": "Emma goldman. Vivendo la mia vita. Vol. II. 1900-1907", "a": "Goldman E.", "p": 22.0, "i": "img/cat/199269920.jpg"}, {"id": "199269923", "t": "Vivere in india", "a": "Govind S. G. - (P. Verni)", "p": 12.0, "i": "img/cat/199269923.jpg"}, {"id": "199269924", "t": "I PIEDI NERI. Storia delle tre tribù", "a": "Grinnell G. B.", "p": 22.0, "i": "img/cat/199269924.jpg"}, {"id": "199269926", "t": "Perchè non i fiori", "a": "Gruppo per l'espressione della donna", "p": 22.0, "i": "img/cat/199269926.jpg"}, {"id": "199269928", "t": "Borghesi e proletari nella rivoluzione francese. 1793 - 1795 Vol. I", "a": "Guerin D.", "p": 9.5, "i": "img/cat/199269928.jpg"}, {"id": "199269927", "t": "Borghesi e proletari nella rivoluzione francese. 1793 - 1795 Vol. II", "a": "Guerin D.", "p": 9.5, "i": "img/cat/199269927.jpg"}, {"id": "199269929", "t": "L'avversario. Prefazione A. Ballabio - postfazione G. Novello", "a": "Guerrieri A. M.", "p": 14.0, "i": "img/cat/199269929.jpg"}, {"id": "199269930", "t": "La ribelle.  Fra sindacalismo rivoluzionario e comunismo - la vita di una militante americana", "a": "Gurley Flynn E.", "p": 18.0, "i": "img/cat/199269930.jpg"}, {"id": "199269931", "t": "I CHEYENNE: INDIANI DELLE GRANDI PIANURE", "a": "Hoebel E. A.", "p": 20.0, "i": "img/cat/199269931.jpg"}, {"id": "199269932", "t": "I SIGNORI DEL PASSAGGIO NORD OVEST. La confederazione Piedi Neri. Volume fotografico con 114 illustrazioni", "a": "", "p": 29.0, "i": "img/cat/199269932.jpg"}, {"id": "199269933", "t": "Insieme contro. Esperienza dei consultori femministi", "a": "Jourdan C.", "p": 14.0, "i": "img/cat/199269933.jpg"}, {"id": "199269934", "t": "La ronda delle stagioni (Rtusamhara). Cura e traduzione dal sanscrito di F. Baldissera. Saggio introduttivo su Kalidasa e sulla poetica sanscrita di A. Schwarz", "a": "Kalidasa", "p": 22.0, "i": "img/cat/199269934.jpg"}, {"id": "199269935", "t": "In sintonia con l'organismo. La vita e l'opera di Barbara McClintock", "a": "Keller Fox E.", "p": 28.0, "i": "img/cat/199269935.jpg"}, {"id": "199269936", "t": "Arafat. Destino o speranza?", "a": "Konzelmann G.", "p": 28.0, "i": "img/cat/199269936.jpg"}, {"id": "199269942", "t": "Per una sociologia degli intellettuali rivoluzionari. L'evoluzione politica di Lukàcs 1909-1929.", "a": "Lowy M.", "p": 22.0, "i": "img/cat/199269942.jpg"}, {"id": "199269937", "t": "Lacan in italia 1953 - 1978 EN ITALIE LACAN. Bilingue", "a": "Lacan J.", "p": 18.0, "i": "img/cat/199269937.jpg"}, {"id": "199269938", "t": "Piccolo vocabolario della femminilità rappresenata", "a": "Lascault G.", "p": 16.0, "i": "img/cat/199269938.jpg"}, {"id": "199269939", "t": "Vittime italiane dello stalinismo in urss", "a": "Leonetti A.", "p": 8.0, "i": "img/cat/199269939.jpg"}, {"id": "199269940", "t": "New kamasutra. Didattica sadomasochistica", "a": "Levi C.", "p": 8.0, "i": "img/cat/199269940.jpg"}, {"id": "199269941", "t": "Groddeck e il regno millenario di hyeronymus bosch. Saggio sul paradiso in psicoanalisi", "a": "Lewinter R.", "p": 8.0, "i": "img/cat/199269941.jpg"}, {"id": "199269943", "t": "La grande cronaca (Mahàvamsa). Sulle orme del Buddha nell'antica Ceylon. Cura e traduzione dal pàli di V. Talamo", "a": "Mahanama", "p": 26.0, "i": "img/cat/199269943.jpg"}, {"id": "199269944", "t": "Fools crow. Autobiografia di un grande capo Sioux Teton", "a": "Mails T. E.", "p": 30.0, "i": "img/cat/199269944.jpg"}, {"id": "199269945", "t": "La crisi. Una risposta marxista alle congiunture attuali", "a": "Mandel E.", "p": 15.0, "i": "img/cat/199269945.jpg"}, {"id": "199269946", "t": "Inchiostro bugiardo. Guida alle tecniche della (dis)informazione", "a": "Mariani M.", "p": 12.0, "i": "img/cat/199269946.jpg"}, {"id": "199269947", "t": "Peyote", "a": "Marriott A. / Rachlin C. K.", "p": 18.0, "i": "img/cat/199269947.jpg"}, {"id": "199269948", "t": "L'accerchiamento", "a": "McNickle D'A.", "p": 28.0, "i": "img/cat/199269948.jpg"}, {"id": "199269949", "t": "Simone weil. Il pensiero e l'esperienza del femminile", "a": "Melchiori P. / Scattigno A.", "p": 23.0, "i": "img/cat/199269949.jpg"}, {"id": "199269950", "t": "Donne e sessualità nel cinema di oggi  Vol. 1: Aldrich- Bergman - Bertolucci - Buauel - Chabrol - Morissey - Nichols - Pakula - Rafetson - Schlesinger - Varda e altri", "a": "Mellen J.", "p": 11.0, "i": "img/cat/199269950.jpg"}, {"id": "199269951", "t": "Donne e sessualità nel cinema di oggi - Vol. II: Altman- Ashby - Brooks - Buauel - Makavejev - Rohmer - Ross - Rydell - Visconti - Wertmaller - Zinneman e altri", "a": "Mellen J.", "p": 11.0, "i": "img/cat/199269951.jpg"}, {"id": "199269952", "t": "Io omosessuale", "a": "Merlini F.", "p": 13.0, "i": "img/cat/199269952.jpg"}, {"id": "199269953", "t": "Linfa. Energia di guarigione e di rivoluzione", "a": "Metzger D.", "p": 11.0, "i": "img/cat/199269953.jpg"}, {"id": "199269954", "t": "Paurangoscia d'emanciparsi", "a": "Moeller-Gambaroff M.", "p": 1.0, "i": "img/cat/199269954.jpg"}, {"id": "199269956", "t": "I NOMI", "a": "Momaday N. S.", "p": 26.0, "i": "img/cat/199269956.jpg"}, {"id": "199269955", "t": "Il viaggio a rainy mountain", "a": "Momaday N. S.", "p": 25.0, "i": "img/cat/199269955.jpg"}, {"id": "199269957", "t": "Le storie della donna ragno. Leggende degli Indiani Hopi", "a": "Mullett G. C. M.", "p": 20.0, "i": "img/cat/199269957.jpg"}, {"id": "199269958", "t": "Wilhelm reich. Biografia da vicino", "a": "Ollendorff R. I.", "p": 16.0, "i": "img/cat/199269958.jpg"}, {"id": "199269959", "t": "La trappola della scienza - Tutti vivi a Harrisburg", "a": "Paccino D.", "p": 9.0, "i": "img/cat/199269959.jpg"}, {"id": "199269960", "t": "Un corpo per il mio guardaroba", "a": "Pacinotti M. C.", "p": 13.0, "i": "img/cat/199269960.jpg"}, {"id": "199269961", "t": "Avanti un'altra. Donne e ginecologi a confronto", "a": "Paggio L. C.", "p": 11.0, "i": "img/cat/199269961.jpg"}, {"id": "199269962", "t": "Buenaventura durruti. Cronaca della vita. Prefazione e cura di P. Flecchia", "a": "Paz A.", "p": 22.0, "i": "img/cat/199269962.jpg"}, {"id": "199269963", "t": "Maschio e maschismo. Esperienze americane contro il potere del cazzo", "a": "Pleck J. H. / Sawyer J.", "p": 14.0, "i": "img/cat/199269963.jpg"}, {"id": "199269964", "t": "Immanuel kant rigore ed espressione", "a": "Puder M.", "p": 16.0, "i": "img/cat/199269964.jpg"}, {"id": "199269965", "t": "Wounded knee. Gli indiani alla riscossa", "a": "Quattrocchi A.", "p": 14.0, "i": "img/cat/199269965.jpg"}, {"id": "199269878", "t": "Robota nervoso. n. 2. Fantascienza e socialità - a cura di M. Capa", "a": "", "p": 8.0, "i": "img/cat/199269878.jpg"}, {"id": "199269966", "t": "La ricerca. Conversazioni sui Dieci Tori Zen", "a": "Rajneesh B. S. O.", "p": 25.0, "i": "img/cat/199269966.jpg"}, {"id": "199269968", "t": "Dallo sciopero selvaggio all'autogestione generalizzata", "a": "Ratgeb", "p": 8.0, "i": "img/cat/199269968.jpg"}, {"id": "199269969", "t": "Un giurista sovietico e freud", "a": "Rejsner M.", "p": 10.0, "i": "img/cat/199269969.jpg"}, {"id": "199269970", "t": "La filosofia oggi come bisogno di nuova razionalita'", "a": "Riccio F.", "p": 14.0, "i": "img/cat/199269970.jpg"}, {"id": "199269971", "t": "La ragione condizionale. Immanenza dei criteri e trasformazione del denaro in capitale", "a": "Riccio F.", "p": 13.0, "i": "img/cat/199269971.jpg"}, {"id": "255759232", "t": "Robota Nervoso.  Fantascienza e socialità n. 1", "a": "", "p": 6.0, "i": "img/cat/255759232.jpg"}, {"id": "199269972", "t": "Autopsia della storia. La forma spettacolo e le sue ideologie nel crepuscolo del politico", "a": "Rosenthal B.", "p": 8.5, "i": "img/cat/199269972.jpg"}, {"id": "199269973", "t": "Una vita degna di essere narrata. Autobiografie di donne nell'Inghilterra puritana", "a": "Rossetti G.", "p": 19.0, "i": "img/cat/199269973.jpg"}, {"id": "199269974", "t": "La perversione inesistente ovvero il fantasma del potere", "a": "Saba Sardi F.", "p": 19.0, "i": "img/cat/199269974.jpg"}, {"id": "199269975", "t": "Karl kraus", "a": "Schick P.", "p": 22.0, "i": "img/cat/199269975.jpg"}, {"id": "199269976", "t": "Anarchia e creatività", "a": "Schwarz A.", "p": 20.0, "i": "img/cat/199269976.jpg"}, {"id": "199269977", "t": "L'immaginazione alchemica", "a": "Schwarz A.", "p": 28.0, "i": "img/cat/199269977.jpg"}, {"id": "199269978", "t": "Satyavati. Con una incisione di C. Parmiggiani", "a": "Schwarz A.", "p": 28.0, "i": "img/cat/199269978.jpg"}, {"id": "199269979", "t": "Pietre non ordinarie. Viaggio nel mondo delle pietre, dei sassi , dei cristalli, delle gemme, dei fossili, della polvere e delle stelle", "a": "Severi P.", "p": 16.0, "i": "img/cat/199269979.jpg"}, {"id": "199269980", "t": "Una letteratura tutta per Sè. Due secoli di scrittrici inglesi (1800-1900)", "a": "Showalter E.", "p": 28.0, "i": "img/cat/199269980.jpg"}, {"id": "199269981", "t": "Raccontare", "a": "Silko L. M.", "p": 22.0, "i": "img/cat/199269981.jpg"}, {"id": "199269982", "t": "Antimanuale. Ad uso di marxisti marxiani e marxologi", "a": "Silva L.", "p": 14.0, "i": "img/cat/199269982.jpg"}, {"id": "199269983", "t": "Il teatro delle donne", "a": "Silvi M. G. (a cura di)", "p": 14.0, "i": "img/cat/199269983.jpg"}, {"id": "199269984", "t": "Androginia. Verso una nuova (teoria della) sessualità. Introduzione di Sheldon S. Hendler", "a": "Singer J.", "p": 27.0, "i": "img/cat/199269984.jpg"}, {"id": "199269985", "t": "Joe hill. La vita (leggendaria) e le canzoni (rivoluzionarie) del \"primo eroe popolare del ventesimo secolo\". Introduzione di J. Kornbluh", "a": "Smith G. M.", "p": 19.0, "i": "img/cat/199269985.jpg"}, {"id": "199269986", "t": "Toro. 21 aprile - 20 maggio", "a": "", "p": 20.0, "i": "img/cat/199269986.jpg"}, {"id": "199269988", "t": "Parolefrecce", "a": "Vizenor G.", "p": 25.0, "i": "img/cat/199269988.jpg"}, {"id": "199269989", "t": "Vol. II. Zen e utopia: gli anni della rivolta", "a": "", "p": 15.0, "i": "img/cat/199269989.jpg"}, {"id": "199269990", "t": "Alan watts. Vol. I. Incontro con l'oriente", "a": "Watts A. W.", "p": 15.0, "i": "img/cat/199269990.jpg"}, {"id": "829380809", "t": "Alan watts. Vol. II Zen e Utopia: gli anni della rivolta", "a": "Watts A. W.", "p": 15.0, "i": "img/cat/829380809.jpg"}, {"id": "199269991", "t": "L'arte della contemplazione. Bilingue", "a": "Watts A. W.", "p": 13.0, "i": "img/cat/199269991.jpg"}, {"id": "199269992", "t": "Uomo donna natura", "a": "Watts A. W.", "p": 14.0, "i": "img/cat/199269992.jpg"}, {"id": "199269993", "t": "David ricardo. Economista finanziere politico", "a": "Weatherall D.", "p": 20.0, "i": "img/cat/199269993.jpg"}, {"id": "199269994", "t": "Mestruazioni e menopausa. Fisiologia e psicologia - mito e realtà", "a": "Weideger P.", "p": 16.0, "i": "img/cat/199269994.jpg"}, {"id": "199269995", "t": "La morte di jim loney", "a": "Welch J.", "p": 23.0, "i": "img/cat/199269995.jpg"}, {"id": "199269996", "t": "Origini dello stalinismo. Lo sviluppo del marxismo da scienza a ideologia", "a": "Wolter U.", "p": 14.0, "i": "img/cat/199269996.jpg"}, {"id": "199269997", "t": "Le viscere del presente", "a": "Zanga G.", "p": 18.0, "i": "img/cat/199269997.jpg"}];
+var WA='393466209685', MAIL='celuclibri@libero.it', PER=24, shown=PER, cart={};
+try{cart=JSON.parse(localStorage.getItem('celuc-cart')||'{}')}catch(e){}
+function save(){try{localStorage.setItem('celuc-cart',JSON.stringify(cart))}catch(e){}}
+function eur(n){return (Math.round(n*100)/100).toString().replace('.',',')+' €'}
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+var byId={};DATA.forEach(function(d){byId[d.id]=d});
+var $=function(i){return document.getElementById(i)};
+function filtered(){var q=norm($('q').value.trim());return q?DATA.filter(function(d){return norm(d.t+' '+d.a).indexOf(q)>-1}):DATA}
+function render(){
+  var f=filtered(),box=$('cards');box.innerHTML='';
+  f.slice(0,shown).forEach(function(d){
+    var c=document.createElement('article');c.className='card';
+    c.innerHTML='<div class="cv"><img src="'+d.i+'" alt="Copertina: '+d.t.replace(/"/g,'&quot;')+'" loading="lazy"></div><h3></h3><p class="au"></p><div class="row2"><span class="pr">'+eur(d.p)+'</span><button class="btn" type="button" data-id="'+d.id+'">Aggiungi</button></div>';
+    c.querySelector('h3').textContent=d.t;c.querySelector('.au').textContent=d.a;box.appendChild(c)});
+  $('count').textContent=f.length+(f.length===1?' titolo':' titoli');
+  $('more').parentNode.style.display=f.length>shown?'flex':'none';
+}
+function cartCount(){return Object.keys(cart).reduce(function(s,k){return s+cart[k]},0)}
+function drawCart(){
+  var ids=Object.keys(cart),tot=0,ul=$('items');ul.innerHTML='';
+  if(!ids.length){ul.innerHTML='<li class="empty" style="display:block">Non hai ancora scelto nessun libro.</li>'}
+  ids.forEach(function(id){var d=byId[id];tot+=d.p*cart[id];var li=document.createElement('li');
+    li.innerHTML='<img src="'+d.i+'" alt=""><div><b></b><small>'+eur(d.p)+'</small><div class="qty"><button type="button" data-d="-1" data-id="'+id+'" aria-label="Uno in meno">−</button><span>'+cart[id]+'</span><button type="button" data-d="1" data-id="'+id+'" aria-label="Uno in più">+</button></div></div><span>'+eur(d.p*cart[id])+'</span>';
+    li.querySelector('b').textContent=d.t.length>70?d.t.slice(0,68)+'…':d.t;ul.appendChild(li)});
+  $('tot').textContent=eur(tot);$('n').textContent=cartCount();
+  var lines=ids.map(function(id){return cart[id]+' × '+byId[id].t+' ('+eur(byId[id].p)+')'});
+  var msg='Buongiorno, vorrei ordinare questi libri:\n'+lines.join('\n')+'\nTotale libri: '+eur(tot)+'\nGrazie!';
+  $('send').href=ids.length?'https://wa.me/'+WA+'?text='+encodeURIComponent(msg):'#';
+  save();
+}
+function open(o){$('drawer').classList.toggle('open',o);$('scrim').classList.toggle('open',o);$('drawer').setAttribute('aria-hidden',!o)}
+document.addEventListener('click',function(e){
+  var b=e.target.closest('button[data-id]');
+  if(b&&b.closest('.card')){cart[b.dataset.id]=(cart[b.dataset.id]||0)+1;drawCart();open(true);return}
+  if(b&&b.dataset.d){var id=b.dataset.id;cart[id]=(cart[id]||0)+parseInt(b.dataset.d);if(cart[id]<=0)delete cart[id];drawCart()}
+});
+$('open-cart').onclick=function(){open(true)};$('close-cart').onclick=function(){open(false)};$('scrim').onclick=function(){open(false)};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')open(false)});
+$('q').addEventListener('input',function(){shown=PER;render()});
+$('more').onclick=function(){shown+=PER;render()};
+
+$('pay').onclick=function(){
+  var ids=Object.keys(cart); if(!ids.length)return;
+  startStore();
+  var t=0,tries=0;
+  (function go(){
+    if(typeof Ecwid==='undefined'||!Ecwid.Cart||!Ecwid.OnAPILoaded){ if(tries++>80){alert('Il negozio non risponde. Riprova tra poco o scrivici su WhatsApp.');return} return setTimeout(go,150)}
+    Ecwid.OnAPILoaded.add(function(){
+      ids.forEach(function(id){Ecwid.Cart.addProduct({id:parseInt(id,10),quantity:cart[id],callback:function(){}})});
+      cart={};drawCart();open(false);
+      $('cassa').classList.add('open');$('cassa').setAttribute('aria-hidden','false');
+      setTimeout(function(){Ecwid.openPage('cart')},600);
+    });
+  })();
+};
+$('cassa-x').onclick=function(){$('cassa').classList.remove('open');$('cassa').setAttribute('aria-hidden','true')};
+render();drawCart();
+</script>
+</body>
+</html>

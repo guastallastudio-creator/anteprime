@@ -1,0 +1,27 @@
+[
+ {
+  "check": "street-number",
+  "target": "Via Santa Valeria 5",
+  "reason": "Indirizzo reale con civico: lo richiede il brief della demo (BRIEF.md regola 4)"
+ },
+ {
+  "check": "postcode",
+  "target": "20123 Milano",
+  "reason": "CAP reale del negozio, richiesto dal brief della demo"
+ },
+ {
+  "check": "phone-number",
+  "target": "02 8645 0776",
+  "reason": "Telefono reale del negozio, richiesto dal brief (BRIEF.md regola 6)"
+ },
+ {
+  "check": "phone-number",
+  "target": "tel:+390286450776",
+  "reason": "Telefono reale del negozio, richiesto dal brief (BRIEF.md regola 6)"
+ },
+ {
+  "check": "phone-number",
+  "target": "https://wa.me/393466209685",
+  "reason": "WhatsApp reale dalle loro locandine, richiesto dal brief"
+ }
+]

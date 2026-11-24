@@ -1,0 +1,1550 @@
+{
+ "start": "2026-11-23T19:50:32.011Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-23T19:52:58.616Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 99,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-23T19:53:12.623Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 99,
+   "round": 1,
+   "reused": true,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-23T19:53:18.286Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 99,
+   "round": 1,
+   "reused": true,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-23T19:57:42.619Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 38,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-23T20:00:33.616Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 29,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "place",
+  "category": "libreria universitaria e casa editrice",
+  "primary": "Chiedi un libro su WhatsApp",
+  "rounds": 3,
+  "start": "2026-11-23T19:50:32.011Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "fdde03ab875a0f53:06fc91ab",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "fdde03ab875a0f53",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "button-styles",
+    "where": "(the page)",
+    "msg": "4 button styles on the page: square, fill #8a2b21, outline #8a2b21 x2 (\"Chiama in libreria\"); square, fill #8a2b21 x1 (\"Chiedi su WhatsApp\"); square, fill #8a2b21, outline #f3ede1 x1 (\"Vendi i tuoi libri usati\"); square, outline #1c1a16 x1 (\"Chiama 02 8645 0776\")",
+    "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "button-styles"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "copy-headings",
+    "where": "div.wrap.grid12 > div.c-r.rows > div.row:nth-of-type(2) > h3 \"Copisteria e rilegatura\"",
+    "msg": "\"Copisteria e rilegatura\" names no product, part, place or section (4 headings like it; at most one brand line per page) (and 3 more like it: \"Cartoleria\", \"Corone d'alloro\", \"Pacchi e minimarket\")",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headings"
+    ],
+    "wheres": [
+     "div.wrap.grid12 > div.c-r.rows > div.row:nth-of-type(2) > h3 \"Copisteria e rilegatura\""
+    ]
+   },
+   {
+    "check": "street-number",
+    "where": "div:nth-of-type(1) > div.hero-facts > div:nth-of-type(3) > strong \"Via Santa Valeria 5\"",
+    "msg": "a street with its house number: \"Via Santa Valeria 5\"; a real door, which the brief does not give (and 5 more like it: section#visita > div.wrap.grid12 > div.c-l > p.indirizzo, footer > div.wrap > div.f-l > p, section#visita > div.wrap.grid12 > div.c-r.mappa > iframe in its frame, ...)",
+    "fix": "print the street and the district only (\"Weserstraße, Berlin-Neukölln\"): no house number, unless the brief gives the address",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "street-number"
+    ],
+    "wheres": [
+     "div:nth-of-type(1) > div.hero-facts > div:nth-of-type(3) > strong \"Via Santa Valeria 5\""
+    ]
+   },
+   {
+    "check": "postcode",
+    "where": "section#visita > div.wrap.grid12 > div.c-l > p:nth-of-type(3) \"20123 Milano\"",
+    "msg": "a postcode with its town: \"20123 Milano\"; with the street it points at one building, which the brief does not give (and 1 more like it: footer > div.wrap > div.f-l > p)",
+    "fix": "drop the postcode: the street and the district say where it is (copy.md, Address)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "postcode"
+    ],
+    "wheres": [
+     "section#visita > div.wrap.grid12 > div.c-l > p:nth-of-type(3) \"20123 Milano\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "section#visita > div.wrap.grid12 > div.c-l > div.contatti \"02 8645 0776\"",
+    "msg": "a phone number with its area code: \"02 8645 0776\"; a visitor can dial it and reach a stranger (and 1 more like it: footer > div.wrap > div.f-r > div:nth-of-type(1))",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "section#visita > div.wrap.grid12 > div.c-l > div.contatti \"02 8645 0776\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "header.top > div.wrap > a.btn \"tel:+390286450776\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+390286450776\"; a visitor can dial it and reach a stranger (and 3 more like it: div.wrap.grid12 > div.c-l > div.contatti > a.btn.ghost, div.wrap > div.f-r > div:nth-of-type(1) > a:nth-of-type(1), nav.bar > a:nth-of-type(1))",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "header.top > div.wrap > a.btn \"tel:+390286450776\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "section#usato > div.wrap.grid12 > div.c-l > a.btn \"https://wa.me/393466209685?text=Buongior\"",
+    "msg": "a WhatsApp link calls a number in a real dialable format: \"https://wa.me/393466209685?text=Buongior\"; a visitor can dial it and reach a stranger (and 2 more like it: div.wrap.grid12 > div.c-l > div.contatti > a.btn:nth-of-type(1), nav.bar > a.wa)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "section#usato > div.wrap.grid12 > div.c-l > a.btn \"https://wa.me/393466209685?text=Buongior\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "footer > div.wrap > div.f-l:nth-of-type(1) > a.brand \"Celuc Libri\"",
+    "msg": "Tab stop 16, a \"Celuc Libri\": its focus change is faint: 2.03:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "footer > div.wrap > div.f-l:nth-of-type(1) > a.brand \"Celuc Libri\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1) \"02 8645 0776\"",
+    "msg": "Tab stop 17, a \"02 8645 0776\": its focus change is faint: 2.03:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1) \"02 8645 0776\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2) \"celuclibri@libero.it\"",
+    "msg": "Tab stop 18, a \"celuclibri@libero.it\": its focus change is faint: 2.03:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2) \"celuclibri@libero.it\""
+    ]
+   },
+   {
+    "check": "moment-none",
+    "where": "(the page)",
+    "msg": "a place page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+    "fix": "deal one (moments.mjs pick --page place --photo) and mount it in its own section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "moment-none"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "footer \"Celuc LibriLibreria universitaria e casa\"",
+    "msg": "the section is 257px tall (0.3 screens), 644px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "footer \"Celuc LibriLibreria universitaria e casa\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "main#main",
+    "msg": "the page is 8.3 screens long (7457px on a 900px screen): a place page runs 3 to 6 screens (over 7 FAIL) (SR-2)",
+    "fix": "keep a place page at 3 to 6 screens: merge a short block into the section above, or cut a section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "main#main"
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "footer \"Celuc LibriLibreria universitaria e casa\"",
+    "msg": "the screen at scroll 6557px (the top of section 9) shows 257px of section 9 and the content of 2 sections, over 24px each beside section 8: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "footer \"Celuc LibriLibreria universitaria e casa\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "a.skip \"Vai al contenuto\"",
+    "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "a.skip \"Vai al contenuto\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "header.top \"Celuc Libri Cosa trovi Libri usati Incon\"",
+    "msg": "a <header> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "header.top \"Celuc Libri Cosa trovi Libri usati Incon\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "footer \"Celuc LibriLibreria universitaria e casa\"",
+    "msg": "a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: \"La libreria di via Santa\") (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "footer \"Celuc LibriLibreria universitaria e casa\""
+    ]
+   },
+   {
+    "check": "split-pair",
+    "where": "main#main > section.hero > div.wrap \"La libreria di via Santa Valeria. A due \"",
+    "msg": "the two columns of the split start 57px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+    "fix": "top-align both columns of the split (align-items: start)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "split-pair"
+    ],
+    "wheres": [
+     "main#main > section.hero > div.wrap \"La libreria di via Santa Valeria. A due \""
+    ]
+   },
+   {
+    "check": "split-pair",
+    "where": "section#usato > div.wrap.grid12 \"Libri usati Compravendita di libri usati\"",
+    "msg": "the two columns of the split start 50px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+    "fix": "top-align both columns of the split (align-items: start)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "split-pair"
+    ],
+    "wheres": [
+     "section#usato > div.wrap.grid12 \"Libri usati Compravendita di libri usati\""
+    ]
+   },
+   {
+    "check": "split-pair",
+    "where": "section#cafe > div.wrap > div.grid12.txt \"Celuc Café, il bar dentro la libreria. U\"",
+    "msg": "the two columns of the split start 44px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (and 4 more like it: \"Presentazioni di libri i\", \"Vieni a trovarci Via San\", \"Celuc Libri è una librer\") (SR-8)",
+    "fix": "top-align both columns of the split (align-items: start)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "split-pair"
+    ],
+    "wheres": [
+     "section#cafe > div.wrap > div.grid12.txt \"Celuc Café, il bar dentro la libreria. U\""
+    ]
+   },
+   {
+    "check": "flush",
+    "where": "section#usato > div.wrap.grid12 > div.c-l > p.eyebrow \"LIBRI USATI\"",
+    "msg": "its first line sits -2px under the top edge of section#usato, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "section#usato > div.wrap.grid12 > div.c-l > p.eyebrow \"LIBRI USATI\""
+    ]
+   },
+   {
+    "check": "flush",
+    "where": "section#edizioni > div.wrap.grid12 > div.c-l > div.big \"Edizioni La Salamandra, dal 1974\"",
+    "msg": "its first line sits -3px under the top edge of section#edizioni, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "section#edizioni > div.wrap.grid12 > div.c-l > div.big \"Edizioni La Salamandra, dal 1974\""
+    ]
+   },
+   {
+    "check": "flush",
+    "where": "div.wrap.grid12 > div.c-r > p.books-note > a.link \"Sfoglia il catalogo completo e ordina →\"",
+    "msg": "its button sits 2px above the lower edge of section#edizioni, where the ground changes to section#incontri",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "div.wrap.grid12 > div.c-r > p.books-note > a.link \"Sfoglia il catalogo completo e ordina →\""
+    ]
+   },
+   {
+    "check": "flush",
+    "where": "section#visita > div.wrap.grid12 > div.c-l > p.eyebrow \"VIENI A TROVARCI\"",
+    "msg": "its first line sits -2px under the top edge of section#visita, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "section#visita > div.wrap.grid12 > div.c-l > p.eyebrow \"VIENI A TROVARCI\""
+    ]
+   },
+   {
+    "check": "flush",
+    "where": "section#visita > div.wrap.grid12 > div.c-r.mappa",
+    "msg": "its last line sits 0px above the lower edge of section#visita, where the ground changes to the footer",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "section#visita > div.wrap.grid12 > div.c-r.mappa"
+    ]
+   },
+   {
+    "check": "row-gap",
+    "where": "section#cafe > div.wrap > div.grid > div.ph.e",
+    "msg": "stretched alone across the last row (358px) while the 2 like it above are 167px",
+    "fix": "fill the row at this width: span the columns, or stack the split",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-gap"
+    ],
+    "wheres": [
+     "section#cafe > div.wrap > div.grid > div.ph.e"
+    ]
+   },
+   {
+    "check": "no-visual",
+    "where": "section#edizioni \"Edizioni La Salamandra, dal 1974 Celuc è\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "section#edizioni \"Edizioni La Salamandra, dal 1974 Celuc è\""
+    ]
+   },
+   {
+    "check": "button-styles",
+    "where": "(one screen)",
+    "msg": "3 button styles on one screen: square, fill #8a2b21 (\"WhatsApp\"); square, fill #8a2b21, outline #8a2b21 (\"Scrivici su WhatsApp\"); square, outline #1c1a16 (\"Chiama 02 8645 0776\"); the odd one out: \"Chiama 02 8645 0776\"",
+    "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "button-styles"
+    ],
+    "wheres": [
+     "(one screen)"
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#usato / main#main > section.story",
+    "msg": "127px between these sections, +151% against the median 51px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#usato / main#main > section.story"
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#main > section.story / section#edizioni",
+    "msg": "106px between these sections, +110% against the median 51px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "main#main > section.story / section#edizioni"
+    ]
+   },
+   {
+    "check": "fold-action",
+    "where": "form#ask > button",
+    "msg": "the hero's main button \"Chiedi su WhatsApp\" shows only 8px of itself at the bottom of the first screen (844px tall): it is not seen on load",
+    "fix": "bring the hero's buttons onto the first screen: a shorter headline or line, the picture under the buttons",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "fold-action"
+    ],
+    "wheres": [
+     "form#ask > button"
+    ]
+   },
+   {
+    "check": "sparse",
+    "where": "section.story section.story \"Celuc Libri è una libreria indip\"",
+    "msg": "its content fills 49% of its screen; merge it or give it its visual (0.55 is the aim)",
+    "fix": "fill the section or make it a screen shorter",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "sparse"
+    ],
+    "wheres": [
+     "section.story section.story \"Celuc Libri è una libreria indip\""
+    ]
+   },
+   {
+    "check": "screen-height",
+    "where": "#visita section.s.visita \"Vieni a trovarci Via Santa Valer\"",
+    "msg": "996px, 1.18 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills",
+    "fix": "make the section exactly one or two screens (--h: 1 or 2)",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "screen-height"
+    ],
+    "wheres": [
+     "#visita section.s.visita \"Vieni a trovarci Via Santa Valer\""
+    ]
+   },
+   {
+    "check": "hero-fold",
+    "where": "section.hero section.hero \"La libreria di via Santa Valeria\"",
+    "msg": "ends at y 1191, past the fold (844): 1.41 screens tall",
+    "fix": "the hero fills the first screen alone, its button inside it",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-fold"
+    ],
+    "wheres": [
+     "section.hero section.hero \"La libreria di via Santa Valeria\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "no-visual",
+    "where": "section#cosa-trovi \"Servizi della libreria: libri, copisteri\"",
+    "msg": "pictures, effects and mocks cover 23% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#edizioni \"Edizioni La Salamandra, dal 1974 Celuc è\"",
+    "msg": "pictures, effects and mocks cover 15% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "card-layout",
+    "where": "section#cafe > div.wrap > div.grid",
+    "msg": "5 cards with 1 placement of their UI (vary them: rise, corner, a low stack, right)",
+    "fix": "vary the cards of a group: at least three placements, and the ground in its own light on each",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-headline",
+    "where": "section.hero > div.wrap > div:nth-of-type(1) > h1 \"La libreria di via Santa Valeria. A due \"",
+    "msg": "the h1 has 11 words (2 to 8 read at a glance)",
+    "fix": "put the category noun in the h1 (and who it is for, or where), in 2 to 8 words",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-buttons",
+    "where": "form#ask > button \"Chiedi su WhatsApp\"",
+    "msg": "\"Chiedi su WhatsApp\" does not start with a verb (book, buy, try, start, get, see...) (and 3 more like it: \"Vendi i tuoi libri usati\", \"Scrivici su WhatsApp\", \"Chiama 02 8645 0776\")",
+    "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "header.top > div.wrap > a.btn \"Chiama in libreria\"",
+    "msg": "2 labels for one target tel:+390286450776: \"Chiama in libreria\", \"Chiama 02 8645 0776\"",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "(the page)",
+    "msg": "the main action \"Chiedi un libro su WhatsApp\" does not read word for word the same in the nav or hero and the closing section",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "off-grid",
+    "where": "div.wrap.grid12 > div.c-r.rows > div.row:nth-of-type(1) > p \"Testi universitari, saggistica, narrativ\"",
+    "msg": "two common left edges of one section 24px apart: 756px (6 elements, like this one) and 732px (12)",
+    "fix": "move it onto the page margin, or the column edge its section uses",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#main > section.hero / section#cosa-trovi",
+    "msg": "186px between these sections, -27% against the median 254px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#cosa-trovi / section#usato",
+    "msg": "193px between these sections, -47% against the median 365px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#visita / footer",
+    "msg": "226px between these sections, -38% against the median 365px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#usato / main#main > section.story",
+    "msg": "uneven space at the edge of a band: 244px outside its edge, 121px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "div.wrap.grid12 > div.c-l > div.covers > img:nth-of-type(2) \"copertina-02.jpg\"",
+    "msg": "12 photographs in more than one look: lightness from 0.20 to 0.78; saturation from 0.15 to 0.75; the odd one out is copertina-02.jpg",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.top > div.wrap > nav.main > a:nth-of-type(1) \"Cosa trovi\"",
+    "msg": "\"Cosa trovi\" opens a section headed \"Servizi della libreria: libri, copisteria, cartole\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.top > div.wrap > nav.main > a:nth-of-type(3) \"Incontri\"",
+    "msg": "\"Incontri\" opens a section headed \"Presentazioni di libri in libreria.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.top > div.wrap > nav.main > a:nth-of-type(4) \"Caffè\"",
+    "msg": "\"Caffè\" opens a section headed \"Celuc Café, il bar dentro la libreria.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section.hero > div.wrap > div:nth-of-type(1) > h1 \"La libreria di via Santa Valeria. A due \"",
+    "msg": "a headline of 11 words on 4 lines at 76.3px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section#cosa-trovi > div.wrap.grid12 > div.c-l > h2 \"Servizi della libreria: libri, copisteri\"",
+    "msg": "a section heading of 6 words on 4 lines at 72px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header.top",
+    "msg": "the nav stays on screen with 5 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "grounds",
+    "where": "section#usato \"LIBRI USATI Compravendita di libri usati\"",
+    "msg": "4 flat grounds across the page (#f3ede1 section x6, #1f3a31 section, #e9e0cf section, #1c1a16 footer): three at most (the base, a surface, an inverse)",
+    "fix": "three flat grounds at most (the base, one surface, one inverse): lay the other bands on one of them",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "main#main > section.story \"Celuc Libri è una libreria indipendente \"",
+    "msg": "35% of the section is empty: 128px above its first content, 144px under its last (div.c-r.ph), in its 760px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#edizioni \"Edizioni La Salamandra, dal 1974 Celuc è\"",
+    "msg": "40% of the section is empty: 176px above its first content, 192px under its last (img:nth-of-type(1)), in its 900px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "share-meta",
+    "where": "head",
+    "msg": "the head lacks og:title, og:description, og:image, twitter:card: a shared link shows no picture or title of its own",
+    "fix": "copy the head block of starter.html: og tags, twitter:card, the icon and theme-color (references/system.md, Head)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "form-fields",
+    "where": "form#ask",
+    "msg": "the form has no status line (role=\"status\"): sending, sent and errors are never read out",
+    "fix": "give each field its type, autocomplete and inputmode, never block paste or disable the button before a submit, and add the status line (references/system.md, Forms)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-air",
+    "where": "main#main > section.story \"Celuc Libri è una libreria indipendente \"",
+    "msg": "the content fills 49% of the section's height (441 of 900px): 55% or more (40% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-air",
+    "where": "section#visita \"Vieni a trovarci Via Santa Valeria 5 201\"",
+    "msg": "the content fills 53.7% of the section's height (484 of 900px): 55% or more (40% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header.top > div.wrap > a.brand \"Celuc Libri\"",
+    "msg": "a 119x26px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "section#usato > div.wrap.grid12 > div.c-l > p.eyebrow \"LIBRI USATI\"",
+    "msg": "sits across the edge of a panel behind it (and 2 more like it: \"Edizioni La Salamandra, \", \"VIENI A TROVARCI\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fold-cut",
+    "where": "form#ask > button \"Chiedi su WhatsApp\"",
+    "msg": "the hero's button \"Chiedi su WhatsApp\" is cut by the bottom of the first screen (44px of its 52px below the fold)",
+    "fix": "size the hero so the heading ends above the fold, or starts below it",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "heading-scale",
+    "where": "section#edizioni > div.wrap.grid12 > div.c-l > div.big \"Edizioni La Salamandra, dal 1974\"",
+    "msg": "1 line of plain text set larger than the section headings (56px against h2 38px)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#cafe / section#visita",
+    "msg": "the sections overlap by 2px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#edizioni / section#incontri",
+    "msg": "uneven space at the edge of a band: 45px outside its edge, 2px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "section#usato > div.wrap.grid12 > div.c-r.poster > img \"usato-seconda-vita.jpg\"",
+    "msg": "11 photographs in more than one look: lightness from 0.21 to 0.62; saturation from 0.14 to 0.56; the odd one out is usato-seconda-vita.jpg",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-weight",
+    "where": "section#usato > div.wrap.grid12 > div.c-r.poster > img \"usato-seconda-vita.jpg\"",
+    "msg": "3 photographs are 3x or more wider than drawn on the phone, with no srcset: usato-seconda-vita.jpg is 1254px (405 KB, lazy) for a 358px frame; on a phone it arrives late and its frame shows only its ground until then",
+    "fix": "give each photograph srcset and sizes (a 800px and a 1600px file), or a smaller file: the frame never shows empty",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "visual-caption",
+    "where": "section#visita > div.wrap.grid12 > div.c-l > p.eyebrow \"VIENI A TROVARCI\"",
+    "msg": "a muted 13px line of 1 row sits 0px under the picture bar-bicchieri.jpg: it reads as a caption: \"VIENI A TROVARCI\"; no caption or description under any image, render or visual (house rule)",
+    "fix": "take the line away: no caption or description under, over or on any image, render or visual; a licence credit goes in one footer line",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fold-cut",
+    "where": "section.hero > div.wrap > div:nth-of-type(1) > p.lead \"Libri nuovi e usati, cartoleria, stampa \"",
+    "msg": "a line of the hero text is sliced by the bottom of the first screen",
+    "fix": "size the hero so the heading ends above the fold, or starts below it",
+    "widths": [
+     320
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 109,
+   "layout": 13
+  }
+ },
+ "open": [
+  {
+   "check": "button-styles",
+   "where": "(the page)",
+   "msg": "4 button styles on the page: square, fill #8a2b21, outline #8a2b21 x2 (\"Chiama in libreria\"); square, fill #8a2b21 x1 (\"Chiedi su WhatsApp\"); square, fill #8a2b21, outline #f3ede1 x1 (\"Vendi i tuoi libri usati\"); square, outline #1c1a16 x1 (\"Chiama 02 8645 0776\")",
+   "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "button-styles"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "copy-headings",
+   "where": "div.wrap.grid12 > div.c-r.rows > div.row:nth-of-type(2) > h3 \"Copisteria e rilegatura\"",
+   "msg": "\"Copisteria e rilegatura\" names no product, part, place or section (4 headings like it; at most one brand line per page) (and 3 more like it: \"Cartoleria\", \"Corone d'alloro\", \"Pacchi e minimarket\")",
+   "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headings"
+   ],
+   "wheres": [
+    "div.wrap.grid12 > div.c-r.rows > div.row:nth-of-type(2) > h3 \"Copisteria e rilegatura\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "footer > div.wrap > div.f-l:nth-of-type(1) > a.brand \"Celuc Libri\"",
+   "msg": "Tab stop 16, a \"Celuc Libri\": its focus change is faint: 2.03:1 against the ground, 3:1 needed",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "footer > div.wrap > div.f-l:nth-of-type(1) > a.brand \"Celuc Libri\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1) \"02 8645 0776\"",
+   "msg": "Tab stop 17, a \"02 8645 0776\": its focus change is faint: 2.03:1 against the ground, 3:1 needed",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1) \"02 8645 0776\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2) \"celuclibri@libero.it\"",
+   "msg": "Tab stop 18, a \"celuclibri@libero.it\": its focus change is faint: 2.03:1 against the ground, 3:1 needed",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "div.wrap > div.f-r:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2) \"celuclibri@libero.it\""
+   ]
+  },
+  {
+   "check": "moment-none",
+   "where": "(the page)",
+   "msg": "a place page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+   "fix": "deal one (moments.mjs pick --page place --photo) and mount it in its own section",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "moment-none"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "footer \"Celuc LibriLibreria universitaria e casa\"",
+   "msg": "the section is 257px tall (0.3 screens), 644px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "footer \"Celuc LibriLibreria universitaria e casa\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "main#main",
+   "msg": "the page is 8.3 screens long (7457px on a 900px screen): a place page runs 3 to 6 screens (over 7 FAIL) (SR-2)",
+   "fix": "keep a place page at 3 to 6 screens: merge a short block into the section above, or cut a section",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "main#main"
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "footer \"Celuc LibriLibreria universitaria e casa\"",
+   "msg": "the screen at scroll 6557px (the top of section 9) shows 257px of section 9 and the content of 2 sections, over 24px each beside section 8: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "footer \"Celuc LibriLibreria universitaria e casa\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "a.skip \"Vai al contenuto\"",
+   "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "a.skip \"Vai al contenuto\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "header.top \"Celuc Libri Cosa trovi Libri usati Incon\"",
+   "msg": "a <header> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "header.top \"Celuc Libri Cosa trovi Libri usati Incon\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "footer \"Celuc LibriLibreria universitaria e casa\"",
+   "msg": "a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: \"La libreria di via Santa\") (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "footer \"Celuc LibriLibreria universitaria e casa\""
+   ]
+  },
+  {
+   "check": "split-pair",
+   "where": "main#main > section.hero > div.wrap \"La libreria di via Santa Valeria. A due \"",
+   "msg": "the two columns of the split start 57px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+   "fix": "top-align both columns of the split (align-items: start)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "split-pair"
+   ],
+   "wheres": [
+    "main#main > section.hero > div.wrap \"La libreria di via Santa Valeria. A due \""
+   ]
+  },
+  {
+   "check": "split-pair",
+   "where": "section#usato > div.wrap.grid12 \"Libri usati Compravendita di libri usati\"",
+   "msg": "the two columns of the split start 50px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+   "fix": "top-align both columns of the split (align-items: start)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "split-pair"
+   ],
+   "wheres": [
+    "section#usato > div.wrap.grid12 \"Libri usati Compravendita di libri usati\""
+   ]
+  },
+  {
+   "check": "split-pair",
+   "where": "section#cafe > div.wrap > div.grid12.txt \"Celuc Café, il bar dentro la libreria. U\"",
+   "msg": "the two columns of the split start 44px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (and 4 more like it: \"Presentazioni di libri i\", \"Vieni a trovarci Via San\", \"Celuc Libri è una librer\") (SR-8)",
+   "fix": "top-align both columns of the split (align-items: start)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "split-pair"
+   ],
+   "wheres": [
+    "section#cafe > div.wrap > div.grid12.txt \"Celuc Café, il bar dentro la libreria. U\""
+   ]
+  },
+  {
+   "check": "flush",
+   "where": "section#usato > div.wrap.grid12 > div.c-l > p.eyebrow \"LIBRI USATI\"",
+   "msg": "its first line sits -2px under the top edge of section#usato, where the ground changes",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "section#usato > div.wrap.grid12 > div.c-l > p.eyebrow \"LIBRI USATI\""
+   ]
+  },
+  {
+   "check": "flush",
+   "where": "section#edizioni > div.wrap.grid12 > div.c-l > div.big \"Edizioni La Salamandra, dal 1974\"",
+   "msg": "its first line sits -3px under the top edge of section#edizioni, where the ground changes",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "section#edizioni > div.wrap.grid12 > div.c-l > div.big \"Edizioni La Salamandra, dal 1974\""
+   ]
+  },
+  {
+   "check": "flush",
+   "where": "div.wrap.grid12 > div.c-r > p.books-note > a.link \"Sfoglia il catalogo completo e ordina →\"",
+   "msg": "its button sits 2px above the lower edge of section#edizioni, where the ground changes to section#incontri",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "div.wrap.grid12 > div.c-r > p.books-note > a.link \"Sfoglia il catalogo completo e ordina →\""
+   ]
+  },
+  {
+   "check": "flush",
+   "where": "section#visita > div.wrap.grid12 > div.c-l > p.eyebrow \"VIENI A TROVARCI\"",
+   "msg": "its first line sits -2px under the top edge of section#visita, where the ground changes",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "section#visita > div.wrap.grid12 > div.c-l > p.eyebrow \"VIENI A TROVARCI\""
+   ]
+  },
+  {
+   "check": "flush",
+   "where": "section#visita > div.wrap.grid12 > div.c-r.mappa",
+   "msg": "its last line sits 0px above the lower edge of section#visita, where the ground changes to the footer",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "section#visita > div.wrap.grid12 > div.c-r.mappa"
+   ]
+  },
+  {
+   "check": "row-gap",
+   "where": "section#cafe > div.wrap > div.grid > div.ph.e",
+   "msg": "stretched alone across the last row (358px) while the 2 like it above are 167px",
+   "fix": "fill the row at this width: span the columns, or stack the split",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-gap"
+   ],
+   "wheres": [
+    "section#cafe > div.wrap > div.grid > div.ph.e"
+   ]
+  },
+  {
+   "check": "no-visual",
+   "where": "section#edizioni \"Edizioni La Salamandra, dal 1974 Celuc è\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "section#edizioni \"Edizioni La Salamandra, dal 1974 Celuc è\""
+   ]
+  },
+  {
+   "check": "button-styles",
+   "where": "(one screen)",
+   "msg": "3 button styles on one screen: square, fill #8a2b21 (\"WhatsApp\"); square, fill #8a2b21, outline #8a2b21 (\"Scrivici su WhatsApp\"); square, outline #1c1a16 (\"Chiama 02 8645 0776\"); the odd one out: \"Chiama 02 8645 0776\"",
+   "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "button-styles"
+   ],
+   "wheres": [
+    "(one screen)"
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#usato / main#main > section.story",
+   "msg": "127px between these sections, +151% against the median 51px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#usato / main#main > section.story"
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "main#main > section.story / section#edizioni",
+   "msg": "106px between these sections, +110% against the median 51px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "main#main > section.story / section#edizioni"
+   ]
+  },
+  {
+   "check": "fold-action",
+   "where": "form#ask > button",
+   "msg": "the hero's main button \"Chiedi su WhatsApp\" shows only 8px of itself at the bottom of the first screen (844px tall): it is not seen on load",
+   "fix": "bring the hero's buttons onto the first screen: a shorter headline or line, the picture under the buttons",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "fold-action"
+   ],
+   "wheres": [
+    "form#ask > button"
+   ]
+  },
+  {
+   "check": "sparse",
+   "where": "section.story section.story \"Celuc Libri è una libreria indip\"",
+   "msg": "its content fills 49% of its screen; merge it or give it its visual (0.55 is the aim)",
+   "fix": "fill the section or make it a screen shorter",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "sparse"
+   ],
+   "wheres": [
+    "section.story section.story \"Celuc Libri è una libreria indip\""
+   ]
+  },
+  {
+   "check": "screen-height",
+   "where": "#visita section.s.visita \"Vieni a trovarci Via Santa Valer\"",
+   "msg": "996px, 1.18 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills",
+   "fix": "make the section exactly one or two screens (--h: 1 or 2)",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "screen-height"
+   ],
+   "wheres": [
+    "#visita section.s.visita \"Vieni a trovarci Via Santa Valer\""
+   ]
+  },
+  {
+   "check": "hero-fold",
+   "where": "section.hero section.hero \"La libreria di via Santa Valeria\"",
+   "msg": "ends at y 1191, past the fold (844): 1.41 screens tall",
+   "fix": "the hero fills the first screen alone, its button inside it",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-fold"
+   ],
+   "wheres": [
+    "section.hero section.hero \"La libreria di via Santa Valeria\""
+   ]
+  }
+ ],
+ "waived": [
+  {
+   "check": "street-number",
+   "where": "div:nth-of-type(1) > div.hero-facts > div:nth-of-type(3) > strong \"Via Santa Valeria 5\"",
+   "msg": "a street with its house number: \"Via Santa Valeria 5\"; a real door, which the brief does not give (and 5 more like it: section#visita > div.wrap.grid12 > div.c-l > p.indirizzo, footer > div.wrap > div.f-l > p, section#visita > div.wrap.grid12 > div.c-r.mappa > iframe in its frame, ...)",
+   "fix": "print the street and the district only (\"Weserstraße, Berlin-Neukölln\"): no house number, unless the brief gives the address",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "street-number"
+   ],
+   "wheres": [
+    "div:nth-of-type(1) > div.hero-facts > div:nth-of-type(3) > strong \"Via Santa Valeria 5\""
+   ],
+   "reason": "Indirizzo reale con civico: lo richiede il brief della demo (BRIEF.md regola 4)"
+  },
+  {
+   "check": "postcode",
+   "where": "section#visita > div.wrap.grid12 > div.c-l > p:nth-of-type(3) \"20123 Milano\"",
+   "msg": "a postcode with its town: \"20123 Milano\"; with the street it points at one building, which the brief does not give (and 1 more like it: footer > div.wrap > div.f-l > p)",
+   "fix": "drop the postcode: the street and the district say where it is (copy.md, Address)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "postcode"
+   ],
+   "wheres": [
+    "section#visita > div.wrap.grid12 > div.c-l > p:nth-of-type(3) \"20123 Milano\""
+   ],
+   "reason": "CAP reale del negozio, richiesto dal brief della demo"
+  },
+  {
+   "check": "phone-number",
+   "where": "section#visita > div.wrap.grid12 > div.c-l > div.contatti \"02 8645 0776\"",
+   "msg": "a phone number with its area code: \"02 8645 0776\"; a visitor can dial it and reach a stranger (and 1 more like it: footer > div.wrap > div.f-r > div:nth-of-type(1))",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "section#visita > div.wrap.grid12 > div.c-l > div.contatti \"02 8645 0776\""
+   ],
+   "reason": "Telefono reale del negozio, richiesto dal brief (BRIEF.md regola 6)"
+  },
+  {
+   "check": "phone-number",
+   "where": "header.top > div.wrap > a.btn \"tel:+390286450776\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+390286450776\"; a visitor can dial it and reach a stranger (and 3 more like it: div.wrap.grid12 > div.c-l > div.contatti > a.btn.ghost, div.wrap > div.f-r > div:nth-of-type(1) > a:nth-of-type(1), nav.bar > a:nth-of-type(1))",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "header.top > div.wrap > a.btn \"tel:+390286450776\""
+   ],
+   "reason": "Telefono reale del negozio, richiesto dal brief (BRIEF.md regola 6)"
+  },
+  {
+   "check": "phone-number",
+   "where": "section#usato > div.wrap.grid12 > div.c-l > a.btn \"https://wa.me/393466209685?text=Buongior\"",
+   "msg": "a WhatsApp link calls a number in a real dialable format: \"https://wa.me/393466209685?text=Buongior\"; a visitor can dial it and reach a stranger (and 2 more like it: div.wrap.grid12 > div.c-l > div.contatti > a.btn:nth-of-type(1), nav.bar > a.wa)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "section#usato > div.wrap.grid12 > div.c-l > a.btn \"https://wa.me/393466209685?text=Buongior\""
+   ],
+   "reason": "WhatsApp reale dalle loro locandine, richiesto dal brief"
+  }
+ ],
+ "warnCount": 36,
+ "at": "2026-11-23T20:00:33.616Z",
+ "openTold": true
+}
